@@ -1,0 +1,22 @@
+<svg width="72" height="63" viewBox="0 0 72 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_12_87)">
+<path d="M58.5 61L42 63L8.5 57L0 36L3.5 18.5L16.5 0H47L62.5 11L72 31.5L66 51.5L58.5 61Z" fill="#7089D9"/>
+<path d="M42 63L58.5 61L66 51.5L47 53L24 41.5L25 20L38.5 11H62.5L47 0H16.5L3.5 18.5L0 36L8.5 57L42 63Z" fill="#7089D9"/>
+<path d="M66 51.5L47 53L24 41.5L25 20L38.5 11H62.5L72 31.5L66 51.5Z" fill="#B2C3FB"/>
+<path d="M24 41.5L25 20L38.5 11L16.5 0L3.5 18.5L0 36L24 41.5Z" fill="#7089D9"/>
+<path d="M42 63L58.5 61L66 51.5L47 53L24 41.5L8.5 57L42 63Z" fill="#7089D9"/>
+<path d="M38.5 11H62.5L47 0H16.5L38.5 11Z" fill="#6279C5"/>
+<path d="M0 36L8.5 57L24 41.5L0 36Z" fill="#5972C2"/>
+<path d="M25 20L24 41.5L48 36L38.5 11L25 20Z" fill="#A1B6FA"/>
+<path d="M62.5 11H38.5L48 36L67 35L62.5 11Z" fill="#B9C8F8"/>
+<path d="M24 41.5L47 53L48 36L24 41.5Z" fill="#A5B8F4"/>
+<path d="M47 53L66 51.5L67 35L48 36L47 53Z" fill="#B2C3FB"/>
+<path d="M66 51.5L72 31.5L67 35L66 51.5Z" fill="#B8C8FC"/>
+<path d="M72 31.5L62.5 11L67 35L72 31.5Z" fill="#B2C4FF"/>
+</g>
+<defs>
+<clipPath id="clip0_12_87">
+<rect width="72" height="63" fill="white"/>
+</clipPath>
+</defs>
+</svg>
