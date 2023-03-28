@@ -1,7 +1,13 @@
-interface LinksGroupProps {
-  icon: import("@tabler/icons").TablerIcon;
+interface Sublink {
+  label: string;
+  link?: string;
+  title?: boolean;
+}
+
+interface Link {
+  icon: import("@carbon/icons-react").CarbonIconType;
   label: string;
   initiallyOpened?: boolean;
-  link: string;
-  links?: { label: string; link: string }[];
-}
+  link?: string;
+  links?: Sublink[];
+};

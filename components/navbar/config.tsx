@@ -1,48 +1,78 @@
 import {
-  IconCookie,
-  IconDoor,
-  IconBook2,
-  IconAppWindow,
-  IconClock,
-  IconServerCog,
-  IconUsers
-} from "@tabler/icons";
+  Cookie,
+  WatsonHealth3DCurveManual,
+  Book,
+  Terminal,
+  BareMetalServer,
+  UserMultiple
+} from "@carbon/icons-react";
 
 // Don't add a trailing slash to the hrefs
 // The active link is determined by the current path
 // If the current path is the same as the href, it is active
 // Else if you add a trailing slash, it will never be active
 // Until clicked on
-export const navLinks = [
-  { label: 'Introduction', icon: IconDoor, link: "/dash" },
-  { label: 'Getting Started', icon: IconBook2, link: "/" },
-  { label: 'Credits', icon: IconCookie, link: "/" },
+export const navLinks: Link[] = [
+  { label: 'Introduction', icon: WatsonHealth3DCurveManual, link: "/introduction" },
+  { label: 'Getting Started', icon: Book, link: "/getting-started" },
   {
     label: 'Beginner\'s Guidebook',
-    icon: IconUsers,
+    icon: UserMultiple,
     links: [
-      { label: 'Creating A Bot', link: '/' },
-      { label: 'Proxying', link: '/' },
-      { label: 'Ticket System', link: '/' },
-      { label: 'Wordpress', link: '/' },
+      { label: 'Creating A Bot', link: '/beginner/creating-a-bot' },
+      { label: 'Proxying', link: '/beginner/proxying' },
+      { label: 'Ticket System', link: '/beginner/tickets' },
+      { label: 'Wordpress', link: '/beginner/wordpress' },
     ],
   },
   {
     label: 'Advanced Management',
-    icon: IconAppWindow,
+    icon: Terminal,
     links: [
-    ],
-  },
-  {
-    label: 'Timeline',
-    icon: IconClock,
-    links: [
+      { label: 'DBH API', link: '/advanced/dbh-api' },
+      { label: 'SFTP Using VSCode', link: '/advanced/vscode-sftp' },
+      { label: 'ShareX Setup', link: '/advanced/sharex-setup' },
+      { label: 'Status API', link: '/advanced/status-api' },
     ],
   },
   {
     label: 'Server Guides',
-    icon: IconServerCog,
+    icon: BareMetalServer,
     links: [
+      { label: 'Server Creation', link: '/server/create' },
+
+      { label: 'Databases', title: true },
+      { label: 'MongoDB', link: '/server/database/mongodb' },
+      { label: 'Postgres', link: '/server/database/postgres' },
+      { label: 'Redis', link: '/server/database/redis' },
+
+      { label: 'Development', title: true },
+      { label: 'All In One (AIO)', link: '/server/development/aio' },
+      { label: 'Code Server', link: '/server/development/code-server' },
+      { label: 'Java', link: '/server/development/java' },
+      { label: 'Node.js', link: '/server/development/nodejs' },
+      { label: 'Python', link: '/server/development/python' },
+      { label: 'Red Discord Bot', link: '/server/development/rdb' },
+      
+      { label: 'Minecraft', title: true },
+      { label: 'Forge', link: '/server/minecraft/forge' },
+      { label: 'Paper', link: '/server/minecraft/paper' },
+      { label: 'Spigot', link: '/server/minecraft/spigot' },
+      { label: 'Bedrock', link: '/server/minecraft/bedrock' },
+      { label: 'Pocketmine MP', link: '/server/minecraft/pmmp' },
+      { label: 'Waterfall', link: '/server/minecraft/waterfall' },
+
+      { label: 'Software', title: true },
+      { label: 'Gitea', link: '/server/software/gitea' },
+      { label: 'Haste', link: '/server/software/haste' },
+      { label: 'ShareX', link: '/server/software/sharex' },
+
+      { label: 'Voice Servers', title: true },
+      { label: 'Mumble', link: '/server/voice-server/mumble' },
+      { label: 'TeamSpeak 3', link: '/server/voice-server/teamspeak3' },
+
+      { label: 'Web Hosting', title: true },
+      { label: 'Nginx', link: '/server/web-hosting/nginx' },
     ],
   },
 ];

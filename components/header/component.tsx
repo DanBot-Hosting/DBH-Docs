@@ -16,10 +16,10 @@ import {
   ActionIcon
 } from "@mantine/core";
 
-import { navLinks } from "./config";
+import { navLinks } from "../navbar/config";
 import { useRouter } from "next/router";
-import NextLink from "next/link";
-import { IconMoonStars, IconSun } from "@tabler/icons";
+import { Moon, Sun } from "@carbon/icons-react";
+import { LinksGroup } from "@component/navbarLinks";
 
 /**
  * Header component that is used in the AppShell if mobile version (see: components/layout/component.tsx)
@@ -36,52 +36,37 @@ export const Header: FunctionComponent = (): ReactElement => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const dark = colorScheme === "dark";
   const [opened, { toggle, close }] = useDisclosure(false);
-  const router = useRouter();
-  const [active, setActive] = useState(
-    navLinks.find((link: Link) =>
-      link.links.some((sub) => sub.link === router.pathname)
-    ) ?? navLinks[0]
-  );
-  const [activeLink, setActiveLink] = useState(
-    active.links.find((link) => link.link === router.pathname)
-  );
+  // const router = useRouter();
+  // const [active, setActive] = useState(
+  //   navLinks.find((link: Link) =>
+  //     link.links.some((sub) => sub.link === router.pathname)
+  //   ) ?? navLinks[0]
+  // );
+  // const [activeLink, setActiveLink] = useState(
+  //   active.links.find((link) => link.link === router.pathname)
+  // );
 
-  const mainLinks = navLinks.map((link: Link) => (
-    <UnstyledButton
-      onClick={() => setActive(link)}
-      key={link.label}
-      className={cx(classes.mainLink, {
-        [classes.mainLinkActive]: link.label === active.label,
-      })}
-    >
-      <link.icon stroke={2} />
-    </UnstyledButton>
-  ));
+  // const mainLinks = navLinks.map((link: Link) => (
+  //   <UnstyledButton
+  //     onClick={() => setActive(link)}
+  //     key={link.label}
+  //     className={cx(classes.mainLink, {
+  //       [classes.mainLinkActive]: link.label === active.label,
+  //     })}
+  //   >
+  //     <link.icon />
+  //   </UnstyledButton>
+  // ));
 
-  const links = navLinks
-    .find((link) => link.label === active.label)
-    .links.map((link) => (
-      <NextLink
-        className={cx(classes.link, {
-          [classes.linkActive]: activeLink === link,
-        })}
-        href={link.link}
-        onClick={() => {
-          setActiveLink(link);
-          close();
-        }}
-        key={link.label}
-      >
-        {link.label}
-      </NextLink>
-    ));
+  const links = navLinks.map((item) => <LinksGroup {...item} key={item.label} />);
 
   return (
     <div className={classes.header}>
       <Container className={classes.mainSection}>
         <Group position="apart">
           <Title order={3} className={classes.title} pl="sm">
-            {active.label}
+            {/* {active.label} */}
+            test
           </Title>
 
           <Burger
@@ -93,13 +78,17 @@ export const Header: FunctionComponent = (): ReactElement => {
         </Group>
         <Drawer
           opened={opened}
-          className={classes.drawer}
+          classNames={{
+            body: classes.drawerBody
+          }}
           onClose={toggle}
-          transition="slide-right"
+          transitionProps={{
+            transition: "slide-right"
+          }}
           position="left"
           title={(
             <Title order={4} className={classes.title}>
-              <ActionIcon
+              {/* <ActionIcon
                 variant="light"
                 radius="sm"
                 color={!dark ? 'astronomist-blue' : 'astronomist-purple'}
@@ -108,21 +97,15 @@ export const Header: FunctionComponent = (): ReactElement => {
                 mr="md"
                 size={44}
               >
-                {!dark ? <IconSun stroke={2} /> : <IconMoonStars stroke={2} />}
-              </ActionIcon>
-              {active.label}
+                {!dark ? <Sun /> : <Moon />}
+              </ActionIcon> */}
+              {/* {active.label} */}
+              test
             </Title>
           )}
           padding="md"
         >
-          <Flex>
-            <Stack spacing={0}>
-              {mainLinks}
-            </Stack>
-            <Stack spacing={0} style={{ width: "100%" }}>
-              {links}
-            </Stack>
-          </Flex>
+          {links}
         </Drawer>
       </Container>
     </div>

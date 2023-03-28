@@ -35,6 +35,7 @@ export const useStyles = createStyles((theme) => ({
 
   info: {
     fontFamily: theme.headings.fontFamily,
+    textAlign: "center",
     [theme.fn.smallerThan("xs")]: {
       marginTop: theme.spacing.md,
     },

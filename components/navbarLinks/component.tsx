@@ -1,42 +1,70 @@
-import { useState } from 'react';
-import { Group, Box, Collapse, ThemeIcon, Text, UnstyledButton } from '@mantine/core';
-import { IconChevronLeft, IconChevronRight } from '@tabler/icons';
-import { useStyles } from './styles';
+import { FunctionComponent, ReactElement, useState } from "react";
+import {
+  Group,
+  Box,
+  Collapse,
+  ThemeIcon,
+  Text,
+  UnstyledButton,
+} from "@mantine/core";
+import { ChevronLeft, ChevronRight } from "@carbon/icons-react";
+import { useStyles } from "./styles";
+import Link from "next/link";
 
-export function LinksGroup({ icon: Icon, label, initiallyOpened, links, link }: LinksGroupProps) {
+export const LinksGroup: FunctionComponent = ({
+  icon: Icon,
+  label,
+  initiallyOpened,
+  links,
+  link,
+}: Link): ReactElement => {
   const { classes, theme } = useStyles();
   const hasLinks = Array.isArray(links);
   const [opened, setOpened] = useState(initiallyOpened || false);
-  const ChevronIcon = theme.dir === 'ltr' ? IconChevronRight : IconChevronLeft;
-  const items = (hasLinks ? links : []).map((link) => (
-    <Text<'a'>
-      component="a"
-      className={classes.link}
-      href={link.link}
-      key={link.label}
-      // onClick={(event) => event.preventDefault()}
-    >
-      {link.label}
-    </Text>
-  ));
+  const ChevronIcon = theme.dir === "ltr" ? ChevronRight : ChevronLeft;
+  const items = (hasLinks ? links : []).map((link) =>
+    link.title ? (
+      <Text className={classes.title} key={link.label}>
+        {link.label}
+      </Text>
+    ) : (
+      <Text
+        className={classes.link}
+        component={link.link && Link}
+        href={link.link}
+        key={link.label}
+      >
+        {link.label}
+      </Text>
+    )
+  );
 
   return (
     <>
-      <UnstyledButton onClick={() => setOpened((o) => !o)} className={classes.control}>
+      <UnstyledButton
+        onClick={() => setOpened((o) => !o)}
+        className={classes.control}
+        component={!hasLinks && Link}
+        href={!hasLinks ? link : undefined}
+      >
         <Group position="apart" spacing={0}>
-          <Box sx={{ display: 'flex', alignItems: 'center' }} component="a" href={!hasLinks && link}>
-            <ThemeIcon variant="light" size={30} className={classes.icon}>
-              <Icon size={18} />
+          <Box
+            sx={{ display: "flex", alignItems: "center" }}
+            className={classes.dropdown}
+          >
+            <ThemeIcon variant="default" size={30}>
+              <Icon size={16} />
             </ThemeIcon>
             <Box ml="md">{label}</Box>
           </Box>
           {hasLinks && (
             <ChevronIcon
               className={classes.chevron}
-              size={14}
-              stroke={1.5}
+              size={16}
               style={{
-                transform: opened ? `rotate(${theme.dir === 'rtl' ? -90 : 90}deg)` : 'none',
+                transform: opened
+                  ? `rotate(${theme.dir === "rtl" ? -90 : 90}deg)`
+                  : "none",
               }}
             />
           )}

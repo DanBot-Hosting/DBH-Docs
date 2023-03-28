@@ -34,8 +34,8 @@ export const useStyles = createStyles((theme) => ({
     },
   },
 
-  drawer: {
-    // backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+  drawerBody: {
+    padding: 0,
   },
 
   userActive: {

@@ -5,7 +5,7 @@ import {
   ColorSchemeProvider,
   MantineProvider,
 } from "@mantine/core";
-import { NotificationsProvider } from "@mantine/notifications";
+import { Notifications } from "@mantine/notifications";
 import { useMediaQuery } from "@mantine/hooks";
 import { FunctionComponent, PropsWithChildren, useState } from "react";
 import { setCookie } from "cookies-next";
@@ -114,16 +114,15 @@ export const PanelProvider: FunctionComponent<
         }}
       >
         <RouterTransition />
-        <NotificationsProvider>
-          <AppShell
-            header={mobile && <Header />}
-            navbar={!mobile && <Navbar />}
-            footer={<Footer />}
-          >
-            <Box className="noise" />
-            {children}
-          </AppShell>
-        </NotificationsProvider>
+        <Notifications />
+        <AppShell
+          header={mobile && <Header />}
+          navbar={!mobile && <Navbar />}
+          footer={<Footer />}
+        >
+          <Box className="noise" />
+          {children}
+        </AppShell>
       </MantineProvider>
     </ColorSchemeProvider>
   );

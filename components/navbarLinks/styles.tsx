@@ -6,7 +6,10 @@ export const useStyles = createStyles((theme) => ({
     fontFamily: theme.headings.fontFamily,
     display: 'block',
     width: '100%',
-    padding: `${theme.spacing.xs}px ${theme.spacing.md}px`,
+    paddingTop: theme.spacing.xs,
+    paddingBottom: theme.spacing.xs,
+    paddingLeft: theme.spacing.md,
+    paddingRight: theme.spacing.md,
     color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black,
     fontSize: theme.fontSizes.sm,
     // textShadow: (theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black) + " 0 0 2px",
@@ -18,12 +21,19 @@ export const useStyles = createStyles((theme) => ({
     },
   },
 
+  dropdown: {
+    color: theme.colorScheme === "dark" ? theme.white : theme.black,
+    textDecoration: "none",
+    userSelect: "none"
+  },
+
   link: {
     fontWeight: 500,
     fontFamily: theme.headings.fontFamily,
     display: 'block',
     textDecoration: 'none',
-    padding: `${theme.spacing.xs}px ${theme.spacing.md}px`,
+    padding: theme.spacing.xs,
+    paddingRight: theme.spacing.md,
     paddingLeft: 31,
     marginLeft: 30,
     fontSize: theme.fontSizes.sm,
@@ -39,13 +49,22 @@ export const useStyles = createStyles((theme) => ({
     },
   },
 
-  icon: {
-    transform: "skew(-10deg)",
+  title: {
+    fontWeight: 500,
+    fontSize: theme.fontSizes.sm,
+    fontFamily: theme.headings.fontFamily,
 
-    boxShadow: theme.fn.variant({
-      color: theme.primaryColor,
-      variant: "light"
-    }).background + " 0 0 15px"
+    marginTop: theme.spacing.sm,
+    marginLeft: 30,
+    
+    paddingLeft: 31,
+    paddingTop: `calc(${theme.spacing.xs} * .3)`,
+    paddingBottom: `calc(${theme.spacing.xs} * .3)`,
+
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],
+    borderLeft: `1px solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+    }`,
   },
 
   chevron: {
