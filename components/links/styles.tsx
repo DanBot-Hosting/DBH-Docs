@@ -15,7 +15,7 @@ export const useStyles = createStyles((theme) => ({
     // textShadow: (theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.black) + " 0 0 2px",
 
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[1],
       color: theme.colorScheme === 'dark' ? theme.white : theme.black,
       textShadow: theme.fn.rgba(theme.colorScheme === 'dark' ? theme.white : theme.black, 0.3) + " 0 0 5px"
     },
@@ -43,7 +43,7 @@ export const useStyles = createStyles((theme) => ({
     }`,
 
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[0],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[1],
       color: theme.colorScheme === 'dark' ? theme.white : theme.black,
       textShadow: theme.fn.rgba(theme.colorScheme === 'dark' ? theme.white : theme.black, 0.3) + " 0 0 5px"
     },

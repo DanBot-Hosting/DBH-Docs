@@ -19,7 +19,8 @@ import {
 import { navLinks } from "../navbar/config";
 import { useRouter } from "next/router";
 import { Moon, Sun } from "@carbon/icons-react";
-import { LinksGroup } from "@component/navbarLinks";
+import { Links } from "@component/links";
+import { Search } from "@component/search";
 
 /**
  * Header component that is used in the AppShell if mobile version (see: components/layout/component.tsx)
@@ -58,16 +59,16 @@ export const Header: FunctionComponent = (): ReactElement => {
   //   </UnstyledButton>
   // ));
 
-  const links = navLinks.map((item) => <LinksGroup {...item} key={item.label} />);
+  const links = navLinks.map((item) => <Links {...item} key={item.label} />);
 
   return (
     <div className={classes.header}>
       <Container className={classes.mainSection}>
         <Group position="apart">
-          <Title order={3} className={classes.title} pl="sm">
-            {/* {active.label} */}
+          {/* <Title order={3} className={classes.title} pl="sm">
             test
-          </Title>
+          </Title> */}
+          <Search w="50%" />
 
           <Burger
             opened={opened}
@@ -86,23 +87,25 @@ export const Header: FunctionComponent = (): ReactElement => {
             transition: "slide-right"
           }}
           position="left"
-          title={(
-            <Title order={4} className={classes.title}>
-              {/* <ActionIcon
-                variant="light"
-                radius="sm"
-                color={!dark ? 'astronomist-blue' : 'astronomist-purple'}
-                onClick={() => toggleColorScheme()}
-                title="Toggle color scheme"
-                mr="md"
-                size={44}
-              >
-                {!dark ? <Sun /> : <Moon />}
-              </ActionIcon> */}
-              {/* {active.label} */}
-              test
-            </Title>
-          )}
+          // title={(
+          //   <Title order={4} className={classes.title}>
+          //     {/* <ActionIcon
+          //       variant="light"
+          //       radius="sm"
+          //       color={!dark ? 'astronomist-blue' : 'astronomist-purple'}
+          //       onClick={() => toggleColorScheme()}
+          //       title="Toggle color scheme"
+          //       mr="md"
+          //       size={44}
+          //     >
+          //       {!dark ? <Sun /> : <Moon />}
+          //     </ActionIcon> */}
+          //     {/* {active.label} */}
+          //     test
+          //   </Title>
+          // )}
+          // Shift close icon to right side of the drawer
+          title={(<></>)}
           padding="md"
         >
           {links}

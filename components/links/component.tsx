@@ -11,7 +11,7 @@ import { ChevronLeft, ChevronRight } from "@carbon/icons-react";
 import { useStyles } from "./styles";
 import Link from "next/link";
 
-export const LinksGroup: FunctionComponent = ({
+export const Links: FunctionComponent = ({
   icon: Icon,
   label,
   initiallyOpened,

@@ -81,7 +81,6 @@ export const PanelProvider: FunctionComponent<
           loader: "dots",
           primaryColor: "astronomist-blue",
           primaryShade: 9,
-          defaultRadius: 0,
           components: components,
           colors: colors,
           focusRingStyles: focusRingStyles,

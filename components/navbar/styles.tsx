@@ -51,7 +51,7 @@ export const useStyles = createStyles((theme) => ({
   },
 
   linksInner: {
-    paddingTop: theme.spacing.xl,
-    paddingBottom: theme.spacing.xl
+    paddingTop: theme.spacing.md,
+    paddingBottom: theme.spacing.md
   },
 }));
