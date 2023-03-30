@@ -1,12 +1,11 @@
 import { FunctionComponent, PropsWithChildren } from "react";
-import ImageComponent, { StaticImageData } from "next/image";
+import { Text, Tooltip } from "@mantine/core";
+import { InformationFilled } from "@carbon/icons-react";
 
-export interface ImageProps {
-  src: StaticImageData;
-  alt: string;
+export interface AnchorProps {
+  href?: string;
 }
 
-// JSDoc comment
 /**
  * Next.js image component with additional styling (radius & width/height: 100%)
  * @param {StaticImageData} props.src - Image source provided from an import
@@ -15,20 +14,17 @@ export interface ImageProps {
  * @see {@link https://nextjs.org/docs/api-reference/next/image Next.js Image Component}
  * @example
  * <Image src={accountCreation} alt="How to create an account" />
-**/
-export const Image: FunctionComponent<PropsWithChildren<ImageProps>> = ({
-  src,
-  alt,
+ **/
+export const Anchor: FunctionComponent<PropsWithChildren<AnchorProps>> = ({
+  children,
+  href = "/",
   ...props
-}) => (
-  <ImageComponent
-    src={src}
-    alt={alt}
-    {...props}
-    style={{
-      width: "100%",
-      height: "auto",
-      borderRadius: 4,
-    }}
-  />
-)
+}) => {
+  return (
+    <Tooltip label={href} withArrow>
+      <Text component="a" href={href} span target="_blank" {...props}>
+        {children}
+      </Text>
+    </Tooltip>
+  );
+};

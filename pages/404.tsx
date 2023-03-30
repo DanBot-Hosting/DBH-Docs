@@ -15,7 +15,6 @@ const useStyles = createStyles((theme) => ({
 
   title: {
     marginTop: 25,
-    textAlign: "center",
     fontWeight: 900,
     fontSize: 38,
 
@@ -45,7 +44,7 @@ const NotFound: NextPage = (): ReactElement => {
   return (
     <Container className={classes.root}>
       <Image src={Stars} alt="404" width={400} className={classes.stars} />
-      <Title className={classes.title}>You have found a secret place.</Title>
+      <Title className={classes.title} ta="center">You have found a secret place.</Title>
       <Text
         color="dimmed"
         size="lg"

@@ -20,6 +20,9 @@
       "@component/*": ["components/*/component.tsx"],
       "@hook/*": ["hooks/*"],
       "@page/*": ["pages/*"],
+      "@elements": ["components/elements/index.tsx"],
+      "@illustrations/*": ["public/illustrations/*.svg"],
+      "@media/*": ["public/media/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/footer/config.tsx"],

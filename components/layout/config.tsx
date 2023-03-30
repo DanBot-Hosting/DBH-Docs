@@ -1,3 +1,4 @@
+import { Anchor } from "@elements";
 import type { Tuple, MantineTheme } from "@mantine/core";
 import { shades, tints, tones } from "cvet";
 
@@ -22,30 +23,18 @@ export const components = {
   Anchor: {
     styles: (theme: MantineTheme) => ({
       root: {
-        backgroundColor: theme.fn.variant({
-          variant: "light",
-          color: theme.primaryColor,
-        }).background,
-        color: theme.fn.variant({
-          variant: "light",
-          color: theme.primaryColor,
-        }).color,
-        paddingLeft: theme.spacing.xs * .5,
-        paddingRight: theme.spacing.xs * .5,
-        borderRadius: theme.radius.sm,
+        backgroundColor: theme.black,
+        color: theme.white,
+        paddingLeft: `calc(${theme.spacing.xs} * .5)`,
+        paddingRight: `calc(${theme.spacing.xs} * .5)`,
+        borderRadius: theme.radius.xs,
         "&:hover": {
           backgroundColor: theme.fn.lighten(
-            theme.fn.variant({
-                variant: "light",
-                color: theme.primaryColor,
-            }).background,
+            theme.black,
             .2
           ),
           color: theme.fn.lighten(
-            theme.fn.variant({
-                variant: "light",
-                color: theme.primaryColor,
-            }).color,
+            theme.white,
             .3
           ),
           textDecoration: "none",
@@ -65,4 +54,8 @@ export const components = {
 export const focusRingStyles = {
   resetStyles: () => ({ outline: 'none' }),
   styles: (theme: MantineTheme) => ({ outline: `1px solid ${theme.colors["astronomist-blue"][8]}` }),
+}
+
+export const mdxComponents = {
+  a: Anchor
 }

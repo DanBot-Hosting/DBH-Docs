@@ -3,20 +3,23 @@ import {
   Box,
   ColorScheme,
   ColorSchemeProvider,
+  Container,
   MantineProvider,
+  TypographyStylesProvider,
 } from "@mantine/core";
 import { Notifications } from "@mantine/notifications";
 import { useMediaQuery } from "@mantine/hooks";
 import { FunctionComponent, PropsWithChildren, useState } from "react";
 import { setCookie } from "cookies-next";
-import { Hanken_Grotesk, Space_Grotesk, Space_Mono } from "@next/font/google";
+import { Hanken_Grotesk, Space_Grotesk, Space_Mono } from "next/font/google";
 import { Header } from "@component/header";
 import { Navbar } from "@component/navbar";
 import { RouterTransition } from "@component/progress";
 import { Footer } from "@component/footer";
 import Noise from "@public/noise.svg";
 
-import { colors, components, focusRingStyles } from "./config";
+import { colors, components, focusRingStyles, mdxComponents } from "./config";
+import { MDXProvider } from "@mdx-js/react";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -50,6 +53,7 @@ export const PanelProvider: FunctionComponent<
   const mobile = useMediaQuery("(max-width: 900px)");
   const [colorScheme, setColorScheme] = useState<ColorScheme>(
     props.colorScheme
+    // "dark"
   );
 
   // Toggle color scheme function called in Navbar & Header
@@ -78,7 +82,7 @@ export const PanelProvider: FunctionComponent<
           colorScheme,
           fontFamily: hankenGrotesk.style.fontFamily,
           fontFamilyMonospace: spaceMono.style.fontFamily,
-          loader: "dots",
+          loader: "oval",
           primaryColor: "astronomist-blue",
           primaryShade: 9,
           components: components,
@@ -120,7 +124,13 @@ export const PanelProvider: FunctionComponent<
           footer={<Footer />}
         >
           <Box className="noise" />
-          {children}
+          <Container>
+            <TypographyStylesProvider>
+              <MDXProvider components={mdxComponents}>
+                {children}
+              </MDXProvider>
+            </TypographyStylesProvider>
+          </Container>
         </AppShell>
       </MantineProvider>
     </ColorSchemeProvider>

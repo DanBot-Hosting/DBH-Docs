@@ -1,5 +1,4 @@
 import {
-  Cookie,
   WatsonHealth3DCurveManual,
   Book,
   Terminal,
