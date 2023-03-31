@@ -14,4 +14,4 @@ interface Link {
   links?: Sublink[];
 
   onSwitch?: () => void;
-};
+}

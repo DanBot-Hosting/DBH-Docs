@@ -25,7 +25,9 @@ export const Footer: FunctionComponent = (): ReactElement => {
       <div className={classes.wrapper}>
         <Container className={classes.inner}>
           <Image src={DanbotSpace} alt="Danbot Space" height={32} width={32} />
-          <Group className={classes.info} ta="center">{footerLicense}</Group>
+          <Group className={classes.info} ta="center">
+            {footerLicense}
+          </Group>
         </Container>
       </div>
     </div>

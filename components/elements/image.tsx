@@ -29,7 +29,7 @@ export const Image: FunctionComponent<
         styles={{
           image: {
             maxHeight: 320,
-          }
+          },
         }}
         {...props}
       />

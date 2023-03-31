@@ -18,13 +18,13 @@ export const Copy: FunctionComponent<CopyProps> = ({ value, ...props }) => {
   const { classes } = createStyles((theme) => ({
     selection: {
       cursor: "pointer",
-      borderBottom: "2px solid " + theme.fn.rgba(theme.black, .5),
+      borderBottom: "2px solid " + theme.fn.rgba(theme.black, 0.5),
       transition: "border-bottom .3s",
 
       ":hover": {
         transition: "border-bottom .3s",
         borderBottom: "2px solid " + theme.black,
-      }
+      },
     },
   }))();
 

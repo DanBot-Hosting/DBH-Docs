@@ -33,9 +33,9 @@ const useStyles = createStyles((theme) => ({
   stars: {
     [theme.fn.smallerThan("xs")]: {
       width: 200,
-      height: "auto"
-    }
-  }
+      height: "auto",
+    },
+  },
 }));
 
 const NotFound: NextPage = (): ReactElement => {
@@ -44,7 +44,9 @@ const NotFound: NextPage = (): ReactElement => {
   return (
     <Container className={classes.root}>
       <Image src={Stars} alt="404" width={400} className={classes.stars} />
-      <Title className={classes.title} ta="center">You have found a secret place.</Title>
+      <Title className={classes.title} ta="center">
+        You have found a secret place.
+      </Title>
       <Text
         color="dimmed"
         size="lg"

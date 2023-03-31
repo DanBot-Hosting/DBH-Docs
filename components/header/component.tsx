@@ -13,7 +13,7 @@ import {
   Flex,
   Stack,
   useMantineColorScheme,
-  ActionIcon
+  ActionIcon,
 } from "@mantine/core";
 
 import { navLinks } from "../../config";
@@ -59,7 +59,9 @@ export const Header: FunctionComponent = (): ReactElement => {
   //   </UnstyledButton>
   // ));
 
-  const links = navLinks.map((item) => <Links {...item} key={item.label} onSwitch={toggle} />);
+  const links = navLinks.map((item) => (
+    <Links {...item} key={item.label} onSwitch={toggle} />
+  ));
 
   return (
     <div className={classes.header}>
@@ -80,11 +82,11 @@ export const Header: FunctionComponent = (): ReactElement => {
         <Drawer
           opened={opened}
           classNames={{
-            body: classes.drawerBody
+            body: classes.drawerBody,
           }}
           onClose={toggle}
           transitionProps={{
-            transition: "slide-right"
+            transition: "slide-right",
           }}
           position="left"
           // title={(
@@ -105,7 +107,7 @@ export const Header: FunctionComponent = (): ReactElement => {
           //   </Title>
           // )}
           // Shift close icon to right side of the drawer
-          title={(<></>)}
+          title={<></>}
           padding="md"
         >
           {links}

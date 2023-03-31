@@ -4,7 +4,7 @@ export const useFetch = ({
   url,
   dataName,
   dummyData = {},
-  interval = false
+  interval = false,
 }: {
   url: string;
   dataName: string;
@@ -41,5 +41,5 @@ export const useFetch = ({
     if (interval !== false) setInterval(fetchData, interval);
   }, []);
 
-  return [ data, loading, error ];
-}
+  return [data, loading, error];
+};

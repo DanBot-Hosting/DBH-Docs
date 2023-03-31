@@ -24,7 +24,8 @@ export default class Panel extends App<AppInitialPropsWithColor> {
 
   render(): ReactElement {
     const { Component, pageProps }: AppInitialPropsWithColor = this.props;
-    const colorScheme: ColorScheme = this.props?.colorScheme || getCookie("color-scheme") as ColorScheme;
+    const colorScheme: ColorScheme =
+      this.props?.colorScheme || (getCookie("color-scheme") as ColorScheme);
 
     return (
       <PanelProvider colorScheme={colorScheme}>

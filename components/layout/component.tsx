@@ -23,16 +23,16 @@ import { MDXProvider } from "@mdx-js/react";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  display: "swap"
+  display: "swap",
 });
 const spaceMono = Space_Mono({
   weight: ["400", "700"],
   subsets: ["latin"],
-  display: "swap"
+  display: "swap",
 });
 const hankenGrotesk = Hanken_Grotesk({
   subsets: ["latin"],
-  display: "swap"
+  display: "swap",
 });
 
 /**
@@ -89,12 +89,18 @@ export const PanelProvider: FunctionComponent<
           colors: colors,
           focusRingStyles: focusRingStyles,
           headings: {
-            fontFamily: spaceGrotesk.style.fontFamily
+            fontFamily: spaceGrotesk.style.fontFamily,
           },
           globalStyles: (theme) => ({
             "::selection": {
-              backgroundColor: theme.colorScheme === "dark" ? theme.white : theme.colors.dark[9],
-              color: theme.colorScheme === "dark" ? theme.colors.dark[9] : theme.white
+              backgroundColor:
+                theme.colorScheme === "dark"
+                  ? theme.white
+                  : theme.colors.dark[9],
+              color:
+                theme.colorScheme === "dark"
+                  ? theme.colors.dark[9]
+                  : theme.white,
             },
             ".noise": {
               backgroundImage: `url(${Noise.src})`,
@@ -106,14 +112,14 @@ export const PanelProvider: FunctionComponent<
               left: 0,
               width: "100vw",
               height: "100vh",
-              zIndex: 10
+              zIndex: 10,
             },
-            "img": {
+            img: {
               // Ignore noise
               position: "relative",
-              zIndex: 20
-            }
-          })
+              zIndex: 20,
+            },
+          }),
         }}
       >
         <RouterTransition />
@@ -126,9 +132,7 @@ export const PanelProvider: FunctionComponent<
           <Box className="noise" />
           <Container>
             <TypographyStylesProvider>
-              <MDXProvider components={mdxComponents}>
-                {children}
-              </MDXProvider>
+              <MDXProvider components={mdxComponents}>{children}</MDXProvider>
             </TypographyStylesProvider>
           </Container>
         </AppShell>

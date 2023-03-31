@@ -1,6 +1,6 @@
-import { LoadingOverlay } from '@mantine/core';
-import { useRouter } from 'next/router';
-import { ReactElement, useEffect } from 'react';
+import { LoadingOverlay } from "@mantine/core";
+import { useRouter } from "next/router";
+import { ReactElement, useEffect } from "react";
 
 // An index page redirects to the introduction page
 // Added loading overlay to prevent
@@ -9,7 +9,7 @@ import { ReactElement, useEffect } from 'react';
 export default (): ReactElement => {
   const { push } = useRouter();
   useEffect(() => {
-    push('/introduction');
+    push("/introduction");
   }, []);
 
   return <LoadingOverlay overlayOpacity={1} visible />;

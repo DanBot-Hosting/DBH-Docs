@@ -18,24 +18,26 @@ export const Links: FunctionComponent<Link> = ({
   initiallyOpened,
   links,
   link,
-  onSwitch
+  onSwitch,
 }: Link): ReactElement => {
   const { classes, theme, cx } = useStyles();
   const router = useRouter();
   const hasLinks = Array.isArray(links);
-  const [opened, setOpened] = useState(initiallyOpened || (hasLinks ? links : []).some((item) => router.pathname === item.link));
+  const [opened, setOpened] = useState(
+    initiallyOpened ||
+      (hasLinks ? links : []).some((item) => router.pathname === item.link)
+  );
   const ChevronIcon = theme.dir === "ltr" ? ChevronRight : ChevronLeft;
   const items = (hasLinks ? links : []).map((link) =>
     link.title ? (
-      <Text
-        className={classes.title}
-        key={link.label}
-      >
+      <Text className={classes.title} key={link.label}>
         {link.label}
       </Text>
     ) : (
       <Text
-        className={cx(classes.link, { [classes.active]: router.pathname === link.link })}
+        className={cx(classes.link, {
+          [classes.active]: router.pathname === link.link,
+        })}
         component={link.link && Link}
         href={link.link}
         key={link.label}
@@ -53,7 +55,9 @@ export const Links: FunctionComponent<Link> = ({
           setOpened((o) => !o);
           if (!hasLinks && onSwitch) onSwitch();
         }}
-        className={cx(classes.control, { [classes.active]: router.pathname === link })}
+        className={cx(classes.control, {
+          [classes.active]: router.pathname === link,
+        })}
         component={!hasLinks && Link}
         href={!hasLinks ? link : undefined}
       >
@@ -80,13 +84,7 @@ export const Links: FunctionComponent<Link> = ({
           )}
         </Group>
       </UnstyledButton>
-      {hasLinks ? (
-        <Collapse
-          in={opened}
-        >
-          {items}
-        </Collapse>
-      ) : null}
+      {hasLinks ? <Collapse in={opened}>{items}</Collapse> : null}
     </>
   );
 };

@@ -11,7 +11,7 @@ export const colors: CustomColors = {
   "astronomist-blue": tints("#7089D9", 10).reverse() as CustomColor,
   "astronomist-purple": tints("#4E3570", 10).reverse() as CustomColor,
   // Half of the dark shades are based off lighter colors, the other half is dark shades
-  dark: [...shades("#a5a4a6", 5), ...shades("#212025", 5)] as CustomColor
+  dark: [...shades("#a5a4a6", 5), ...shades("#212025", 5)] as CustomColor,
 };
 
 export const components = {
@@ -29,16 +29,10 @@ export const components = {
         paddingRight: `calc(${theme.spacing.xs} * .5)`,
         borderRadius: theme.radius.xs,
         "&:hover": {
-          backgroundColor: theme.fn.lighten(
-            theme.black,
-            .2
-          ),
-          color: theme.fn.lighten(
-            theme.white,
-            .3
-          ),
+          backgroundColor: theme.fn.lighten(theme.black, 0.2),
+          color: theme.fn.lighten(theme.white, 0.3),
           textDecoration: "none",
-        }
+        },
       },
     }),
   },
@@ -46,15 +40,17 @@ export const components = {
     styles: (theme: MantineTheme) => ({
       root: {
         "& a": components.Anchor.styles(theme).root,
-      }
+      },
     }),
-  }
-}
+  },
+};
 
 export const focusRingStyles = {
-  resetStyles: () => ({ outline: 'none' }),
-  styles: (theme: MantineTheme) => ({ outline: `1px solid ${theme.colors["astronomist-blue"][8]}` }),
-}
+  resetStyles: () => ({ outline: "none" }),
+  styles: (theme: MantineTheme) => ({
+    outline: `1px solid ${theme.colors["astronomist-blue"][8]}`,
+  }),
+};
 
 export const mdxComponents = {
   a: Anchor,
@@ -62,5 +58,5 @@ export const mdxComponents = {
   Image: Image,
   Redirect: Redirect,
   Tip: Tip,
-  Copy: Copy
-}
+  Copy: Copy,
+};

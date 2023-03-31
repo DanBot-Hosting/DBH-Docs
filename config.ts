@@ -3,7 +3,7 @@ import {
   Book,
   Terminal,
   BareMetalServer,
-  UserMultiple
+  UserMultiple,
 } from "@carbon/icons-react";
 
 // Don't add a trailing slash to the hrefs
@@ -12,66 +12,70 @@ import {
 // Else if you add a trailing slash, it will never be active
 // Until clicked on
 export const navLinks: Link[] = [
-  { label: 'Introduction', icon: WatsonHealth3DCurveManual, link: "/introduction" },
-  { label: 'Getting Started', icon: Book, link: "/getting-started" },
   {
-    label: 'Beginner\'s Guidebook',
+    label: "Introduction",
+    icon: WatsonHealth3DCurveManual,
+    link: "/introduction",
+  },
+  { label: "Getting Started", icon: Book, link: "/getting-started" },
+  {
+    label: "Beginner's Guidebook",
     icon: UserMultiple,
     links: [
-      { label: 'Creating A Bot', link: '/beginner/creating-a-bot' },
-      { label: 'Proxying', link: '/beginner/proxying' },
-      { label: 'Ticket System', link: '/beginner/tickets' },
-      { label: 'Wordpress', link: '/beginner/wordpress' },
+      { label: "Creating A Bot", link: "/beginner/creating-a-bot" },
+      { label: "Proxying", link: "/beginner/proxying" },
+      { label: "Ticket System", link: "/beginner/tickets" },
+      { label: "Wordpress", link: "/beginner/wordpress" },
     ],
   },
   {
-    label: 'Advanced Management',
+    label: "Advanced Management",
     icon: Terminal,
     links: [
-      { label: 'DBH API', link: '/advanced/dbh-api' },
-      { label: 'SFTP Using VSCode', link: '/advanced/vscode-sftp' },
-      { label: 'ShareX Setup', link: '/advanced/sharex-setup' },
-      { label: 'Status API', link: '/advanced/status-api' },
+      { label: "DBH API", link: "/advanced/dbh-api" },
+      { label: "SFTP Using VSCode", link: "/advanced/vscode-sftp" },
+      { label: "ShareX Setup", link: "/advanced/sharex-setup" },
+      { label: "Status API", link: "/advanced/status-api" },
     ],
   },
   {
-    label: 'Server Guides',
+    label: "Server Guides",
     icon: BareMetalServer,
     links: [
-      { label: 'Server Creation', link: '/server/create' },
+      { label: "Server Creation", link: "/server/create" },
 
-      { label: 'Databases', title: true },
-      { label: 'MongoDB', link: '/server/database/mongodb' },
-      { label: 'Postgres', link: '/server/database/postgres' },
-      { label: 'Redis', link: '/server/database/redis' },
+      { label: "Databases", title: true },
+      { label: "MongoDB", link: "/server/database/mongodb" },
+      { label: "Postgres", link: "/server/database/postgres" },
+      { label: "Redis", link: "/server/database/redis" },
 
-      { label: 'Development', title: true },
-      { label: 'All In One (AIO)', link: '/server/development/aio' },
-      { label: 'Code Server', link: '/server/development/code-server' },
-      { label: 'Java', link: '/server/development/java' },
-      { label: 'Node.js', link: '/server/development/nodejs' },
-      { label: 'Python', link: '/server/development/python' },
-      { label: 'Red Discord Bot', link: '/server/development/rdb' },
-      
-      { label: 'Minecraft', title: true },
-      { label: 'Forge', link: '/server/minecraft/forge' },
-      { label: 'Paper', link: '/server/minecraft/paper' },
-      { label: 'Spigot', link: '/server/minecraft/spigot' },
-      { label: 'Bedrock', link: '/server/minecraft/bedrock' },
-      { label: 'Pocketmine MP', link: '/server/minecraft/pmmp' },
-      { label: 'Waterfall', link: '/server/minecraft/waterfall' },
+      { label: "Development", title: true },
+      { label: "All In One (AIO)", link: "/server/development/aio" },
+      { label: "Code Server", link: "/server/development/code-server" },
+      { label: "Java", link: "/server/development/java" },
+      { label: "Node.js", link: "/server/development/nodejs" },
+      { label: "Python", link: "/server/development/python" },
+      { label: "Red Discord Bot", link: "/server/development/rdb" },
 
-      { label: 'Software', title: true },
-      { label: 'Gitea', link: '/server/software/gitea' },
-      { label: 'Haste', link: '/server/software/haste' },
-      { label: 'ShareX', link: '/server/software/sharex' },
+      { label: "Minecraft", title: true },
+      { label: "Forge", link: "/server/minecraft/forge" },
+      { label: "Paper", link: "/server/minecraft/paper" },
+      { label: "Spigot", link: "/server/minecraft/spigot" },
+      { label: "Bedrock", link: "/server/minecraft/bedrock" },
+      { label: "Pocketmine MP", link: "/server/minecraft/pmmp" },
+      { label: "Waterfall", link: "/server/minecraft/waterfall" },
 
-      { label: 'Voice Servers', title: true },
-      { label: 'Mumble', link: '/server/voice-server/mumble' },
-      { label: 'TeamSpeak 3', link: '/server/voice-server/teamspeak3' },
+      { label: "Software", title: true },
+      { label: "Gitea", link: "/server/software/gitea" },
+      { label: "Haste", link: "/server/software/haste" },
+      { label: "ShareX", link: "/server/software/sharex" },
 
-      { label: 'Web Hosting', title: true },
-      { label: 'Nginx', link: '/server/web-hosting/nginx' },
+      { label: "Voice Servers", title: true },
+      { label: "Mumble", link: "/server/voice-server/mumble" },
+      { label: "TeamSpeak 3", link: "/server/voice-server/teamspeak3" },
+
+      { label: "Web Hosting", title: true },
+      { label: "Nginx", link: "/server/web-hosting/nginx" },
     ],
   },
 ];
