@@ -1,9 +1,14 @@
 import { Card } from "@mantine/core";
-import { Tip, Image } from "@elements";
-import Logo from "@public/danbot-space.svg";
 
 <Card>
-  <Image src={Logo} alt="Danbot Space logo" height={128} margin={0} />
+  <Image
+    src="/danbot-space.svg"
+    alt="Danbot Space logo"
+    height={128}
+    width="auto"
+    my={0}
+    withoutTooltip
+  />
 </Card>
 
 # Welcome to DanBot Space!
@@ -30,7 +35,7 @@ DanBot Hosting - DBH is a free hosting done right owned and founded by [**Dan**]
 
 To easily get started checkout either `#📗╏getting-started` channel in DBH Discord Server or head to this page:
 
-{/* p{fa-solid fa-book ++ /getting-started} Getting Started */}
+<Redirect href="/getting-started" />
 
 ## What is the project for?
 
@@ -42,5 +47,5 @@ This project was made by a bunch of DBH members to let newbies know everything a
 
 ## Rules regarding DBH
 
-{/* p{fa-solid fa-file-shield ++ https://docs.google.com/document/d/1dOY5xefHu_RzBdOphh-_el8vNgMz2U_OWO8OeulOg_4/edit} Privacy Policy */}
-{/* p{fa-solid fa-file-contract ++ https://docs.google.com/document/d/1BxGFRlH3TEMqfUWBPszsWYudbKmcbM5pkp7bTq4IbHg/edit} Terms Of Service */}
+<Redirect href="https://docs.google.com/document/d/1dOY5xefHu_RzBdOphh-_el8vNgMz2U_OWO8OeulOg_4" label="Privacy Policy" />
+<Redirect href="https://docs.google.com/document/d/1BxGFRlH3TEMqfUWBPszsWYudbKmcbM5pkp7bTq4IbHg" label="Terms Of Service" />

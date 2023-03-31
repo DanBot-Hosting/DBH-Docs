@@ -1,6 +1,6 @@
 import { Navbar as MantineNavbar, ScrollArea } from '@mantine/core';
 import { Links } from '@component/links';
-import { navLinks } from './config';
+import { navLinks } from '../../config';
 import { useStyles } from './styles';
 import { Search } from '@component/search';
 // import { IconSun, IconMoonStars } from '@tabler/icons';

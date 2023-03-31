@@ -16,7 +16,7 @@ import {
   ActionIcon
 } from "@mantine/core";
 
-import { navLinks } from "../navbar/config";
+import { navLinks } from "../../config";
 import { useRouter } from "next/router";
 import { Moon, Sun } from "@carbon/icons-react";
 import { Links } from "@component/links";
@@ -59,7 +59,7 @@ export const Header: FunctionComponent = (): ReactElement => {
   //   </UnstyledButton>
   // ));
 
-  const links = navLinks.map((item) => <Links {...item} key={item.label} />);
+  const links = navLinks.map((item) => <Links {...item} key={item.label} onSwitch={toggle} />);
 
   return (
     <div className={classes.header}>

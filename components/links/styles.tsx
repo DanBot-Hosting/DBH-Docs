@@ -21,6 +21,12 @@ export const useStyles = createStyles((theme) => ({
     },
   },
 
+  active: {
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[1],
+    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+    textShadow: theme.fn.rgba(theme.colorScheme === 'dark' ? theme.white : theme.black, 0.3) + " 0 0 5px"
+  },
+
   dropdown: {
     color: theme.colorScheme === "dark" ? theme.white : theme.black,
     textDecoration: "none",

@@ -1,6 +1,5 @@
-import { FunctionComponent, PropsWithChildren } from "react";
+import type { FunctionComponent, PropsWithChildren } from "react";
 import { Text, Tooltip } from "@mantine/core";
-import { InformationFilled } from "@carbon/icons-react";
 
 export interface AnchorProps {
   href?: string;
@@ -19,12 +18,10 @@ export const Anchor: FunctionComponent<PropsWithChildren<AnchorProps>> = ({
   children,
   href = "/",
   ...props
-}) => {
-  return (
-    <Tooltip label={href} withArrow>
-      <Text component="a" href={href} span target="_blank" {...props}>
-        {children}
-      </Text>
-    </Tooltip>
-  );
-};
+}) => (
+  <Tooltip label={href} withArrow>
+    <Text component="a" href={href} span target="_blank" {...props}>
+      {children}
+    </Text>
+  </Tooltip>
+);

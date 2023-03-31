@@ -1,4 +1,4 @@
-import { Anchor } from "@elements";
+import { Copy, Anchor, Image, Redirect, Tip } from "@elements";
 import type { Tuple, MantineTheme } from "@mantine/core";
 import { shades, tints, tones } from "cvet";
 
@@ -57,5 +57,10 @@ export const focusRingStyles = {
 }
 
 export const mdxComponents = {
-  a: Anchor
+  a: Anchor,
+  img: Image,
+  Image: Image,
+  Redirect: Redirect,
+  Tip: Tip,
+  Copy: Copy
 }

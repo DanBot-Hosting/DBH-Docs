@@ -21,7 +21,7 @@
       "@hook/*": ["hooks/*"],
       "@page/*": ["pages/*"],
       "@elements": ["components/elements/index.tsx"],
-      "@illustrations/*": ["public/illustrations/*.svg"],
+      "@illustrations/*": ["public/illustrations/*"],
       "@media/*": ["public/media/*"],
     }
   },

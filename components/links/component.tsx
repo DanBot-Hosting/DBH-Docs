@@ -10,29 +10,36 @@ import {
 import { ChevronLeft, ChevronRight } from "@carbon/icons-react";
 import { useStyles } from "./styles";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-export const Links: FunctionComponent = ({
+export const Links: FunctionComponent<Link> = ({
   icon: Icon,
   label,
   initiallyOpened,
   links,
   link,
+  onSwitch
 }: Link): ReactElement => {
-  const { classes, theme } = useStyles();
+  const { classes, theme, cx } = useStyles();
+  const router = useRouter();
   const hasLinks = Array.isArray(links);
-  const [opened, setOpened] = useState(initiallyOpened || false);
+  const [opened, setOpened] = useState(initiallyOpened || (hasLinks ? links : []).some((item) => router.pathname === item.link));
   const ChevronIcon = theme.dir === "ltr" ? ChevronRight : ChevronLeft;
   const items = (hasLinks ? links : []).map((link) =>
     link.title ? (
-      <Text className={classes.title} key={link.label}>
+      <Text
+        className={classes.title}
+        key={link.label}
+      >
         {link.label}
       </Text>
     ) : (
       <Text
-        className={classes.link}
+        className={cx(classes.link, { [classes.active]: router.pathname === link.link })}
         component={link.link && Link}
         href={link.link}
         key={link.label}
+        onClick={onSwitch}
       >
         {link.label}
       </Text>
@@ -42,8 +49,11 @@ export const Links: FunctionComponent = ({
   return (
     <>
       <UnstyledButton
-        onClick={() => setOpened((o) => !o)}
-        className={classes.control}
+        onClick={() => {
+          setOpened((o) => !o);
+          if (!hasLinks && onSwitch) onSwitch();
+        }}
+        className={cx(classes.control, { [classes.active]: router.pathname === link })}
         component={!hasLinks && Link}
         href={!hasLinks ? link : undefined}
       >
@@ -70,7 +80,13 @@ export const Links: FunctionComponent = ({
           )}
         </Group>
       </UnstyledButton>
-      {hasLinks ? <Collapse in={opened}>{items}</Collapse> : null}
+      {hasLinks ? (
+        <Collapse
+          in={opened}
+        >
+          {items}
+        </Collapse>
+      ) : null}
     </>
   );
-}
+};

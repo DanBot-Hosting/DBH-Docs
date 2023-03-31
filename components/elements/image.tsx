@@ -1,13 +1,11 @@
 import { FunctionComponent, PropsWithChildren } from "react";
-import NextImage, { StaticImageData } from "next/image";
-
-export interface ImageProps {
-  src: StaticImageData;
-  alt: string;
-  width?: number;
-  height?: number;
-  margin?: number;
-}
+// import NextImage, { StaticImageData } from "next/image";
+import {
+  Center,
+  Image as MantineImage,
+  ImageProps,
+  Tooltip,
+} from "@mantine/core";
 
 // JSDoc comment
 /**
@@ -18,26 +16,23 @@ export interface ImageProps {
  * @see {@link https://nextjs.org/docs/api-reference/next/image Next.js Image Component}
  * @example
  * <Image src={accountCreation} alt="How to create an account" />
-**/
-export const Image: FunctionComponent<PropsWithChildren<ImageProps>> = ({
-  src,
-  alt,
-  width = "100%",
-  height = "auto",
-  margin = 32,
-  ...props
-}) => (
-  <NextImage
-    src={src}
-    alt={alt}
-    style={{
-      width: width,
-      height: height,
-      maxHeight: 320,
-      marginTop: margin,
-      marginBottom: margin,
-      borderRadius: 4,
-    }}
-    {...props}
-  />
-)
+ **/
+export const Image: FunctionComponent<
+  PropsWithChildren<ImageProps & { withoutTooltip?: boolean }>
+> = ({ alt, withoutTooltip, ...props }) => (
+  <Tooltip label={alt} position="bottom" display={withoutTooltip && "none"}>
+    <Center>
+      <MantineImage
+        radius="sm"
+        fit="fill"
+        width="auto"
+        styles={{
+          image: {
+            maxHeight: 320,
+          }
+        }}
+        {...props}
+      />
+    </Center>
+  </Tooltip>
+);

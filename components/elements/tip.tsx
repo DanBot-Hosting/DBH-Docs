@@ -47,7 +47,7 @@ export const Tip: FunctionComponent<PropsWithChildren<TipProps>> = ({
   }))();
 
   return (
-    <Card className={classes.tip} {...props}>
+    <Card className={classes.tip} my="md" {...props}>
       <Icon title={label} className={classes.icon} />
       <Box className={classes.text}>
         <div>
