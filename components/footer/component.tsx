@@ -3,10 +3,10 @@ import Image from "next/image";
 
 import type { FunctionComponent, ReactElement } from "react";
 
-import { Container, Group } from "@mantine/core";
+import { Box, Container, Group, SimpleGrid, Title, Text } from "@mantine/core";
 
-import DanbotSpace from "@public/danbot-space.svg";
-import { footerLicense } from "./config";
+import { footerLicense, footerLinks } from "./config";
+import { Logo } from "@elements";
 
 /**
  * Footer component that is used in the AppShell (see: components/layout/component.tsx)
@@ -24,7 +24,7 @@ export const Footer: FunctionComponent = (): ReactElement => {
     <div className={classes.footer}>
       <div className={classes.wrapper}>
         <Container className={classes.inner}>
-          <Image src={DanbotSpace} alt="Danbot Space" height={32} width={32} />
+          <Image src={Logo()} alt="Danbot Space" height={32} width={32} />
           <Group className={classes.info} ta="center">
             {footerLicense}
           </Group>

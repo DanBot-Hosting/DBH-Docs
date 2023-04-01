@@ -32,7 +32,7 @@ export const Redirect: FunctionComponent<RedirectProps> = ({
       ":hover": {
         backgroundColor:
           theme.colorScheme === "dark"
-            ? theme.colors.dark[7]
+            ? theme.colors.dark[5]
             : theme.colors.gray[1],
       },
     },

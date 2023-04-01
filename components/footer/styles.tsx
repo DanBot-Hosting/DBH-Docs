@@ -1,4 +1,4 @@
-import { createStyles } from "@mantine/core";
+import { createStyles, rem } from "@mantine/core";
 
 // Styles for the Footer component
 // Used mantine's createStyles function
@@ -30,6 +30,21 @@ export const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan("xs")]: {
       flexDirection: "column",
+    },
+  },
+
+  link: {
+    display: "block",
+    color:
+      theme.colorScheme === "dark"
+        ? theme.colors.dark[1]
+        : theme.colors.gray[6],
+    fontSize: theme.fontSizes.sm,
+    paddingTop: rem(3),
+    paddingBottom: rem(3),
+
+    "&:hover": {
+      textDecoration: "underline",
     },
   },
 

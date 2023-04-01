@@ -37,40 +37,16 @@ export const Header: FunctionComponent = (): ReactElement => {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
   const dark = colorScheme === "dark";
   const [opened, { toggle, close }] = useDisclosure(false);
-  // const router = useRouter();
-  // const [active, setActive] = useState(
-  //   navLinks.find((link: Link) =>
-  //     link.links.some((sub) => sub.link === router.pathname)
-  //   ) ?? navLinks[0]
-  // );
-  // const [activeLink, setActiveLink] = useState(
-  //   active.links.find((link) => link.link === router.pathname)
-  // );
-
-  // const mainLinks = navLinks.map((link: Link) => (
-  //   <UnstyledButton
-  //     onClick={() => setActive(link)}
-  //     key={link.label}
-  //     className={cx(classes.mainLink, {
-  //       [classes.mainLinkActive]: link.label === active.label,
-  //     })}
-  //   >
-  //     <link.icon />
-  //   </UnstyledButton>
-  // ));
 
   const links = navLinks.map((item) => (
-    <Links {...item} key={item.label} onSwitch={toggle} />
+    <Links {...item} key={item.label} onSwitch={close} />
   ));
 
   return (
     <div className={classes.header}>
       <Container className={classes.mainSection}>
         <Group position="apart">
-          {/* <Title order={3} className={classes.title} pl="sm">
-            test
-          </Title> */}
-          <Search w="50%" />
+          <Search w="auto" />
 
           <Burger
             opened={opened}
@@ -89,25 +65,22 @@ export const Header: FunctionComponent = (): ReactElement => {
             transition: "slide-right",
           }}
           position="left"
-          // title={(
-          //   <Title order={4} className={classes.title}>
-          //     {/* <ActionIcon
-          //       variant="light"
-          //       radius="sm"
-          //       color={!dark ? 'astronomist-blue' : 'astronomist-purple'}
-          //       onClick={() => toggleColorScheme()}
-          //       title="Toggle color scheme"
-          //       mr="md"
-          //       size={44}
-          //     >
-          //       {!dark ? <Sun /> : <Moon />}
-          //     </ActionIcon> */}
-          //     {/* {active.label} */}
-          //     test
-          //   </Title>
-          // )}
-          // Shift close icon to right side of the drawer
-          title={<></>}
+          // A title shifts close icon to the right side of the drawer
+          title={
+            <ActionIcon
+              variant="light"
+              color={!dark ? "astronomist-blue" : "astronomist-purple"}
+              onClick={() => {
+                toggleColorScheme();
+                close();
+              }}
+              title="Toggle color scheme"
+              mr="md"
+              size={30}
+            >
+              {!dark ? <Sun /> : <Moon />}
+            </ActionIcon>
+          }
           padding="md"
         >
           {links}

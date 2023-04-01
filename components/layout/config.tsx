@@ -23,14 +23,23 @@ export const components = {
   Anchor: {
     styles: (theme: MantineTheme) => ({
       root: {
-        backgroundColor: theme.black,
-        color: theme.white,
+        backgroundColor:
+          theme.colorScheme === "dark" ? theme.colors.dark[0] : theme.black,
+        color:
+          theme.colorScheme === "dark" ? theme.colors.dark[7] : theme.white,
         paddingLeft: `calc(${theme.spacing.xs} * .5)`,
         paddingRight: `calc(${theme.spacing.xs} * .5)`,
         borderRadius: theme.radius.xs,
+
         "&:hover": {
-          backgroundColor: theme.fn.lighten(theme.black, 0.2),
-          color: theme.fn.lighten(theme.white, 0.3),
+          backgroundColor:
+            theme.colorScheme === "dark"
+              ? theme.fn.darken(theme.colors.dark[0], 0.2)
+              : theme.fn.lighten(theme.black, 0.2),
+          color:
+            theme.colorScheme === "dark"
+              ? theme.fn.darken(theme.colors.dark[7], 0.3)
+              : theme.fn.lighten(theme.white, 0.3),
           textDecoration: "none",
         },
       },
