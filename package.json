@@ -20,7 +20,7 @@
     "@carbon/icons-react": "^11.17.0",
     "@emotion/react": "^11.10.6",
     "@emotion/server": "^11.10.0",
-    "@mantine/core": "^6.0.5",
+    "@mantine/core": "^6.0.6",
     "@mantine/hooks": "^6.0.5",
     "@mantine/next": "^6.0.5",
     "@mantine/notifications": "^6.0.5",
