@@ -40,7 +40,7 @@
     "sharp": "^0.32.0"
   },
   "devDependencies": {
-    "@ikota/mantine": "^0.9.9",
+    "@ikota/mantine": "^0.9.10",
     "@types/node": "^18.14.0",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
