@@ -347,12 +347,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:^6.0.5":
-  version: 6.0.5
-  resolution: "@mantine/hooks@npm:6.0.5"
+"@mantine/hooks@npm:^7.11.2":
+  version: 7.11.2
+  resolution: "@mantine/hooks@npm:7.11.2"
   peerDependencies:
-    react: ">=16.8.0"
-  checksum: 2f8a1f155bf5e457484282d1ee1ab6e8d3356f48b01291820f828ac7978c8f960d711a576b4636753e604e4058e241b210f348e32adb2960be22aee84137ab63
+    react: ^18.2.0
+  checksum: a21a0d8c18d40b500f9658d1a08866c073d7fad61904e398e186c08f9716db073383ac3beb4c7ac4dd4003740c12ca7f861c6eb53ef12a9f20a3ff632b5c83f5
   languageName: node
   linkType: hard
 
@@ -425,20 +425,6 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: 3566792ef2e7afab9a31b31a057af94b1c19844420d7d7d4ddc9a679750a01e45d0b56f55afb0460c1e2a903788061d7fdc537fa4b5f764ab8dda968760bd60c
-  languageName: node
-  linkType: hard
-
-"@mantine/styles@npm:6.0.5":
-  version: 6.0.5
-  resolution: "@mantine/styles@npm:6.0.5"
-  dependencies:
-    clsx: 1.1.1
-    csstype: 3.0.9
-  peerDependencies:
-    "@emotion/react": ">=11.9.0"
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 074012e4899516cd701dbfa032c5eb9865f6a1460fc6ebdfb934d703283a0e9229b18f93ef54d8e9127ba63390e46429cf51a1fbea6ddb77cc1f815d36072797
   languageName: node
   linkType: hard
 
@@ -1861,7 +1847,7 @@ __metadata:
     "@emotion/server": ^11.10.0
     "@ikota/mantine": ^0.9.9
     "@mantine/core": ^6.0.6
-    "@mantine/hooks": ^6.0.5
+    "@mantine/hooks": ^7.11.2
     "@mantine/next": ^6.0.6
     "@mantine/notifications": ^6.0.5
     "@mantine/nprogress": ^6.0.5
