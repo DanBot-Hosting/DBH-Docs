@@ -13,7 +13,7 @@ type AppInitialPropsWithColor = AppInitialProps & {
 
 export default class Panel extends App<AppInitialPropsWithColor> {
   static async getInitialProps(
-    appContext: AppContext
+    appContext: AppContext,
   ): Promise<AppInitialProps & { colorScheme: ColorScheme }> {
     const appProps: AppInitialProps = await App.getInitialProps(appContext);
     return {
