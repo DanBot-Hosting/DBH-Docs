@@ -1,6 +1,7 @@
 import {
   WatsonHealth3DCurveManual,
   Book,
+  Portfolio,
   Terminal,
   BareMetalServer,
   UserMultiple,
@@ -18,6 +19,7 @@ export const navLinks: Link[] = [
     link: "/introduction",
   },
   { label: "Getting Started", icon: Book, link: "/getting-started" },
+  { label: "Staff List", icon: Portfolio, link: "/staff-list" },
   {
     label: "Beginner's Guidebook",
     icon: UserMultiple,
@@ -25,17 +27,14 @@ export const navLinks: Link[] = [
       { label: "Creating A Bot", link: "/beginner/creating-a-bot" },
       { label: "Proxying", link: "/beginner/proxying" },
       { label: "Ticket System", link: "/beginner/tickets" },
-      { label: "Wordpress", link: "/beginner/wordpress" },
     ],
   },
   {
     label: "Advanced Management",
     icon: Terminal,
     links: [
-      { label: "DBH API", link: "/advanced/dbh-api" },
       { label: "SFTP Using VSCode", link: "/advanced/vscode-sftp" },
       { label: "ShareX Setup", link: "/advanced/sharex-setup" },
-      { label: "Status API", link: "/advanced/status-api" },
     ],
   },
   {
@@ -52,7 +51,6 @@ export const navLinks: Link[] = [
       { label: "Development", title: true },
       { label: "All In One (AIO)", link: "/server/development/aio" },
       { label: "Code Server", link: "/server/development/code-server" },
-      { label: "Java", link: "/server/development/java" },
       { label: "Node.js", link: "/server/development/nodejs" },
       { label: "Python", link: "/server/development/python" },
       { label: "Red Discord Bot", link: "/server/development/rdb" },

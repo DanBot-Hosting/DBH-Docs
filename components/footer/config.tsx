@@ -1,5 +1,5 @@
 export const footerLicense = [
-  "Danbot Space is not affiliated with Danbot Hosting LTD.",
+  "DanBot Hosting Docs is coded by our Dev team and updated by staff members",
 ].join(" ");
 
 export const footerLinks = [{ label: "Contribute", link: "/contribute" }];

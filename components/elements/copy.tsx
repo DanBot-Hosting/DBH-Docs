@@ -22,7 +22,7 @@ export const Copy: FunctionComponent<CopyProps> = ({ value, ...props }) => {
         "2px solid " +
         theme.fn.rgba(
           theme.colorScheme === "dark" ? theme.white : theme.black,
-          0.5
+          0.5,
         ),
       transition: "all .3s",
 

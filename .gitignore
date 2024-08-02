@@ -1,4 +1,6 @@
 node_modules
+.npm
 .yarn/*
 .next
 !.yarn/releases
+.gitconfig

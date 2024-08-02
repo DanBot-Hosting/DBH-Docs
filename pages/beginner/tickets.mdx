@@ -4,13 +4,13 @@ A ticketing system is a management tool that processes and catalogs customer ser
 
 ## Submitting a ticket
 
-In order to submit a ticket, you have to create one and provide any information related to the hosting-related only issue. A benefit from it is that you get a less crowded place to contact support. To create a ticket use the command: <Copy value="DBH!ticket new" />
+In order to submit a ticket, you have to create one and provide any information related to the hosting-related only issue. A benefit from it is that you get a less crowded place to contact support. To create a ticket use the command: <Copy value="/open reason:" /> then please select the reason for creating a ticket.
 
 ## Contacting administrators only
 
-Since moderation doesn't have all the permissions over DBH there's an option to "upgrade" the ticket to let only administrators see it: <Copy value="DBH!ticket upgrade" />
+Since moderation doesn't have all the permissions over DBH there's an option to "upgrade" the ticket to let only administrators see it: <Copy value="/upgrade" />
 
-To revert the changes use the following command: <Copy value="DBH!ticket downgrade" />
+To revert the changes use the following command: <Copy value="/downgrade" />
 
 <Tip label="Good To Know">
   Your case might already exist in the [Issue Tracker](/issue-tracker/) page!
@@ -18,15 +18,15 @@ To revert the changes use the following command: <Copy value="DBH!ticket downgra
 
 ## Want to add someone to see your ticket?
 
-Sometimes it is necessary to add a non-staff member to the ticket. For such cases you need the "add" command: <Copy value="DBH!ticket add" />
+Sometimes it is necessary to add a non-staff member to the ticket. For such cases you need the "add" command: <Copy value="/add-user user:<@user>" /> Make sure to choose the correct user! You don't want to add the wrong user
 
 ### Removing an unnecessary user
 
-You also can remove any member (including moderation) using the following command: <Copy value="DBH!ticket remove" />
+You also can remove any member (including moderation) using the following command: <Copy value="/remove-user user:<@user>" />
 
 ## Issue solved
 
-If your case/issue is now solved, you need to close the ticket using the command: <Copy value="DBH!ticket close" />
+If your case/issue is now solved, you need to close the ticket by clicking the close button on the emebed that pops up when you make the ticket!
 
 This is required to be done due to the possible Discord ticket category overflow.
 

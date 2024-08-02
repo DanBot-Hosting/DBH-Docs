@@ -16,7 +16,7 @@ export const Search: FunctionComponent<InputProps> = (props): ReactElement => {
   const router = useRouter();
   const pages = navLinks
     .map((link: Link) =>
-      link.link && !link.links ? link : [link, ...link.links]
+      link.link && !link.links ? link : [link, ...link.links],
     )
     .flat();
 

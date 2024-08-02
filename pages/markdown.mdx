@@ -1,44 +1,137 @@
 # Sample Markdown
 
-This is some basic, sample markdown.
+## Links
 
-## Second Heading
-
-- Unordered lists, and:
-
-1. One
-1. Two
-1. Three
-
-- More
-
-> Blockquote
-
-And **bold**, _italics_, and even \*italics and later **bold\***. [A link](https://markdowntohtml.com) to somewhere.
-
-~~strikethrough~~, **underline**, ~~**combo**~~, **\_**~~K.O.~~**\_**
-
-And code highlighting:
-
-```js
-var foo = "bar";
-
-function baz(s) {
-  return foo + ":" + s;
-}
+```mdx
+[... Text](... URL)
 ```
 
-Or inline code like `var foo = 'bar';`.
+## Images
 
-Or an image of bears
+```mdx
+![... Alt Text](... Image)
+```
 
-![bears](https://placebear.com/200/200)
+## Code Blocks
 
-<Tip>Bears have excellent senses of smell, sight and hearing...</Tip>
+Remove the backticks to use the code block
 
-<Redirect href="/introduction" />
+````mdx
+```js
+console.log('Hello, World!')
+``\`
+```
+````
 
-<Copy value="In this case you might need an axe, here take!" />
-<Copy value="Oh and I forgor to gib you this sword... It's too late..." />
+## Inline Code
 
-The end ...
+```mdx
+`console.log('Hello, World!')`
+```
+
+## Banners
+
+Allowed Options:
+
+- `INFO` & `INFORMATION`
+- `WARNING` & `WARN`
+- `DANGER` & `ERROR`
+- `SUCCESS` & `OK`
+- `CUSTOM`
+
+```mdx
+<Banner title?={if type is CUSTOM} type="...">
+    This is a banner
+</Banner>
+```
+
+<Banner type="DANGER">Hello World</Banner>
+
+Test
+
+## Dropdowns
+
+Dropdown with items:
+
+```mdx
+<Dropdown title="..." icon="...">
+  <DropdownItem>...</DropdownItem>
+  <DropdownItem>...</DropdownItem>
+</Dropdown>
+```
+
+Dropdown with regular text:
+
+```mdx
+<Dropdown title="..." icon="...">
+  This is a dropdown
+</Dropdown>
+```
+
+## HTTP Request
+
+Allowed Options:
+
+- `GET`
+- `POST`
+- `PUT`
+- `DELETE`
+- `PATCH`
+
+```mdx
+<HTTP method="..." url="..." note?={note} />
+```
+
+## Tables
+
+```mdx
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+```
+
+## Lists
+
+Unordered List:
+
+```mdx
+- Item 1
+- Item 2
+- Item 3
+```
+
+Ordered List:
+
+```mdx
+1. Item 1
+2. Item 2
+3. Item 3
+```
+
+You can also nest lists:
+
+```mdx
+- Item 1
+  - Item 1.1
+  - Item 1.2
+- Item 2
+- Item 3
+```
+
+## Regular Markdown Elements
+
+Regular markdown elements like, headings, paragraphs, blockquotes, bold, italic, etc. are supported.
+
+```mdx
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+This is a paragraph
+
+> This is a blockquote
+> **Bold Text** > _Italic Text_
+```

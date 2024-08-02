@@ -52,7 +52,7 @@ export const Redirect: FunctionComponent<RedirectProps> = ({
 
   const pages = navLinks
     .map((link: Link) =>
-      link.link && !link.links ? link : [link, ...link.links]
+      link.link && !link.links ? link : [link, ...link.links],
     )
     .flat();
 

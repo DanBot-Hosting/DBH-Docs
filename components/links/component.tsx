@@ -25,7 +25,7 @@ export const Links: FunctionComponent<Link> = ({
   const hasLinks = Array.isArray(links);
   const [opened, setOpened] = useState(
     initiallyOpened ||
-      (hasLinks ? links : []).some((item) => router.pathname === item.link)
+      (hasLinks ? links : []).some((item) => router.pathname === item.link),
   );
   const ChevronIcon = theme.dir === "ltr" ? ChevronRight : ChevronLeft;
   const items = (hasLinks ? links : []).map((link) =>
@@ -45,7 +45,7 @@ export const Links: FunctionComponent<Link> = ({
       >
         {link.label}
       </Text>
-    )
+    ),
   );
 
   return (

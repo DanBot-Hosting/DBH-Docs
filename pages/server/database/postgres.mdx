@@ -1,3 +1,80 @@
 # Postgres
 
 <Tip label="We're sorry">The page you're looking for is under maintenance</Tip>
+
+PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance. PostgreSQL features transactions with atomicity, consistency, isolation, durability properties, automatically updatable views, materialized views, triggers, foreign keys, and stored procedures.
+
+<Redirect
+  href="https://en.wikipedia.org/wiki/PostgreSQL"
+  label="Source: Wikipedia"
+/>
+
+# Creating the server
+
+To create a server, we suppose that you've already [created and linked an account into the panel](https://docs.danbot.dev/getting-started).
+
+At DBH we have 2 versions of Postgres you can use, you can use Postgres14 or Postgres16. Both are the same just different versions
+
+In that case, go to DBH server and run this command:
+
+For a free server: `DBH!server create (Postgres14|Postgres16) [optional server name]`
+
+For a donator server: `DBH!server create-donator (Postgres14|Postgres16) [optional name]`
+
+# Connect to the database
+
+In order to connect to your fresh created database start the server and use the following link:
+
+```text
+postgres://container:<PASSWORD>@nX.danbot.host:<port>/postgres
+```
+
+## Fields
+
+The link given above isn't enough for you to connect to the database, now you have to modify it to actually connect to the database.
+
+### Node
+
+"nX" in "nX.danbot.host" is replaced with your server's node. It can be:
+
+| Node    | Domain              |
+| :------ | :------------------ |
+| PNode 1 | pnode1.danbot.host  |
+| PNode 2 | pnode2.danbot.host  |
+| PNode 3 | pnode3.danbot.host  |
+|         |                     |
+| Dono 01 | dono-01.danbot.host |
+| Dono 03 | dono-03.danbot.host |
+
+### Password
+
+"password" can be found in the `Startup` tab.
+
+![Password example](/content/mongodb/example.png)
+
+<Tip>
+  Given page screenshot is an example of the password, it does not carry any
+  important information as the server was already deleted.
+</Tip>
+
+### Port
+
+"port" is your server's port that can be found in the main page.
+
+<Tip>
+  **YOU MUST USE YOU'RE SERVERS PORT! IF YOU DON'T THIS WILL NOT WORK!**
+</Tip>
+
+## Final result
+
+As soon as you finished with the link it should look like this:
+
+```text
+postgres://container:th!s!snot-p-ssword@pnode2.danbot.host:1234/postgres
+```
+
+# Conclusion
+
+Now you can deal with PostgresSQL database. To find out more about PostgresSQL visit their documentation website!
+
+<Redirect href="https://www.postgresql.org/docs/" label="PostgresSQL Docs" />

@@ -52,7 +52,7 @@ export const PanelProvider: FunctionComponent<
 > = ({ children, ...props }) => {
   const mobile = useMediaQuery("(max-width: 900px)");
   const [colorScheme, setColorScheme] = useState<ColorScheme>(
-    props.colorScheme
+    props.colorScheme,
     // "dark"
   );
 

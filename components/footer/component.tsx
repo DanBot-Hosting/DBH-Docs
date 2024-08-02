@@ -24,7 +24,13 @@ export const Footer: FunctionComponent = (): ReactElement => {
     <div className={classes.footer}>
       <div className={classes.wrapper}>
         <Container className={classes.inner}>
-          <Image src={Logo()} alt="Danbot Space" height={32} width={32} />
+          <Image src={Logo()} alt="Danbot Host" height={64} width={64} />
+          <a href="https://discord.gg/dbh">
+            <img src="https://skillicons.dev/icons?i=discord" />
+          </a>
+          <a href="https://github.com/danbot-hosting">
+            <img src="https://skillicons.dev/icons?i=github" />
+          </a>
           <Group className={classes.info} ta="center">
             {footerLicense}
           </Group>

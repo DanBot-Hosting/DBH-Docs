@@ -23,7 +23,7 @@ export const useStyles = createStyles((theme) => ({
       textShadow:
         theme.fn.rgba(
           theme.colorScheme === "dark" ? theme.white : theme.black,
-          0.3
+          0.3,
         ) + " 0 0 5px",
     },
   },
@@ -37,7 +37,7 @@ export const useStyles = createStyles((theme) => ({
     textShadow:
       theme.fn.rgba(
         theme.colorScheme === "dark" ? theme.white : theme.black,
-        0.3
+        0.3,
       ) + " 0 0 5px",
   },
 
@@ -74,7 +74,7 @@ export const useStyles = createStyles((theme) => ({
       textShadow:
         theme.fn.rgba(
           theme.colorScheme === "dark" ? theme.white : theme.black,
-          0.3
+          0.3,
         ) + " 0 0 5px",
     },
   },

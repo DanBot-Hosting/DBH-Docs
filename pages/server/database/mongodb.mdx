@@ -9,7 +9,7 @@ MongoDB is a source-available cross-platform document-oriented database program.
 
 # Creating the server
 
-To create a server, we suppose that you've already [created and linked an account into the panel](https://help.dbh.wtf/getting-started).
+To create a server, we suppose that you've already [created and linked an account into the panel](https://docs.danbot.dev/getting-started).
 
 In that case, go to DBH server and run this command:
 
@@ -33,10 +33,14 @@ The link given above isn't enough for you to connect to the database, now you ha
 
 "nX" in "nX.danbot.host" is replaced with your server's node. It can be:
 
-- n2.danbot.host
-- n3.danbot.host
-- ...
-- dono-1.danbot.host
+| Node    | Domain              |
+| :------ | :------------------ |
+| PNode 1 | pnode1.danbot.host  |
+| PNode 2 | pnode2.danbot.host  |
+| PNode 3 | pnode3.danbot.host  |
+|         |                     |
+| Dono 01 | dono-01.danbot.host |
+| Dono 03 | dono-03.danbot.host |
 
 ### Password
 
@@ -58,7 +62,7 @@ The link given above isn't enough for you to connect to the database, now you ha
 As soon as you finished with the link it should look like this:
 
 ```text
-mongodb://admin:8APCN3FKY9PK042X@n4.danbot.host:2117/?authSource=admin
+mongodb://admin:81OCNEWWJZ1KA0TJ@pnode2.danbot.host:9608/?authSource=admin
 ```
 
 # Conclusion
