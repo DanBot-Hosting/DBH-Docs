@@ -1,7 +1,7 @@
 import { PanelProvider } from "@component/layout";
 
 import type { NextPage } from "next";
-import App, { AppContext, AppInitialProps } from "next/app";
+import App, { AppContext, AppInitialProps, AppProps } from "next/app";
 import { ReactElement } from "react";
 import { ColorScheme } from "@mantine/core";
 import { getCookie } from "cookies-next";
