@@ -1,7 +1,7 @@
 # DBH Docs
 This is the Offical DanBot Hosting Documantaion website, this was coded by a dbh member and is now continued by DBH Team
 
-Website: http://63.141.232.244:1114/
+Website: https://docs.danbot.dev
 
 ## Maintainers
 - **Jon**
