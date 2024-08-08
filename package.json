@@ -24,7 +24,7 @@
     "@mantine/core": "^6.0.6",
     "@mantine/hooks": "^7.0.0",
     "@mantine/next": "^6.0.6",
-    "@mantine/notifications": "^6.0.5",
+    "@mantine/notifications": "^7.0.0",
     "@mantine/nprogress": "^6.0.5",
     "@mantine/spotlight": "^6.0.6",
     "@mdx-js/loader": "^2.3.0",
