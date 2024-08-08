@@ -698,17 +698,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/nprogress@npm:^6.0.5":
-  version: 6.0.22
-  resolution: "@mantine/nprogress@npm:6.0.22"
+"@mantine/nprogress@npm:^7.0.0":
+  version: 7.12.0
+  resolution: "@mantine/nprogress@npm:7.12.0"
   dependencies:
-    "@mantine/utils": 6.0.22
+    "@mantine/store": 7.12.0
   peerDependencies:
-    "@mantine/core": 6.0.22
-    "@mantine/hooks": 6.0.22
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 46cd4efb4eb6db44d2b5d77b1ce7ecf072374e63503cdd0d81528610fbd04de47c961b7867ac5a61ddbb3d58f6d5f84811875921d547c65c04c31b7ea6a7c47d
+    "@mantine/core": 7.12.0
+    "@mantine/hooks": 7.12.0
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 01826a5d3d49598a2005e67a504164caea6d76f707ee62450703d302746636d75fac85f4646d77e56598c05d03137431e772a3f154167229e664578402705ca3
   languageName: node
   linkType: hard
 
@@ -2007,7 +2007,7 @@ __metadata:
     "@mantine/hooks": ^7.0.0
     "@mantine/next": ^6.0.6
     "@mantine/notifications": ^7.0.0
-    "@mantine/nprogress": ^6.0.5
+    "@mantine/nprogress": ^7.0.0
     "@mantine/spotlight": ^6.0.6
     "@mdx-js/loader": ^2.3.0
     "@mdx-js/react": ^2.3.0
