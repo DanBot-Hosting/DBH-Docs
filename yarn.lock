@@ -129,7 +129,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icons-react@npm:*, @carbon/icons-react@npm:^11.46.0":
+"@carbon/icons-react@npm:*, @carbon/icons-react@npm:^11.17.0":
   version: 11.46.0
   resolution: "@carbon/icons-react@npm:11.46.0"
   dependencies:
@@ -223,7 +223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.13.0":
+"@emotion/react@npm:^11.10.6":
   version: 11.13.0
   resolution: "@emotion/react@npm:11.13.0"
   dependencies:
@@ -642,7 +642,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:^6.0.22":
+"@mantine/core@npm:^6.0.6":
   version: 6.0.22
   resolution: "@mantine/core@npm:6.0.22"
   dependencies:
@@ -660,16 +660,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:^6.0.22":
-  version: 6.0.22
-  resolution: "@mantine/hooks@npm:6.0.22"
+"@mantine/hooks@npm:^7.0.0":
+  version: 7.12.0
+  resolution: "@mantine/hooks@npm:7.12.0"
   peerDependencies:
-    react: ">=16.8.0"
-  checksum: bbf52ae89251043e6b62b9be53f608d3975304f18bc785fdca936afbe8c21f31112336533ff4dc6d2af00f131598c1647d79371642c2607aaeb1d33dc1eaa455
+    react: ^18.2.0
+  checksum: 9b8fe71796b385352c11a292a86ad595b6a5a1f8fe54c9e73a988b69cfee41bc57d82edff971cbcc5db1349328a4b07b6a6f0a882672c22f314031f3a24777df
   languageName: node
   linkType: hard
 
-"@mantine/next@npm:^6.0.22":
+"@mantine/next@npm:^6.0.6":
   version: 6.0.22
   resolution: "@mantine/next@npm:6.0.22"
   dependencies:
@@ -683,7 +683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/notifications@npm:^6.0.22":
+"@mantine/notifications@npm:^6.0.5":
   version: 6.0.22
   resolution: "@mantine/notifications@npm:6.0.22"
   dependencies:
@@ -698,7 +698,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/nprogress@npm:^6.0.22":
+"@mantine/nprogress@npm:^6.0.5":
   version: 6.0.22
   resolution: "@mantine/nprogress@npm:6.0.22"
   dependencies:
@@ -712,7 +712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/spotlight@npm:^6.0.22":
+"@mantine/spotlight@npm:^6.0.6":
   version: 6.0.22
   resolution: "@mantine/spotlight@npm:6.0.22"
   dependencies:
@@ -1177,7 +1177,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-react@npm:^4.0.0-alpha.28":
+"@skyra/discord-components-react@npm:^4.0.0-alpha.26":
   version: 4.0.0-alpha.28
   resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.28"
   dependencies:
@@ -1334,28 +1334,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
-  version: 22.1.0
-  resolution: "@types/node@npm:22.1.0"
-  dependencies:
-    undici-types: ~6.13.0
-  checksum: 3544c35da06009790a2e07742a7dfa0ac0f0d64ec47d9e6d3edf0ff6dcfc1a7cc2efdc5e524e80f8ed80aa37154513b2c1c724f95146ff89fc5aefb8e33575f2
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^16.10.2":
-  version: 16.18.104
-  resolution: "@types/node@npm:16.18.104"
-  checksum: 684e7f14812efe7f14ee4745d77a138eb444e9dc4e04a042ce4b8202f3322d92dde2d0642da69b7d02d659cc35cca52408f72b0990089aab0559e87e52d233c8
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^18.19.43":
+"@types/node@npm:*, @types/node@npm:^18.14.0":
   version: 18.19.43
   resolution: "@types/node@npm:18.19.43"
   dependencies:
     undici-types: ~5.26.4
   checksum: 5eb9045aae6da86e8ad297381f93d29d2e7fcd4ed0c53670d9dff1e7b714920f8bbe5ee456289c19fc69c510ac197bdbacc7a785eaeba0afb9cb5d634a64bcd3
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16.10.2":
+  version: 16.18.101
+  resolution: "@types/node@npm:16.18.101"
+  checksum: d099055168529f56665ad470e0aeb443557301b1342be12eeedcb04897614bbc09ecf10621a90460f83a5264acad4feaf84d0db181251ebe901049aad4ab4bcf
   languageName: node
   linkType: hard
 
@@ -1998,24 +1989,24 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "docs.danbot.dev@workspace:."
   dependencies:
-    "@carbon/icons-react": ^11.46.0
+    "@carbon/icons-react": ^11.17.0
     "@danbot-hosting/ts-config": ^1.0.0
-    "@emotion/react": ^11.13.0
+    "@emotion/react": ^11.10.6
     "@emotion/server": ^11.10.0
     "@ikota/mantine": ^0.9.9
-    "@mantine/core": ^6.0.22
-    "@mantine/hooks": ^6.0.22
-    "@mantine/next": ^6.0.22
-    "@mantine/notifications": ^6.0.22
-    "@mantine/nprogress": ^6.0.22
-    "@mantine/spotlight": ^6.0.22
+    "@mantine/core": ^6.0.6
+    "@mantine/hooks": ^7.0.0
+    "@mantine/next": ^6.0.6
+    "@mantine/notifications": ^6.0.5
+    "@mantine/nprogress": ^6.0.5
+    "@mantine/spotlight": ^6.0.6
     "@mdx-js/loader": ^2.3.0
     "@mdx-js/react": ^2.3.0
     "@next/mdx": ^13.2.4
-    "@skyra/discord-components-react": ^4.0.0-alpha.28
+    "@skyra/discord-components-react": ^4.0.0-alpha.26
     "@tabler/icons": 1.119.0
     "@types/carbon__icons-react": ^11.16.0
-    "@types/node": ^18.19.43
+    "@types/node": ^18.14.0
     "@types/react": ^18.0.33
     "@types/react-dom": ^18.0.11
     cookies-next: ^2.1.1
@@ -4714,13 +4705,6 @@ __metadata:
   version: 5.26.5
   resolution: "undici-types@npm:5.26.5"
   checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~6.13.0":
-  version: 6.13.0
-  resolution: "undici-types@npm:6.13.0"
-  checksum: 9d0ef6bf58994bebbea6a4ab75f381c69a89a7ed151bfbae0d4ef95450d56502c9eccb323abf17b7d099c1d9c1cbae62e909e4dfeb8d204612d2f1fdada24707
   languageName: node
   linkType: hard
 
