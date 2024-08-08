@@ -1,0 +1,16 @@
+{
+    "packageRules": [
+        {
+            "groupName": "all non-major dependencies",
+            "groupSlug": "all-minor-patch",
+            "assigneesFromCodeOwners": false,
+            "matchPackagePatterns": [
+                "*"
+            ],
+            "matchUpdateTypes": [
+                "minor",
+                "patch"
+            ]
+        }
+    ]
+}
