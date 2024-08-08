@@ -151,10 +151,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cvet/types@npm:^2.2.7":
-  version: 2.2.8
-  resolution: "@cvet/types@npm:2.2.8"
-  checksum: 9a3f8488f35c34d2c0d1ddfae6f05bc1b31dd609e8e8d829b9d411888b31d5fe6ebae568961bbd609cded449fb4aeb64f9cf7d4c4e4f98488fbe698e280de821
+"@cvet/types@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@cvet/types@npm:3.0.0"
+  checksum: 854636078c0ccaa6db892598b3d12e3727de0b69a5b70b37d8a71411cb092b8826c35681861a4acf5240aababdd01d6afad7cc4144d2c1923fff05094c050def
   languageName: node
   linkType: hard
 
@@ -1783,12 +1783,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cvet@npm:^2.2.6":
-  version: 2.2.7
-  resolution: "cvet@npm:2.2.7"
+"cvet@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "cvet@npm:4.0.0"
   dependencies:
-    "@cvet/types": ^2.2.7
-  checksum: 29eea84d0b2194719c30acbde6f4279eb979673e654034ff23ad19edf42c7d350fe6dd14822ae430b2e489d56423246a39bf5d5774d34f3c75e0044d8fd62144
+    "@cvet/types": ^3.0.0
+  checksum: 0d8bb43bf9521bbbb455ac44b0500ea00d5ac135d57107f28d2a6120bc7e8ced47d4251f5058d2ae75049cc4d532df1d348cdc5d9923b27a68af2b9b82e6b299
   languageName: node
   linkType: hard
 
@@ -1900,7 +1900,7 @@ __metadata:
     "@types/react": ^18.0.33
     "@types/react-dom": ^18.0.11
     cookies-next: ^2.1.1
-    cvet: ^2.2.6
+    cvet: ^4.0.0
     ikota: ^1.0.1
     next: 13.2.4
     prettier: ^3.3.3
