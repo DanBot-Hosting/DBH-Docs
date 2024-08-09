@@ -50,5 +50,5 @@
     "ikota": "^1.0.1",
     "typescript": "5.5.4"
   },
-  "packageManager": "yarn@3.8.4"
+  "packageManager": "yarn@4.4.0"
 }
