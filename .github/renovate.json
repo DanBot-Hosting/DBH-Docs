@@ -3,6 +3,7 @@
         {
             "groupName": "all non-major dependencies",
             "groupSlug": "all-minor-patch",
+            "addLabels": ["dependencies"]
             "assigneesFromCodeOwners": true,
             "matchPackagePatterns": [
                 "*"
