@@ -3,7 +3,7 @@
         {
             "groupName": "all non-major dependencies",
             "groupSlug": "all-minor-patch",
-            "assigneesFromCodeOwners": false,
+            "assigneesFromCodeOwners": true,
             "matchPackagePatterns": [
                 "*"
             ],
