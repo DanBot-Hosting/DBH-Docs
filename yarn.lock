@@ -1073,18 +1073,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons@npm:1.119.0":
-  version: 1.119.0
-  resolution: "@tabler/icons@npm:1.119.0"
-  peerDependencies:
-    react: ^16.x || 17.x || 18.x
-    react-dom: ^16.x || 17.x || 18.x
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: ef1ac50c1a47b2205cb86ca43c28d69c7b8f547ad9c2c5545190fc4a455e9767f49cb511a6f9e8dc45b046ee7d2dab3d2c87af4fd5bbb1694832a15698158753
+"@tabler/icons@npm:3.12.0":
+  version: 3.12.0
+  resolution: "@tabler/icons@npm:3.12.0"
+  checksum: 763371508b92acad03ee84fbeb2c5edcb5d783c36f7f43c3d3725213da2c627100f485f6e402747fb62953934c99e18b97d5198985c3017a3519868160c51913
   languageName: node
   linkType: hard
 
@@ -1898,7 +1890,7 @@ __metadata:
     "@mdx-js/react": ^3.0.0
     "@next/mdx": ^14.0.0
     "@skyra/discord-components-react": ^4.0.0-alpha.26
-    "@tabler/icons": 1.119.0
+    "@tabler/icons": 3.12.0
     "@types/carbon__icons-react": ^11.16.0
     "@types/node": ^18.14.0
     "@types/react": ^18.0.33
