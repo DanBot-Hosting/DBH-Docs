@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@ikota/mantine": "^0.9.9",
-    "@types/node": "^18.14.0",
+    "@types/node": "^22.0.0",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "ikota": "^1.0.1",
