@@ -28,7 +28,7 @@
     "@mantine/nprogress": "^7.0.0",
     "@mantine/spotlight": "^7.0.0",
     "@mdx-js/loader": "^3.0.0",
-    "@mdx-js/react": "^2.3.0",
+    "@mdx-js/react": "^3.0.0",
     "@next/mdx": "^13.2.4",
     "@skyra/discord-components-react": "^4.0.0-alpha.26",
     "@tabler/icons": "1.119.0",
