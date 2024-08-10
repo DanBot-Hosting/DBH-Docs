@@ -1002,37 +1002,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@open-wc/lit-helpers@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "@open-wc/lit-helpers@npm:0.7.0"
-  peerDependencies:
-    lit: ^2.0.0 || ^3.0.0
-  checksum: 10c0/adf5777736500f318e055d6a66748f557d61d5c34dcf43c5fd9e525ee818366f9abdcc1ed5a47dd1fbc572b72d8551895ba2da4ad572e6d50f308cce30617f8e
-  languageName: node
-  linkType: hard
-
-"@skyra/discord-components-core@npm:^4.0.0-alpha.28":
-  version: 4.0.0-alpha.28
-  resolution: "@skyra/discord-components-core@npm:4.0.0-alpha.28"
+"@skyra/discord-components-core@npm:^4.0.0-alpha.29":
+  version: 4.0.0-alpha.29
+  resolution: "@skyra/discord-components-core@npm:4.0.0-alpha.29"
   dependencies:
     "@lit/context": "npm:^1.1.2"
-    "@open-wc/lit-helpers": "npm:^0.7.0"
-    lit: "npm:^3.1.4"
-  checksum: 10c0/580b1b5778e8319366c9bfd89786077a71f861dc5553a86a587325303ee568ec822978143a9b8b4e0aed505b577c76d4a9445fbe38b01cb8ac99f3936d32408f
+    lit: "npm:^3.2.0"
+  checksum: 10c0/f7cf789844861bb4dbdb07bb5cb1c24404aa5bdffdb305ca8082a0fbc5cf8b3db71f407619dcf21e6b40f406eddb40511624f210f10d27945087cc6fa7b19d50
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-react@npm:^4.0.0-alpha.26":
-  version: 4.0.0-alpha.28
-  resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.28"
+"@skyra/discord-components-react@npm:^4.0.0-alpha.29":
+  version: 4.0.0-alpha.29
+  resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.29"
   dependencies:
     "@lit/react": "npm:^1.0.5"
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.28"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.29"
     react: "npm:^18.3.1"
   peerDependencies:
     react: 16.8.x || 17.x || 18.x
     react-dom: 16.8.x || 17.x || 18.x
-  checksum: 10c0/0239090b53f5b3ae7f3eadbfc7fd6c1a369a271bb8c2df54e1de168cddcfbbda11854c4a661634cb56ad1c5d98d94e81c2a7baedf0c6952b5da5b0934e11b153
+  checksum: 10c0/e3c5f3327eba330a196dd04ca191a797bf07f2d20b0c7b6faa0d0bbc10a9b8215c080d0fc96710dfe83a95ce1499c96d3dce7010d73aa9a52de629a57b2479b5
   languageName: node
   linkType: hard
 
@@ -1179,7 +1169,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.2.0":
+"@types/node@npm:*, @types/node@npm:^22.0.0":
   version: 22.2.0
   resolution: "@types/node@npm:22.2.0"
   dependencies:
@@ -1870,10 +1860,10 @@ __metadata:
     "@mdx-js/loader": "npm:^3.0.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@next/mdx": "npm:^14.0.0"
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.26"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.29"
     "@tabler/icons": "npm:3.12.0"
     "@types/carbon__icons-react": "npm:^11.16.0"
-    "@types/node": "npm:^22.2.0"
+    "@types/node": "npm:^22.0.0"
     "@types/react": "npm:^18.0.33"
     "@types/react-dom": "npm:^18.0.11"
     cookies-next: "npm:^4.0.0"
@@ -2707,7 +2697,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit@npm:^3.1.4":
+"lit@npm:^3.2.0":
   version: 3.2.0
   resolution: "lit@npm:3.2.0"
   dependencies:
