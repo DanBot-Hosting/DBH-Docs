@@ -1,4 +1,4 @@
-import { createStyles, rem } from "@mantine/core";
+import { createStyles, rem } from "@mantine/emotion";
 
 // Styles for the Footer component
 // Used mantine's createStyles function

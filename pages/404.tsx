@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { ReactElement } from "react";
-import { createStyles, Title, Text, Container } from "@mantine/core";
+import { createStyles, Title, Text, Container } from "@mantine/emotion";
 import Stars from "@public/illustrations/stars.svg";
 import Image from "next/image";
 
