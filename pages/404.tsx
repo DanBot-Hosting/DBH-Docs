@@ -4,7 +4,7 @@ import { createStyles, Title, Text, Container } from "@mantine/emotion";
 import Stars from "@public/illustrations/stars.svg";
 import Image from "next/image";
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles((theme, _, u) => ({
   root: {
     display: "flex",
     flexDirection: "column",
