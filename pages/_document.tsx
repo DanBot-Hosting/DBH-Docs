@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { createGetInitialProps } from "@mantine/emotion";
+import { createGetInitialProps } from "@mantine/next";
 
 import type { ReactElement } from "react";
 import Script from "next/script";
