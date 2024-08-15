@@ -3,7 +3,7 @@ import { createStyles, rem } from "@mantine/emotion";
 // Styles for the Footer component
 // Used mantine's createStyles function
 // see: https://emotion.sh/docs/introduction
-export const useStyles = createStyles((theme) => ({
+export const useStyles = createStyles((theme, _, u) => ({
   footer: {
     [theme.fn.smallerThan(900)]: {
       paddingLeft: 0,
