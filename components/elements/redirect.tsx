@@ -1,5 +1,5 @@
 import { FunctionComponent, PropsWithChildren, ReactNode } from "react";
-import { Box, Card, createStyles, Text, Tooltip } from "@mantine/core";
+import { Box, Card, createStyles, Text, Tooltip } from "@mantine/emotion";
 import { PageLast } from "@carbon/icons-react";
 import { navLinks } from "config";
 import { useRouter } from "next/router";
