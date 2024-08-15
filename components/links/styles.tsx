@@ -1,6 +1,6 @@
 import { createStyles } from "@mantine/emotion";
 
-export const useStyles = createStyles((theme) => ({
+export const useStyles = createStyles((theme, _, u) => ({
   control: {
     fontWeight: 500,
     fontFamily: theme.headings.fontFamily,
