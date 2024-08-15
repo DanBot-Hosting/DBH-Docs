@@ -1,4 +1,4 @@
-import { createStyles } from "@mantine/core";
+import { createStyles } from "@mantine/emotion";
 
 // Styles for the Navbar component
 // Used mantine's createStyles function
