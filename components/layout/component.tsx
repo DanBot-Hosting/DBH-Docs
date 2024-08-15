@@ -6,7 +6,7 @@ import {
   Container,
   MantineProvider,
   TypographyStylesProvider,
-} from "@mantine/core";
+} from "@mantine/emotion";
 import { Notifications } from "@mantine/notifications";
 import { useMediaQuery } from "@mantine/hooks";
 import { FunctionComponent, PropsWithChildren, useState } from "react";
