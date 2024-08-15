@@ -23,7 +23,7 @@ export const Redirect: FunctionComponent<RedirectProps> = ({
   label,
   ...props
 }) => {
-  const { classes } = createStyles((theme) => ({
+  const { classes } = createStyles((theme, _, u) => ({
     redirect: {
       display: "flex",
       gap: theme.spacing.sm,
