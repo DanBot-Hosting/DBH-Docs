@@ -3,7 +3,7 @@ import { createStyles } from "@mantine/emotion";
 // Styles for the Navbar component
 // Used mantine's createStyles function
 // see: https://emotion.sh/docs/introduction
-export const useStyles = createStyles((theme) => ({
+export const useStyles = createStyles((theme, _, u) => ({
   navbar: {
     backgroundColor:
       theme.colorScheme === "dark" ? theme.colors.dark[6] : theme.white,
