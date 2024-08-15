@@ -22,7 +22,7 @@ export const Tip: FunctionComponent<PropsWithChildren<TipProps>> = ({
   icon: Icon = InformationFilled,
   ...props
 }) => {
-  const { classes } = createStyles((theme) => ({
+  const { classes } = createStyles((theme, _, u) => ({
     tip: {
       display: "flex",
       gap: theme.spacing.sm,
