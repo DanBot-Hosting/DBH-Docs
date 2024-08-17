@@ -1,5 +1,5 @@
 import { FunctionComponent, PropsWithChildren, ReactNode } from "react";
-import { Box, Card, createStyles, Text } from "@mantine/emotion";
+import { Box, Card, createStyles, Text } from "@mantine/core";
 import { InformationFilled } from "@carbon/icons-react";
 
 export interface TipProps {

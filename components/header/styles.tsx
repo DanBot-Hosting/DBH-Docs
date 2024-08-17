@@ -1,4 +1,4 @@
-import { createStyles } from "@mantine/emotion";
+import { createStyles } from "@mantine/core";
 
 // Styles for the Header component
 // Used mantine's createStyles function

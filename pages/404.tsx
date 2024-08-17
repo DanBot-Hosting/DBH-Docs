@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import { ReactElement } from "react";
-import { createStyles, Title, Text, Container } from "@mantine/emotion";
+import { createStyles, Title, Text, Container } from "@mantine/core";
 import Stars from "@public/illustrations/stars.svg";
 import Image from "next/image";
 
-const useStyles = createStyles((theme, _, u) => ({
+const useStyles = createStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
