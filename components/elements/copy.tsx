@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react";
-import { CopyButton, createStyles, Text, Tooltip } from "@mantine/emotion";
+import { CopyButton, createStyles, Text, Tooltip } from "@mantine/core";
 
 export interface CopyProps {
   value: string;
