@@ -129,16 +129,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icons-react@npm:*, @carbon/icons-react@npm:^11.17.0":
-  version: 11.47.0
-  resolution: "@carbon/icons-react@npm:11.47.0"
+"@carbon/icons-react@npm:*, @carbon/icons-react@npm:^11.47.1":
+  version: 11.47.1
+  resolution: "@carbon/icons-react@npm:11.47.1"
   dependencies:
     "@carbon/icon-helpers": "npm:^10.50.0"
     "@ibm/telemetry-js": "npm:^1.5.0"
     prop-types: "npm:^15.7.2"
   peerDependencies:
     react: ">=16"
-  checksum: 10c0/c79ee3ba3b2328e5e9c9ab23b61b8448519090fc8cbb75d48e92e3a3bc1f7c738715fb4eea1ed0a1958ed0dc09a531bf7f6cfc9bfcd40a1af87eae31f3f6272d
+  checksum: 10c0/005f67160ae29454986e064d0be2425a8322ef30037c862005be4499d4623da574272bef6d0e7d33bc1ca7565be5cd1edffe79d24650adaf95c5ec45caef573c
   languageName: node
   linkType: hard
 
@@ -1135,27 +1135,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-core@npm:^4.0.0-alpha.29":
-  version: 4.0.0-alpha.29
-  resolution: "@skyra/discord-components-core@npm:4.0.0-alpha.29"
+"@skyra/discord-components-core@npm:^4.0.0-alpha.31":
+  version: 4.0.0-alpha.31
+  resolution: "@skyra/discord-components-core@npm:4.0.0-alpha.31"
   dependencies:
     "@lit/context": "npm:^1.1.2"
     lit: "npm:^3.2.0"
-  checksum: 10c0/f7cf789844861bb4dbdb07bb5cb1c24404aa5bdffdb305ca8082a0fbc5cf8b3db71f407619dcf21e6b40f406eddb40511624f210f10d27945087cc6fa7b19d50
+  checksum: 10c0/3eb142eb0ead15714053b7f6c69e345bd84f69277c369e5cef7471c1a32ff6951a72fddf92f31b3d066d544145d6cbfd194bfd7b8f119e19e9cf31aa34937537
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-react@npm:^4.0.0-alpha.26":
-  version: 4.0.0-alpha.29
-  resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.29"
+"@skyra/discord-components-react@npm:^4.0.0-alpha.31":
+  version: 4.0.0-alpha.31
+  resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.31"
   dependencies:
     "@lit/react": "npm:^1.0.5"
-    "@skyra/discord-components-core": "npm:^4.0.0-alpha.29"
+    "@skyra/discord-components-core": "npm:^4.0.0-alpha.31"
     react: "npm:^18.3.1"
   peerDependencies:
     react: 16.8.x || 17.x || 18.x
     react-dom: 16.8.x || 17.x || 18.x
-  checksum: 10c0/e3c5f3327eba330a196dd04ca191a797bf07f2d20b0c7b6faa0d0bbc10a9b8215c080d0fc96710dfe83a95ce1499c96d3dce7010d73aa9a52de629a57b2479b5
+  checksum: 10c0/37939b022bac2db38d9ec9af84b63cc71877d42dfe9bce94fa19f124a232ca8c1f0dd88b5685c22704ef6f0a2fa37e12bae8ceecfa2c5039a8e70d5c804c4715
   languageName: node
   linkType: hard
 
@@ -1302,7 +1302,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.4.1":
+"@types/node@npm:*, @types/node@npm:^22.0.0":
   version: 22.4.1
   resolution: "@types/node@npm:22.4.1"
   dependencies:
@@ -1981,7 +1981,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "docs.danbot.dev@workspace:."
   dependencies:
-    "@carbon/icons-react": "npm:^11.17.0"
+    "@carbon/icons-react": "npm:^11.47.1"
     "@danbot-hosting/ts-config": "npm:^1.0.0"
     "@emotion/react": "npm:^11.10.6"
     "@emotion/server": "npm:^11.10.0"
@@ -1995,10 +1995,10 @@ __metadata:
     "@mdx-js/loader": "npm:^3.0.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@next/mdx": "npm:^14.0.0"
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.26"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.31"
     "@tabler/icons": "npm:3.12.0"
     "@types/carbon__icons-react": "npm:^11.16.0"
-    "@types/node": "npm:^22.4.1"
+    "@types/node": "npm:^22.0.0"
     "@types/react": "npm:^18.0.33"
     "@types/react-dom": "npm:^18.0.11"
     cookies-next: "npm:^4.0.0"
