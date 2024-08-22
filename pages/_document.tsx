@@ -42,7 +42,7 @@ export default class _Document extends Document {
         <body>
           <Main />
           <NextScript />
-          <Script src="../public/discord-components.config.js" strategy="beforeInteractive" />
+          <Script src="@/public/discord-components.config.js" strategy="beforeInteractive" />
         </body>
       </Html>
     );
