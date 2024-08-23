@@ -24,7 +24,7 @@ export const navLinks: Link[] = [
     label: "Beginner's Guidebook",
     icon: UserMultiple,
     links: [
-      { label: "Creating A Bot", link: "/beginner/creating-a-bot" },
+      //{ label: "Creating A Bot", link: "/beginner/creating-a-bot" },
       { label: "Proxying", link: "/beginner/proxying" },
       { label: "Ticket System", link: "/beginner/tickets" },
     ],
