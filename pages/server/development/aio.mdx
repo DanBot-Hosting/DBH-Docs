@@ -1,4 +1,4 @@
-import { DiscordMessages, DiscordMessage } from '@skyra/discord-components-react';
+import { DiscordMessages, DiscordMessage, DiscordEmbed, DiscordEmbedField, DiscordEmbedFields } from '@skyra/discord-components-react';
 
 # What is All In One (AIO)
 
@@ -12,12 +12,32 @@ In that case, go to DBH server and run this command:
 
 For a free server: 
 <DiscordMessages>
-  <DiscordMessage profile="dibster">`DBH!server create aio [optional server name]`</DiscordMessage>
+  <DiscordMessage
+							author="Jonfirexbox"
+							avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
+							roleColor='#00cfff'
+              roleName='Client'
+	>DBH!server create aio [optional server name]</DiscordMessage>
+  <DiscordEmbed slot="embeds" color="#00FF00">
+		<DiscordEmbedFields slot="fields">
+			<DiscordEmbedField fieldTitle="__**Status**__"> Created </DiscordEmbedField>
+      <DiscordEmbedField fieldTitle="__**Created for user ID**__"> 126 </DiscordEmbedField>
+      <DiscordEmbedField fieldTitle="__**Server name**__"> Untitled Server (settings -> server name) </DiscordEmbedField>
+      <DiscordEmbedField fieldTitle="__**Type**__">	aio	</DiscordEmbedField>
+      <DiscordEmbedField fieldTitle="__**WARNING**__"> Please do not host game servers on java or AIO servers. If you need a gameserver, You need to use Dono-02 or Dono-04. Slots are 1$ for 2 servers! </DiscordEmbedField>
+		</DiscordEmbedFields>
+	</DiscordEmbed>
 </DiscordMessages>
 <br></br>
 For a donator server: 
 <DiscordMessages>
-  <DiscordMessage author="Donator User">`DBH!server create-donator aio [optional server name]`</DiscordMessage>
+  <DiscordMessage
+							author="Jonfirexbox"
+							avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
+              roleName='Donator'
+							roleColor='#ff00a0'
+							roleIcon='https://images-ext-1.discordapp.net/external/jcxosamsnMQwF-XU7dDsYt5Mz_ti0BRJc5pzpGSDPQ0/https/cdn.discordapp.com/role-icons/898041754564046869/576cbb697c65c8fffe1df17961401d8b.png?format=webp&quality=lossless'
+	>DBH!server create-donator aio [optional server name]</DiscordMessage>
 </DiscordMessages>
 
 # Console
