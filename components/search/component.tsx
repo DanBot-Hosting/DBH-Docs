@@ -45,7 +45,7 @@ export const Search: FunctionComponent<InputProps> = (props): ReactElement => {
       <Input
         icon={<CarbonSearch />}
         rightSection={<Kbd sx={{ userSelect: "none" }}>/</Kbd>}
-        placeholder="Search"
+        //placeholder="Search"
         component="button"
         onClick={spotlight.open}
         pointer
