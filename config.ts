@@ -62,7 +62,7 @@ export const navLinks: Link[] = [
       { label: "Spigot", link: "/server/minecraft/spigot" },
       { label: "Bedrock", link: "/server/minecraft/bedrock" },
       { label: "Pocketmine MP", link: "/server/minecraft/pocketmine" },
-      { label: "Waterfall", link: "/server/minecraft/waterfall" },
+      //{ label: "Waterfall", link: "/server/minecraft/waterfall" },
 
       { label: "Software", title: true },
       { label: "Gitea", link: "/server/software/gitea" },
