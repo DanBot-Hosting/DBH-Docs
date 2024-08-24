@@ -1,3 +1,5 @@
+import { DiscordMessage, DiscordMessages, DiscordAttachments, DiscordInvites } from '@skyra/discord-components-react';
+
 <h1 align="center"> DBH Staff Team </h1>
 <div align="center"> This is in position order + in who role was given </div>
 
@@ -11,7 +13,7 @@
 | `.avixity` | Panel Administrator | 
 | `fredd1e_` | Panel Administrator | 
 | `kwitsies` | Administrator | 
-| `jonfirexbox` | Administrator + Doc Adminstrator | 
+| `jonfirexbox` | Administrator + Doc Manager | 
 | `caliwyr` | Administrator | 
 | `fc5570` | Lead Developer | 
 | `im.artiom` | Backend Developer | 
@@ -24,3 +26,21 @@
 | `_audir8` | Helper |
 </div>
 
+<DiscordMessages>
+  <DiscordMessage
+							author="Jonfirexbox"
+							avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
+							roleColor='#f9d61b'
+              roleName='Administrator'
+roleIcon='https://cdn.discordapp.com/role-icons/898041747219828796/795d9698b91d759e68842ac64aaebe7a.png'
+	>Hey! If you want to come and see all of us staff and or thank us, join the discord! <br />
+discord.gg/dbh
+							<DiscordAttachments slot="attachments">
+								<DiscordInvite
+									name="DanBot Hosting Community | DBH"
+									icon="https://cdn.discordapp.com/icons/639477525927690240/a_49d7c78e2c9cf025e1089fac1542ea94.gif"
+									url="https://discord.gg/dbh"
+									online={1305}
+									members={7271}
+								></DiscordInvite></DiscordMessage>
+</DiscordMessages>
