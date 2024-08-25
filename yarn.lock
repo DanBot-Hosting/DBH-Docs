@@ -698,17 +698,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/nprogress@npm:^6.0.22":
-  version: 6.0.22
-  resolution: "@mantine/nprogress@npm:6.0.22"
+"@mantine/nprogress@npm:^7.12.1":
+  version: 7.12.1
+  resolution: "@mantine/nprogress@npm:7.12.1"
   dependencies:
-    "@mantine/utils": "npm:6.0.22"
+    "@mantine/store": "npm:7.12.1"
   peerDependencies:
-    "@mantine/core": 6.0.22
-    "@mantine/hooks": 6.0.22
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 10c0/b187ac902c328cdd430f29a592bbdbbbce4cffcab8b445d82b22ccf409789861a7ff39bb642413c2700a0d8c696f7934ae354ce73a35a28ce58c17c01714d191
+    "@mantine/core": 7.12.1
+    "@mantine/hooks": 7.12.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 10c0/e254c2ee13cf29d9590952f2116e46bea7355e8d377fea5f23e3a53f9c0c3ea4d1c6e2692aef08e2b82fe0c918d6af368bc66e7ee35138caacd48616e79e0ccc
   languageName: node
   linkType: hard
 
@@ -738,6 +738,15 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: 10c0/0ac476034533dc4a2d2b8f09f4816ef73621cbcae7632745e4e4e555e9bb28e08fbecd997a466f72b28719e34382734664fe023594b89af008906735c95263bc
+  languageName: node
+  linkType: hard
+
+"@mantine/store@npm:7.12.1":
+  version: 7.12.1
+  resolution: "@mantine/store@npm:7.12.1"
+  peerDependencies:
+    react: ^18.2.0
+  checksum: 10c0/806133ac14b22582d5686ef36cbc93287d3408a6b3ce4db5a0aa28c713cddc5447e666e6dd52f1c6e20d739f58921deb722ef553a2456a24d6600c6ade9925d7
   languageName: node
   linkType: hard
 
@@ -1145,7 +1154,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-react@npm:^4.0.0-alpha.33":
+"@skyra/discord-components-react@npm:^4.0.0-alpha.26":
   version: 4.0.0-alpha.33
   resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.33"
   dependencies:
@@ -1981,12 +1990,12 @@ __metadata:
     "@mantine/hooks": "npm:^6.0.22"
     "@mantine/next": "npm:^6.0.22"
     "@mantine/notifications": "npm:^6.0.22"
-    "@mantine/nprogress": "npm:^6.0.22"
+    "@mantine/nprogress": "npm:^7.12.1"
     "@mantine/spotlight": "npm:^6.0.22"
     "@mdx-js/loader": "npm:^3.0.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@next/mdx": "npm:^14.0.0"
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.33"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.26"
     "@tabler/icons": "npm:3.12.0"
     "@types/node": "npm:^22.0.0"
     "@types/react": "npm:^18.0.33"
