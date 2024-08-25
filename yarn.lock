@@ -660,12 +660,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:^6.0.22":
-  version: 6.0.22
-  resolution: "@mantine/hooks@npm:6.0.22"
+"@mantine/hooks@npm:^7.12.1":
+  version: 7.12.1
+  resolution: "@mantine/hooks@npm:7.12.1"
   peerDependencies:
-    react: ">=16.8.0"
-  checksum: 10c0/c9889e94070ca00f62b14e5d5fa3e74774e9d0c3cd30085a663a7ff39fa69e57654721fe32fcf80188fbd73d85a0379c4e2f192105dd5f94967cc2424fafb2cb
+    react: ^18.2.0
+  checksum: 10c0/ad5df6f52adf5338f9005c6974bd13d1e15e15a3ae80041e0e98417c10031a0a6edcfa9522c8bb459f745f0b8989dbf10fea77e540e990cc43a9aa67e9094fa3
   languageName: node
   linkType: hard
 
@@ -1145,7 +1145,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-react@npm:^4.0.0-alpha.33":
+"@skyra/discord-components-react@npm:^4.0.0-alpha.26":
   version: 4.0.0-alpha.33
   resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.33"
   dependencies:
@@ -1978,7 +1978,7 @@ __metadata:
     "@emotion/server": "npm:^11.10.0"
     "@ikota/mantine": "npm:^0.9.9"
     "@mantine/core": "npm:^6.0.22"
-    "@mantine/hooks": "npm:^6.0.22"
+    "@mantine/hooks": "npm:^7.12.1"
     "@mantine/next": "npm:^6.0.22"
     "@mantine/notifications": "npm:^6.0.22"
     "@mantine/nprogress": "npm:^6.0.22"
@@ -1986,7 +1986,7 @@ __metadata:
     "@mdx-js/loader": "npm:^3.0.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@next/mdx": "npm:^14.0.0"
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.33"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.26"
     "@tabler/icons": "npm:3.12.0"
     "@types/node": "npm:^22.0.0"
     "@types/react": "npm:^18.0.33"
