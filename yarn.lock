@@ -683,18 +683,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/notifications@npm:^6.0.22":
-  version: 6.0.22
-  resolution: "@mantine/notifications@npm:6.0.22"
+"@mantine/notifications@npm:^7.12.1":
+  version: 7.12.1
+  resolution: "@mantine/notifications@npm:7.12.1"
   dependencies:
-    "@mantine/utils": "npm:6.0.22"
-    react-transition-group: "npm:4.4.2"
+    "@mantine/store": "npm:7.12.1"
+    react-transition-group: "npm:4.4.5"
   peerDependencies:
-    "@mantine/core": 6.0.22
-    "@mantine/hooks": 6.0.22
-    react: ">=16.8.0"
-    react-dom: ">=16.8.0"
-  checksum: 10c0/83c694710eb4247f7fa60493d21ad28b8fabc8365593c3f2a0f32ac815433589cdba8c109b5c96858b658ad60afbb22b5e34151f321423ddc4e327c2d8d7a1d8
+    "@mantine/core": 7.12.1
+    "@mantine/hooks": 7.12.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 10c0/27dc8a869a2ccfa685ee0f8a5b52246108a42db6ec3654f58d11f4720f8b3edb5a6f2c79b1010d46d18680a164809a2738aa1e1efdd2970492e5b66faf1dc343
   languageName: node
   linkType: hard
 
@@ -738,6 +738,15 @@ __metadata:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   checksum: 10c0/0ac476034533dc4a2d2b8f09f4816ef73621cbcae7632745e4e4e555e9bb28e08fbecd997a466f72b28719e34382734664fe023594b89af008906735c95263bc
+  languageName: node
+  linkType: hard
+
+"@mantine/store@npm:7.12.1":
+  version: 7.12.1
+  resolution: "@mantine/store@npm:7.12.1"
+  peerDependencies:
+    react: ^18.2.0
+  checksum: 10c0/806133ac14b22582d5686ef36cbc93287d3408a6b3ce4db5a0aa28c713cddc5447e666e6dd52f1c6e20d739f58921deb722ef553a2456a24d6600c6ade9925d7
   languageName: node
   linkType: hard
 
@@ -1145,7 +1154,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@skyra/discord-components-react@npm:^4.0.0-alpha.33":
+"@skyra/discord-components-react@npm:^4.0.0-alpha.26":
   version: 4.0.0-alpha.33
   resolution: "@skyra/discord-components-react@npm:4.0.0-alpha.33"
   dependencies:
@@ -1980,13 +1989,13 @@ __metadata:
     "@mantine/core": "npm:^6.0.22"
     "@mantine/hooks": "npm:^6.0.22"
     "@mantine/next": "npm:^6.0.22"
-    "@mantine/notifications": "npm:^6.0.22"
+    "@mantine/notifications": "npm:^7.12.1"
     "@mantine/nprogress": "npm:^6.0.22"
     "@mantine/spotlight": "npm:^6.0.22"
     "@mdx-js/loader": "npm:^3.0.0"
     "@mdx-js/react": "npm:^3.0.0"
     "@next/mdx": "npm:^14.0.0"
-    "@skyra/discord-components-react": "npm:^4.0.0-alpha.33"
+    "@skyra/discord-components-react": "npm:^4.0.0-alpha.26"
     "@tabler/icons": "npm:3.12.0"
     "@types/node": "npm:^22.0.0"
     "@types/react": "npm:^18.0.33"
@@ -3986,9 +3995,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-transition-group@npm:4.4.2":
-  version: 4.4.2
-  resolution: "react-transition-group@npm:4.4.2"
+"react-transition-group@npm:4.4.5":
+  version: 4.4.5
+  resolution: "react-transition-group@npm:4.4.5"
   dependencies:
     "@babel/runtime": "npm:^7.5.5"
     dom-helpers: "npm:^5.0.1"
@@ -3997,7 +4006,7 @@ __metadata:
   peerDependencies:
     react: ">=16.6.0"
     react-dom: ">=16.6.0"
-  checksum: 10c0/afaf835854526065d246532714a3833a7c5fbcf21303e1479008ff6f1ec1ae44ecd151f74f357c60511a1e49de65cb9b81bf4d7858b9ee19e636b9a62a6daaa4
+  checksum: 10c0/2ba754ba748faefa15f87c96dfa700d5525054a0141de8c75763aae6734af0740e77e11261a1e8f4ffc08fd9ab78510122e05c21c2d79066c38bb6861a886c82
   languageName: node
   linkType: hard
 
