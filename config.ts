@@ -51,9 +51,10 @@ export const navLinks: Link[] = [
 
       { label: "Development", title: true },
       { label: "All In One (AIO)", link: "/server/development/aio" },
-      { label: "Code Server", link: "/server/development/code-server" },
       { label: "Node.js", link: "/server/development/nodejs" },
       { label: "Python", link: "/server/development/python" },
+      { label: "Bun", link: "/server/development/bun" },
+      { label: "Rust", link: "/server/development/Rust" },
       { label: "Red Discord Bot", link: "/server/development/rdb" },
 
       { label: "Minecraft", title: true },
@@ -68,6 +69,8 @@ export const navLinks: Link[] = [
       { label: "Gitea", link: "/server/software/gitea" },
       { label: "Haste", link: "/server/software/haste" },
       { label: "ShareX", link: "/server/software/sharex" },
+      { label: "Code Server", link: "/server/development/code-server" },
+      { label: "Uptime Kuma", link: "/server/development/uptimekuma" },
 
       { label: "Voice Servers", title: true },
       { label: "Mumble", link: "/server/voice-server/mumble" },
