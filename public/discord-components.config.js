@@ -5,7 +5,7 @@ window.$discordMessage = {
 		jonfirexbox: {
 			author: 'Jonfirexbox',
 			avatar: 'https://avatars.githubusercontent.com/u/66625200?v=4',
-			roleColor: '#f9d61b'
+			roleColor: '#00ffff'
 		},
 		dibster: {
 			author: 'DIBSTER',

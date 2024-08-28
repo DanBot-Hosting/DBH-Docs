@@ -29,7 +29,7 @@ export default class Panel extends App<AppInitialPropsWithColor> {
 
     return (
       <PanelProvider colorScheme={colorScheme}>
-         return <Component {...pageProps} />;
+        <Component {...pageProps} />
       </PanelProvider>
     );
   }
