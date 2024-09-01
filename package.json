@@ -4,10 +4,10 @@
   "description": "",
   "main": "next.config.js",
   "scripts": {
-    "dev": "next dev -p 1114",
+    "dev": "next dev -p 1110",
     "build": "next build",
     "analyze": "ANALYZE=true next build",
-    "start": "next start -p 1114",
+    "start": "next start -p 1110",
     "typecheck": "tsc --noEmit",
     "export": "next build && next export",
     "lint": "next lint",
