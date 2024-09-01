@@ -1,0 +1,72 @@
+# InfluxDB
+
+InfluxDB is an open-source time series database (TSDB) developed by the company InfluxData. It is used for storage and retrieval of time series data in fields such as operations monitoring, application metrics, Internet of Things sensor data, and real-time analytics. It also has support for processing data from Graphite.
+
+<Redirect
+  href="https://en.wikipedia.org/wiki/InfluxDB"
+  label="Source: Wikipedia"
+/>
+
+# Creating the server
+
+To create a server, we suppose that you've already [created and linked an account into the panel](/getting-started).
+
+In that case, go to DBH server and run this command:
+
+For a free server: `DBH!server create influxdb [optional server name]`
+
+For a donator server: `DBH!server create-donator influxdb [optional name]`
+
+# Get database going
+
+1. On the server InfluxDB is running on, visit the server address (ex: http://pnode1.danbot.host:1234).
+2. Click Get Started
+
+## Set up your initial user
+1. Enter a Username for your initial user.
+2. Enter a Password and Confirm Password for your user.
+3. Enter your initial Organization Name.
+4. Enter your initial Bucket Name.
+5. Click Continue.
+6. Copy the provided operator API token and store it for safe keeping.
+
+And now you have everything setup!
+
+## Fields
+
+The link given above isn't enough for you to connect to the database, now you have to modify it to actually connect to the database.
+
+### Node
+
+"nX" in "nX.danbot.host" is replaced with your server's node. It can be:
+
+| Node    | Domain              |
+| :------ | :------------------ |
+| PNode 1 | pnode1.danbot.host  |
+| PNode 2 | pnode2.danbot.host  |
+| PNode 3 | pnode3.danbot.host  |
+|         |                     |
+| Dono 01 | dono-01.danbot.host |
+| Dono 03 | dono-03.danbot.host |
+
+### Password
+
+Your "password" is actully a API Token you should have created in the first step
+
+### Port
+
+"port" is your server's port that can be found in the main page.
+
+## Final result
+
+As soon as you finished with the link it should look like this:
+
+```text
+// Working on finding this
+```
+
+# Conclusion
+
+Now you can deal with NoSQL database. To find out more about InfluxDB visit their documentation website!
+
+<Redirect href="https://docs.influxdata.com/influxdb/v2/" label="InfluxDB Docs" />

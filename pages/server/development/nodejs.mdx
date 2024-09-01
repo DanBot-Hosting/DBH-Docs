@@ -1,4 +1,10 @@
-import { DiscordMessages, DiscordMessage } from '@skyra/discord-components-react';
+import {
+  DiscordMessages,
+  DiscordMessage,
+  DiscordEmbed,
+  DiscordEmbedField,
+  DiscordEmbedFields,
+} from "@skyra/discord-components-react";
 
 # What is Node.js?
 
@@ -8,25 +14,85 @@ In this document we will show you how to create one, install dependencies and up
 
 <Tip>
   If you are going to host a Discord bot, we recommend you using
-  [RedDiscordBot](https://docs.danbot.dev/server/rdb) if you don't know how to
+  [RedDiscordBot](/server/rdb) if you don't know how to
   code. If you know how to code but don't know how to code a Discord.js bot,
   visit [this web](https://discordjs.guide).
 </Tip>
 
 # Creating the server
 
-To create a server, we suppose that you've already [created and linked an account into the panel.](https://docs.danbot.dev/getting-started)
+To create a server, we suppose that you've already [created and linked an account into the panel.](/getting-started)
 
 In that case, go to DBH server and run this command:
 
-For a free server: 
-<DiscordMessages>
-  <DiscordMessage profile="dibster">`DBH!server create nodejs [optional server name]`</DiscordMessage>
+For a free server:
+
+<DiscordMessages no-background>
+  <DiscordMessage
+    author="Jonfirexbox"
+    avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
+    roleColor="#00cfff"
+    roleName="Client"
+  >
+    DBH!server create nodejs [optional server name]
+  </DiscordMessage>
+  <DiscordMessage
+    author="DanBot Hosting"
+    avatar="https://images-ext-1.discordapp.net/external/9j2_RacvCl8mly7hALccyH0PsM-tbJYm8twQKGf_3jY/https/cdn.discordapp.com/avatars/640161047671603205/718aa5783508125a02e3b244a1bf096e.png"
+    roleColor="#0329d3"
+    bot={true}
+    verified={false}
+  >
+    <DiscordEmbed slot="embeds" color="#00FF00">
+      <DiscordEmbedFields slot="fields">
+        <DiscordEmbedField fieldTitle="__Status__"> Created </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="__Created for user ID__">
+          {" "}
+          126{" "}
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="__Server name__">
+          {" "}
+          Untitled Server (settings -> server name){" "}
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="__Type__"> nodejs </DiscordEmbedField>
+      </DiscordEmbedFields>
+    </DiscordEmbed>
+  </DiscordMessage>
 </DiscordMessages>
 <br></br>
-For a donator server: 
-<DiscordMessages>
-  <DiscordMessage author="Donator User">`DBH!server create-donator nodejs [optional server name]`</DiscordMessage>
+For a donator server:
+<DiscordMessages no-background>
+  <DiscordMessage
+    author="Jonfirexbox"
+    avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
+    roleName="Donator"
+    roleColor="#ff00a0"
+    roleIcon="https://images-ext-1.discordapp.net/external/jcxosamsnMQwF-XU7dDsYt5Mz_ti0BRJc5pzpGSDPQ0/https/cdn.discordapp.com/role-icons/898041754564046869/576cbb697c65c8fffe1df17961401d8b.png?format=webp&quality=lossless"
+  >
+    DBH!server create-donator nodejs [optional server name]
+  </DiscordMessage>
+  <DiscordMessage
+    author="DanBot Hosting"
+    avatar="https://images-ext-1.discordapp.net/external/9j2_RacvCl8mly7hALccyH0PsM-tbJYm8twQKGf_3jY/https/cdn.discordapp.com/avatars/640161047671603205/718aa5783508125a02e3b244a1bf096e.png"
+    roleColor="#0329d3"
+    bot={true}
+    verified={false}
+  >
+    <DiscordEmbed slot="embeds" color="#00FF00">
+      <DiscordEmbedFields slot="fields">
+        <DiscordEmbedField fieldTitle="__Status__"> Created </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="__Created for user ID__">
+          {" "}
+          126{" "}
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="__Server name__">
+          {" "}
+          Untitled Server (settings -> server name){" "}
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="__Type__"> nodejs </DiscordEmbedField>
+      </DiscordEmbedFields>
+    </DiscordEmbed>
+  </DiscordMessage>
 </DiscordMessages>
 
 # Configuration
