@@ -47,7 +47,7 @@ export const navLinks: Link[] = [
       { label: "Postgres", link: "/server/database/postgres" },
       { label: "Redis", link: "/server/database/redis" },
       { label: "MariaDB", link: "/server/database/mariadb" },
-      { label: "InfluxDB", link: "/server/database/influxdb" },
+      //{ label: "InfluxDB", link: "/server/database/influxdb" },
 
       { label: "Development", title: true },
       { label: "All In One (AIO)", link: "/server/development/aio" },
