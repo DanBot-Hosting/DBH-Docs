@@ -31,10 +31,10 @@
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.7",
     "@skyra/discord-components-react": "^4.0.0-alpha.33",
-    "@tabler/icons": "3.14.0",
+    "@tabler/icons": "3.15.0",
     "cookies-next": "^4.2.1",
     "cvet": "^4.0.0",
-    "next": "14.2.7",
+    "next": "14.2.9",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -47,7 +47,7 @@
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "ikota": "^1.0.1",
-    "typescript": "5.5.4"
+    "typescript": "5.6.2"
   },
   "packageManager": "yarn@4.4.1"
 }
