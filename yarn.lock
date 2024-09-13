@@ -120,25 +120,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icon-helpers@npm:^10.51.0":
-  version: 10.51.0
-  resolution: "@carbon/icon-helpers@npm:10.51.0"
+"@carbon/icon-helpers@npm:^10.52.0":
+  version: 10.52.0
+  resolution: "@carbon/icon-helpers@npm:10.52.0"
   dependencies:
     "@ibm/telemetry-js": "npm:^1.5.0"
-  checksum: 10c0/180c4fecfb70d1df99a3e283d45774ba9aabcc29f284cc13ddfdfcc0c0f5f2caa06c75e7900585f528704fc1343fe2e880beaad852dcbcfeb01873d53f16256d
+  checksum: 10c0/7a7cfe20f2e9b8218509499f86fb9518f20b1c3573c442772a45f068a37ec83cd23fe353cc54d1c9da4889b5d8edbda25bf0691241a30b464b1bec9dd08bdf33
   languageName: node
   linkType: hard
 
-"@carbon/icons-react@npm:^11.47.1":
-  version: 11.48.0
-  resolution: "@carbon/icons-react@npm:11.48.0"
+"@carbon/icons-react@npm:^11.49.0":
+  version: 11.49.0
+  resolution: "@carbon/icons-react@npm:11.49.0"
   dependencies:
-    "@carbon/icon-helpers": "npm:^10.51.0"
+    "@carbon/icon-helpers": "npm:^10.52.0"
     "@ibm/telemetry-js": "npm:^1.5.0"
     prop-types: "npm:^15.7.2"
   peerDependencies:
     react: ">=16"
-  checksum: 10c0/6012c9ca4985e3e27adf50f040734b4e6885f5b4c484fd7be81161135f6267d18c223d8b2f730a8a0710ae5952686a39f7dc9944df8f24cadd282cbda4bfe603
+  checksum: 10c0/38fee9083290f80fcee81067403cb2879b2681d886a638271e1a77296e8bf7a8c4522de53f79577d8c62cd07cc14a1a4d4496051305000a95c3d2f2f7d151cf2
   languageName: node
   linkType: hard
 
@@ -826,7 +826,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/mdx@npm:^14.2.10":
+"@next/mdx@npm:^14.2.7":
   version: 14.2.10
   resolution: "@next/mdx@npm:14.2.10"
   dependencies:
@@ -1972,7 +1972,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "docs.danbot.dev@workspace:."
   dependencies:
-    "@carbon/icons-react": "npm:^11.47.1"
+    "@carbon/icons-react": "npm:^11.49.0"
     "@danbot-hosting/ts-config": "npm:^1.0.0"
     "@emotion/react": "npm:^11.13.3"
     "@emotion/server": "npm:^11.11.0"
@@ -1985,7 +1985,7 @@ __metadata:
     "@mantine/spotlight": "npm:^6.0.22"
     "@mdx-js/loader": "npm:^3.0.1"
     "@mdx-js/react": "npm:^3.0.1"
-    "@next/mdx": "npm:^14.2.10"
+    "@next/mdx": "npm:^14.2.7"
     "@skyra/discord-components-react": "npm:^4.0.0-alpha.33"
     "@tabler/icons": "npm:3.16.0"
     "@types/node": "npm:^22.5.1"
