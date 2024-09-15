@@ -1,8 +1,8 @@
 {
     "packageRules": [
         {
-            "groupName": "all non-major dependencies",
-            "groupSlug": "all-minor-patch",
+            "groupName": "all major dependencies",
+            "groupSlug": "all-major-patch",
             "labels": ["dependencies"],
             "addLabels": ["dependencies"],
             "assigneesFromCodeOwners": true,
@@ -10,8 +10,7 @@
                 "*"
             ],
             "matchUpdateTypes": [
-                "minor",
-                "patch"
+                "major"
             ]
         }
     ]
