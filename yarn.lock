@@ -826,7 +826,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/mdx@npm:^14.2.11":
+"@next/mdx@npm:^14.2.7":
   version: 14.2.11
   resolution: "@next/mdx@npm:14.2.11"
   dependencies:
@@ -1293,12 +1293,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.5.1":
-  version: 22.5.4
-  resolution: "@types/node@npm:22.5.4"
+"@types/node@npm:*, @types/node@npm:^22.5.5":
+  version: 22.5.5
+  resolution: "@types/node@npm:22.5.5"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10c0/b445daa7eecd761ad4d778b882d6ff7bcc3b4baad2086ea9804db7c5d4a4ab0298b00d7f5315fc640a73b5a1d52bbf9628e09c9fec0cf44dbf9b4df674a8717d
+  checksum: 10c0/ead9495cfc6b1da5e7025856dcce2591e9bae635357410c0d2dd619fce797d2a1d402887580ca4b336cb78168b195224869967de370a23f61663cf1e4836121c
   languageName: node
   linkType: hard
 
@@ -1985,10 +1985,10 @@ __metadata:
     "@mantine/spotlight": "npm:^6.0.22"
     "@mdx-js/loader": "npm:^3.0.1"
     "@mdx-js/react": "npm:^3.0.1"
-    "@next/mdx": "npm:^14.2.11"
+    "@next/mdx": "npm:^14.2.7"
     "@skyra/discord-components-react": "npm:^4.0.0-alpha.33"
     "@tabler/icons": "npm:3.16.0"
-    "@types/node": "npm:^22.5.1"
+    "@types/node": "npm:^22.5.5"
     "@types/react": "npm:^18.3.4"
     "@types/react-dom": "npm:^18.3.0"
     cookies-next: "npm:^4.2.1"
