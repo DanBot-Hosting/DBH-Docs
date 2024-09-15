@@ -826,9 +826,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/mdx@npm:^14.2.7":
-  version: 14.2.10
-  resolution: "@next/mdx@npm:14.2.10"
+"@next/mdx@npm:^14.2.11":
+  version: 14.2.11
+  resolution: "@next/mdx@npm:14.2.11"
   dependencies:
     source-map: "npm:^0.7.0"
   peerDependencies:
@@ -839,7 +839,7 @@ __metadata:
       optional: true
     "@mdx-js/react":
       optional: true
-  checksum: 10c0/8155e57822788d9a3f515e81086fbc72d2dfe7b55118106aac662d1c4fad00414a10db988cfcf33a538520b088139a80486ce32d2771600e8ac049f199efe717
+  checksum: 10c0/ae8a2d4fe86db0b0b80961148296e44c95c748001983b46fd657808a07e4899b129d336bd594af1dda333cc1e8cf1f2d0493ecfa088483a5f29f923ea63e584c
   languageName: node
   linkType: hard
 
@@ -1985,7 +1985,7 @@ __metadata:
     "@mantine/spotlight": "npm:^6.0.22"
     "@mdx-js/loader": "npm:^3.0.1"
     "@mdx-js/react": "npm:^3.0.1"
-    "@next/mdx": "npm:^14.2.7"
+    "@next/mdx": "npm:^14.2.11"
     "@skyra/discord-components-react": "npm:^4.0.0-alpha.33"
     "@tabler/icons": "npm:3.16.0"
     "@types/node": "npm:^22.5.1"
