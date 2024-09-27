@@ -85,4 +85,11 @@ export const navLinks: Link[] = [
       { label: "Nginx", link: "/server/web-hosting/nginx" },
     ],
   },
+  {
+    label: "Panel Guides",
+    icon: BareMetalServer,
+    links: [
+      { label: "Zipline", link: "/guides/zipline" }
+    ],
+  },
 ];
