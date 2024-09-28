@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit",
     "export": "next build && next export",
     "lint": "next lint",
+    "prepare": "panda codegen",
     "prettier:check": "prettier --check \"**/*.{ts,tsx,mdx}\"",
     "prettier:write": "prettier --write \"**/*.{ts,tsx,mdx}\""
   },
@@ -19,6 +20,7 @@
   "dependencies": {
     "@carbon/icons-react": "^11.47.1",
     "@danbot-hosting/ts-config": "^1.0.0",
+    "@danbot-hosting/panda-preset": "^1.1.1",
     "@emotion/react": "^11.13.3",
     "@emotion/server": "^11.11.0",
     "@mantine/core": "^6.0.22",
@@ -35,6 +37,10 @@
     "cookies-next": "^4.2.1",
     "cvet": "^4.0.0",
     "next": "14.2.13",
+    "@pandacss/dev": "^0.46.1",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
