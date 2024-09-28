@@ -20,6 +20,7 @@
   "dependencies": {
     "@carbon/icons-react": "^11.47.1",
     "@danbot-hosting/ts-config": "^1.0.0",
+    "@danbot-hosting/panda-preset": "^1.1.1",
     "@emotion/react": "^11.13.3",
     "@emotion/server": "^11.11.0",
     "@mantine/core": "^6.0.22",
