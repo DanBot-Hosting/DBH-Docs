@@ -17,7 +17,7 @@ export const colors: CustomColors = {
 export const components = {
   Card: {
     defaultProps: (theme: MantineTheme) => ({
-      withBorder: theme.colorScheme === "light",
+      withBorder: theme.colorScheme === "dark",
     }),
   },
   Anchor: {
@@ -26,7 +26,7 @@ export const components = {
         backgroundColor:
           theme.colorScheme === "dark" ? theme.colors.dark[0] : theme.black,
         color:
-          theme.colorScheme === "dark" ? theme.colors.dark[7] : theme.white,
+          theme.colorScheme === "light" ? theme.colors.dark[7] : theme.white,
         paddingLeft: `calc(${theme.spacing.xs} * .5)`,
         paddingRight: `calc(${theme.spacing.xs} * .5)`,
         borderRadius: theme.radius.xs,
