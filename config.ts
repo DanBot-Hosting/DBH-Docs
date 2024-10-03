@@ -34,6 +34,7 @@ export const navLinks: Link[] = [
     links: [
       { label: "SFTP Using VSCode", link: "/advanced/vscode-sftp" },
       { label: "ShareX Setup", link: "/advanced/sharex-setup" },
+      { label: "NVM Setup", link: "/advanced/nvm" },
     ],
   },
   {
