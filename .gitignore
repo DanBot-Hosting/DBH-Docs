@@ -1,7 +1,14 @@
-node_modules
-.npm
+# Folders:
+node_modules/
+.next/
+.npm/
 .yarn/*
-.next
+styled-system/
+
+# Files:
 !.yarn/releases
 .gitconfig
-start.bat
+package-lock.json
+
+# Configuration:
+start.sh
