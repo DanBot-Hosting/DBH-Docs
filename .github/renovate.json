@@ -1,17 +1,24 @@
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "packageRules": [
         {
             "groupName": "all major dependencies",
             "groupSlug": "all-major-patch",
             "labels": ["dependencies"],
-            "addLabels": ["dependencies"],
-            "assigneesFromCodeOwners": true,
+            "additionalReviewers": [
+                "Kyro3400"
+            ]
             "matchPackagePatterns": [
                 "*"
             ],
             "matchUpdateTypes": [
-                "major"
-            ]
+                "major",
+                "minor",
+                "patch",
+            ],
+            "major": {
+              "reviewers": ["Kyro3400", "DEV-DIBSTER"]
+            }
         }
     ]
 }
