@@ -1,6 +1,6 @@
 import { createStyles } from "@mantine/core";
 
-export const useStyles = createStyles((theme, _, u) => ({
+export const useStyles = createStyles((theme) => ({
   control: {
     fontWeight: 500,
     fontFamily: theme.headings.fontFamily,

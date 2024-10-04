@@ -93,19 +93,19 @@
     "@babel/helper-validator-identifier" "^7.24.7"
     to-fast-properties "^2.0.0"
 
-"@carbon/icon-helpers@^10.53.0":
-  version "10.53.0"
-  resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.53.0.tgz"
-  integrity sha512-5yVbIH3/cYSJBgJ+04l2/zBikxm7IA/CV2MTt04Op3ZwOcSkVbmRNNAWslkamTE/DOHLCTj76GK0Jh6vgXF/UQ==
+"@carbon/icon-helpers@^10.50.0":
+  version "10.50.0"
+  resolved "https://registry.npmjs.org/@carbon/icon-helpers/-/icon-helpers-10.50.0.tgz"
+  integrity sha512-R+RnTIQCvrLuWBdiEyzr6zqluLpzMTawmYO97prAJ59OCoo3+mMgWjhKuggb1s0dW1zRVplrUkKusGKH+0pDnQ==
   dependencies:
     "@ibm/telemetry-js" "^1.5.0"
 
 "@carbon/icons-react@^11.47.1":
-  version "11.50.0"
-  resolved "https://registry.npmjs.org/@carbon/icons-react/-/icons-react-11.50.0.tgz"
-  integrity sha512-CflBww8tmCbZTck/NhsykOcoUdhskzY1RL3EWjZPx7ixS9wqUblZMDaPFmF1AyHS1ykMdqhvOLtlb+HBLQdKow==
+  version "11.47.1"
+  resolved "https://registry.npmjs.org/@carbon/icons-react/-/icons-react-11.47.1.tgz"
+  integrity sha512-GHwOTi/UKkf55qhPhAr4csb6rrv2MpESP3L4LeuCTa61BCC0q1G01TvfoeXhZCoRhX8OvgYKrD8STuRq54+G3A==
   dependencies:
-    "@carbon/icon-helpers" "^10.53.0"
+    "@carbon/icon-helpers" "^10.50.0"
     "@ibm/telemetry-js" "^1.5.0"
     prop-types "^15.7.2"
 
@@ -310,9 +310,9 @@
   integrity sha512-X8R8Oj771YRl/w+c1HqAC1szL8zWQRwFvgDwT129k9ACdBoud/+/rX9V0qiMl6LWUdP9voC2nDVZYPMQQsb6eA==
 
 "@ibm/telemetry-js@^1.5.0":
-  version "1.6.1"
-  resolved "https://registry.npmjs.org/@ibm/telemetry-js/-/telemetry-js-1.6.1.tgz"
-  integrity sha512-ds45f2bz4qVvJPK84VcSMJTvTZI+qXu6wVlBcy9/hAlmzOcxeX6rh8W0De4H133HPONsZWvs0lV/H2aUcznCxw==
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/@ibm/telemetry-js/-/telemetry-js-1.6.0.tgz"
+  integrity sha512-XXdsXhoZwKaJ1/24w/uCqx/YeDQeTu8SAl+7bHQxn62yiFUQ6/D20HhpQVdlG9/Jpv3nYJHFiDH0vGkQbXNFWg==
 
 "@ikota/mantine@^0.9.10":
   version "0.9.10"
@@ -516,9 +516,9 @@
   integrity sha512-s3lh6K8cbW1h5Nga7NNeXrbe0+2jIIYK9YaA9T7IufDWnZpozdFUp6Hf0d5rNWUKu4fEuSX2rCKlGjCrtylfDw==
 
 "@next/mdx@^14.2.7":
-  version "14.2.13"
-  resolved "https://registry.npmjs.org/@next/mdx/-/mdx-14.2.13.tgz"
-  integrity sha512-UrNXnCMcChqLJDb8kdoWjw3Hyt1E+xGh8n/4U3ro/kkQjiXJ/3k4+Es+L6oxY+zafg1n+6xpK5whROTNAsKAxA==
+  version "14.2.7"
+  resolved "https://registry.npmjs.org/@next/mdx/-/mdx-14.2.7.tgz"
+  integrity sha512-GeWQODkqa+0fWCVoc6fMZDXsxbsg386EqC+be9/UreJn/TTz/RWN2ZMHcRHY+sjLkOzfOAsRUjEdPckl10+qCg==
   dependencies:
     source-map "^0.7.0"
 
@@ -901,21 +901,21 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
-"@skyra/discord-components-core@^4.0.0-alpha.34":
-  version "4.0.0-alpha.34"
-  resolved "https://registry.npmjs.org/@skyra/discord-components-core/-/discord-components-core-4.0.0-alpha.34.tgz"
-  integrity sha512-QseHBXE4REdJWjXfwWXHVTBKQ9rv7zbGBSH74/Eii+xNbr+gGiK4whSUH0lgJfUOApRY94vRvpzpY3BIY/H9lw==
+"@skyra/discord-components-core@^4.0.0-alpha.33":
+  version "4.0.0-alpha.33"
+  resolved "https://registry.npmjs.org/@skyra/discord-components-core/-/discord-components-core-4.0.0-alpha.33.tgz"
+  integrity sha512-MGdL0uoXk9mkXQ/yUFhD8zYhNxHIpII0qgdAwKPelG1oBjflmYATXLS5EXwWKvu0NBxxSmwe6+RlvCi31yz5iw==
   dependencies:
     "@lit/context" "^1.1.2"
     lit "^3.2.0"
 
 "@skyra/discord-components-react@^4.0.0-alpha.33":
-  version "4.0.0-alpha.34"
-  resolved "https://registry.npmjs.org/@skyra/discord-components-react/-/discord-components-react-4.0.0-alpha.34.tgz"
-  integrity sha512-3kukPsHfkOA5y63WI85Wc9lDVyaO/ONnnPxIZZ5w8qA6WJBSOwZOhck4ekzhdc6yDDyxkMXX1+jxTbX84Z9oKQ==
+  version "4.0.0-alpha.33"
+  resolved "https://registry.npmjs.org/@skyra/discord-components-react/-/discord-components-react-4.0.0-alpha.33.tgz"
+  integrity sha512-q9TYAZoPGxyZUrOFDJb0x3J2jMDTWLbgkAxP8G5avtpBS7Jmqucb+Z0b+F/RUsIDFQwIuyWFkYxXALhDI7qw/A==
   dependencies:
     "@lit/react" "^1.0.5"
-    "@skyra/discord-components-core" "^4.0.0-alpha.34"
+    "@skyra/discord-components-core" "^4.0.0-alpha.33"
     react "^18.3.1"
 
 "@swc/counter@^0.1.3":
@@ -1050,9 +1050,9 @@
   integrity sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==
 
 "@types/node@*", "@types/node@^22.5.1":
-  version "22.7.4"
-  resolved "https://registry.npmjs.org/@types/node/-/node-22.7.4.tgz"
-  integrity sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==
+  version "22.5.1"
+  resolved "https://registry.npmjs.org/@types/node/-/node-22.5.1.tgz"
+  integrity sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==
   dependencies:
     undici-types "~6.19.2"
 
@@ -1079,9 +1079,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^16.8.0 || ^17.0.0 || ^18.0.0", "@types/react@^16.9.0 || ^17.0.0 || ^18.0.0", "@types/react@^18.3.4", "@types/react@>=16", "@types/react@17 || 18":
-  version "18.3.10"
-  resolved "https://registry.npmjs.org/@types/react/-/react-18.3.10.tgz"
-  integrity sha512-02sAAlBnP39JgXwkAq3PeU9DVaaGpZyF3MGcC0MKgQVkZor5IiiDAipVaxQHtDJAmO4GIy/rVBy/LzVj76Cyqg==
+  version "18.3.4"
+  resolved "https://registry.npmjs.org/@types/react/-/react-18.3.4.tgz"
+  integrity sha512-J7W30FTdfCxDDjmfRM+/JqLHBIyl7xUIp9kwK637FGmY7+mkSFSe6L4jpZzhj5QMfLssSDP4/i75AKkrdC7/Jw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -1533,9 +1533,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001579, caniuse-lite@^1.0.30001646:
-  version "1.0.30001666"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001666.tgz"
-  integrity sha512-gD14ICmoV5ZZM1OdzPWmpx+q4GyefaK06zi8hmfHV5xe4/2nOQX3+Dw5o+fSqOws2xVwL9j+anOPFwHzdEdV4g==
+  version "1.0.30001667"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001667.tgz"
+  integrity sha512-7LTwJjcRkzKFmtqGsibMeuXmvFDfZq/nzIjnmgCGzKKRVzjD72selLDK1oPF/Oxzmt4fNcPvTDvGqSDG4tCALw==
 
 cardinal@^2.1.1:
   version "2.1.1"
@@ -1955,9 +1955,9 @@ ejs@^3.1.8:
     jake "^10.8.5"
 
 electron-to-chromium@^1.5.4:
-  version "1.5.31"
-  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.31.tgz"
-  integrity sha512-QcDoBbQeYt0+3CWcK/rEbuHvwpbT/8SV9T3OSgs6cX1FlcUAkgrkqbg9zLnDrMM/rLamzQwal4LYFCiWk861Tg==
+  version "1.5.32"
+  resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.32.tgz"
+  integrity sha512-M+7ph0VGBQqqpTT2YrabjNKSQ2fEl9PVx6AK3N558gDH9NO8O6XN9SXXFWRo9u9PbEg/bWq+tjXQr+eXmxubCw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"

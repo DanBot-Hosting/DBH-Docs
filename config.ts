@@ -34,6 +34,7 @@ export const navLinks: Link[] = [
     links: [
       { label: "SFTP Using VSCode", link: "/advanced/vscode-sftp" },
       { label: "ShareX Setup", link: "/advanced/sharex-setup" },
+      { label: "NVM Setup", link: "/advanced/nvm" },
     ],
   },
   {
@@ -69,13 +70,13 @@ export const navLinks: Link[] = [
       { label: "Spigot", link: "/server/minecraft/spigot" },
 
       { label: "Software", title: true },
-      { label: "Code Server", link: "/server/development/code-server" },
+      { label: "Code Server", link: "/server/software/code-server" },
       { label: "Gitea", link: "/server/software/gitea" },
-      { label: "Grafana", link: "/server/development/grafana" },
+      { label: "Grafana", link: "/server/software/grafana" },
       { label: "Haste", link: "/server/software/haste" },
-      { label: "RabbitMQ", link: "/server/database/rabbitmq" },
+      { label: "RabbitMQ", link: "/server/software/rabbitmq" },
       { label: "ShareX", link: "/server/software/sharex" },
-      { label: "Uptime Kuma", link: "/server/development/uptimekuma" },
+      { label: "Uptime Kuma", link: "/server/software/uptimekuma" },
 
       { label: "Voice Servers", title: true },
       { label: "Mumble", link: "/server/voice-server/mumble" },

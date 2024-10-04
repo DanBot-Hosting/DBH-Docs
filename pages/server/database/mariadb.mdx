@@ -63,7 +63,7 @@ CREATE USER "DBHMariaDB"@"your_allowed_ipaddr" IDENTIFIED BY "Dbh!sTheBest!@";
 <Tip>
 Please note: You **need** to use the nodes actual IP address, using the domain won't work
 
-Also: Please note that `your_allowed_ipaddr` is the IP of the node that your Wordpress are hosted on. If it's on a same node, use Docker local IP `172.17.0.1`
+Also: Please note that `your_allowed_ipaddr` is the IP of the node that your server is hosted on. If it's on a same node, use Docker local IP `172.17.0.1`
 
 </Tip>
 
@@ -79,14 +79,15 @@ And last thing you need to run is:
 
 ```text
 FLUSH PRIVILEGES;
-````
+```
 
 ### Port
 
 "port" is your server's port that can be found in the main page.
 
 <Tip>
-Make sure to change your `port` in `.my.cnf` to your server port, include the double ticks when executing the command.
+  Make sure to change your `port` in `.my.cnf` to your server port, include the
+  double ticks when executing the command.
 </Tip>
 
 ## Final result
@@ -97,9 +98,7 @@ As soon as you finished with the link it should look like this:
 jdbc:mariadb://pnode1.danbot.host:3306/DB?user=DBHMariaDB&password=Dbh!sTheBest!@
 ```
 
-<Tip>
-Please note: If you did miss a step this will not work!
-</Tip>
+<Tip>Please note: If you did miss a step this will not work!</Tip>
 
 # Conclusion
 
