@@ -12,7 +12,7 @@ type AppInitialPropsWithColor = AppInitialProps & {
 };
 
 export default class Panel extends App<AppInitialPropsWithColor> {
-  static async getInitialProps(
+  /*static async getInitialProps(
     appContext: AppContext,
   ): Promise<AppInitialProps & { colorScheme: ColorScheme }> {
     const appProps: AppInitialProps = await App.getInitialProps(appContext);
@@ -20,7 +20,7 @@ export default class Panel extends App<AppInitialPropsWithColor> {
       ...appProps,
       colorScheme: getCookie("color-scheme", appContext.ctx) as ColorScheme,
     };
-  }
+  }*/
 
   render(): ReactElement {
     const { Component, pageProps }: AppInitialPropsWithColor = this.props;
