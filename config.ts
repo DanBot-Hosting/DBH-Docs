@@ -19,7 +19,6 @@ export const navLinks: Link[] = [
     link: "/introduction",
   },
   { label: "Getting Started", icon: Book, link: "/getting-started" },
-  //{ label: "Staff List", icon: Portfolio, link: "/staff-list" },
   {
     label: "Beginner's Guidebook",
     icon: UserMultiple,
@@ -48,7 +47,7 @@ export const navLinks: Link[] = [
       { label: "Postgres", link: "/server/database/postgres" },
       { label: "Redis", link: "/server/database/redis" },
       { label: "MariaDB", link: "/server/database/mariadb" },
-      //{ label: "InfluxDB", link: "/server/database/influxdb" },
+      { label: "InfluxDB", link: "/server/database/influxdb" },
 
       { label: "Development", title: true },
       { label: "All In One (AIO)", link: "/server/development/aio" },
@@ -84,6 +83,13 @@ export const navLinks: Link[] = [
 
       { label: "Web Hosting", title: true },
       { label: "Nginx", link: "/server/web-hosting/nginx" },
+    ],
+  },
+  {
+    label: "Panel Guides",
+    icon: BareMetalServer,
+    links: [
+      { label: "Zipline", link: "/guides/zipline" }
     ],
   },
 ];

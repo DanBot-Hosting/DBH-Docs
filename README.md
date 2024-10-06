@@ -2,7 +2,6 @@
 This is the Offical DanBot Hosting Documantaion website, this was coded by a dbh member and is now continued by DBH Team
 
 Main Website: https://docs.danbot.host
-Dev Website: https://docs.danbot.dev
 
 ## Maintainers
 - **Jon**
