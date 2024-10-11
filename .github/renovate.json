@@ -1,24 +1,29 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "packageRules": [
-        {
-            "groupName": "all major dependencies",
-            "groupSlug": "all-major-patch",
-            "labels": ["dependencies"],
-            "additionalReviewers": [
-                "Kyro3400"
-            ],
-            "matchPackagePatterns": [
-                "*"
-            ],
-            "matchUpdateTypes": [
-                "major",
-                "minor",
-                "patch",
-            ],
-            "major": {
-              "reviewers": ["Kyro3400", "DEV-DIBSTER"]
-            }
-        }
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "groupName": "all major dependencies",
+      "groupSlug": "all-major-patch",
+      "labels": [
+        "dependencies"
+      ],
+      "additionalReviewers": [
+        "Kyro3400"
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
+      ],
+      "major": {
+        "reviewers": [
+          "Kyro3400",
+          "DEV-DIBSTER"
+        ]
+      }
+    }
+  ]
 }
