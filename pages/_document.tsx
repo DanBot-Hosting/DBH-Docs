@@ -1,4 +1,6 @@
+"use client";
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 import { createGetInitialProps } from "@mantine/next";
 
 import type { ReactElement } from "react";
@@ -41,6 +43,10 @@ export default class _Document extends Document {
         <body>
           <Main />
           <NextScript />
+          <Script
+            src="/public/discord-components.config.js"
+            strategy="beforeInteractive"
+          />
         </body>
       </Html>
     );

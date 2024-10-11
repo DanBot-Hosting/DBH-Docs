@@ -88,8 +88,6 @@ export const navLinks: Link[] = [
   {
     label: "Panel Guides",
     icon: BareMetalServer,
-    links: [
-      { label: "Zipline", link: "/guides/zipline" }
-    ],
+    links: [{ label: "Zipline", link: "/guides/zipline" }],
   },
 ];

@@ -1,3 +1,4 @@
+"use client";
 import { PanelProvider } from "@component/layout";
 
 import type { NextPage } from "next";
