@@ -7,9 +7,7 @@
       "labels": [
         "dependencies"
       ],
-      "additionalReviewers": [
-        "Kyro3400"
-      ],
+      "assigneesFromCodeOwners": true,
       "matchPackagePatterns": [
         "*"
       ],
@@ -17,13 +15,7 @@
         "major",
         "minor",
         "patch"
-      ],
-      "major": {
-        "reviewers": [
-          "Kyro3400",
-          "DEV-DIBSTER"
-        ]
-      }
+      ]
     }
   ]
 }
