@@ -12,9 +12,7 @@
         "*"
       ],
       "matchUpdateTypes": [
-        "major",
-        "minor",
-        "patch"
+        "major"
       ]
     }
   ]
