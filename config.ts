@@ -55,7 +55,7 @@ export const navLinks: Link[] = [
       { label: "Bun", link: "/server/development/bun" },
       { label: "Python", link: "/server/development/python" },
       { label: "Java", link: "/server/development/java" },
-      { label: "Rust", link: "/server/development/Rust" },
+      { label: "Rust", link: "/server/development/rust" },
 
       { label: "Premade Bots", title: true },
       { label: "Red Discord Bot", link: "/server/development/rdb" },
