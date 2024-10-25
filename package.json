@@ -36,7 +36,7 @@
     "@tabler/icons": "3.19.0",
     "cookies-next": "^4.2.1",
     "cvet": "^4.0.0",
-    "next": "15.0.0",
+    "next": "15.0.1",
     "@pandacss/dev": "^0.46.1",
     "postcss": "^8.4.31",
     "postcss-preset-mantine": "^1.17.0",
