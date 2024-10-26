@@ -5,13 +5,13 @@ Zipline is a common ShareX server used by many to share screenshots and store fi
 ## Prerequisites:
 
 - An All in One Server (AIO)
-- A Postgres __**16**__ Server
+- A Postgres **<ins>16</ins>** Server
 
 ## Setting Up:
 
 On the AIO server, run the following commands:
 
-```
+```text
 # This Command clones the repository to the current directory.
 git clone https://github.com/diced/zipline
 
@@ -29,15 +29,16 @@ Then in your file explorer, go to the `/zipline/` folder and rename `env.local.e
 
 Here are some recommended configurations for this:
 
-```
+```text
 CORE_RETURN_HTTPS=true <- Set this to false if you encounter any SSL issues or are using the default node domain.
 CORE_SECRET="<random characters>"
 CORE_PORT=<port of the aio server>
 CORE_DATABASE_URL="postgres://pterodactyl:<db password, can be found in the startup tab of the db server>@<db server ip, use 172.17.0.1 if on the same node>:<db server port>/zip10"
 ```
+
 After filling out your configuration files, run the following commands:
 
-```
+```text
 # This builds the modules so it loads faster when you visit the site.
 yarn build
 
@@ -47,10 +48,9 @@ yarn start
 
 #### The server should now start and you can go to the aio server's IP + Port to log into to zipline. The default login is administrator/password. Once in the panel, click your username on the top right corner and select manage account. From here you can scroll down and generate the sharex config, which you can use to easily add this server to your client.
 
-<Tip>
-    Make sure both servers are running when going through this process.
-</Tip>
+<Tip>Make sure both servers are running when going through this process.</Tip>
 
 <Tip>
-    Thank you to raspi_dude (1005607106596057149) for creating this guide on the support channel.
+  Thank you to raspi_dude (1005607106596057149) for creating this guide on the
+  support channel.
 </Tip>
