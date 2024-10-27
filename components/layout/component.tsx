@@ -16,7 +16,7 @@ import { Header } from "@component/header";
 import { Navbar } from "@component/navbar";
 import { RouterTransition } from "@component/progress";
 import { Footer } from "@component/footer";
-import Noise from "@public/noise.svg";
+//import Noise from "@public/noise.svg";
 
 import { colors, components, focusRingStyles, mdxComponents } from "./config";
 import { MDXProvider } from "@mdx-js/react";
@@ -102,7 +102,7 @@ export const PanelProvider: FunctionComponent<
                   ? theme.colors.dark[9]
                   : theme.white,
             },
-            ".noise": {
+            /*".noise": {
               backgroundImage: `url(${Noise.src})`,
               backgroundRepeat: "repeat",
               mixBlendMode: theme.colorScheme === "dark" ? "darken" : "screen",
@@ -118,7 +118,7 @@ export const PanelProvider: FunctionComponent<
               // Ignore noise
               position: "relative",
               zIndex: 20,
-            },
+            },*/
           }),
         }}
       >
