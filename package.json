@@ -33,7 +33,7 @@
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.7",
     "@skyra/discord-components-react": "^4.0.0-alpha.33",
-    "@tabler/icons": "3.19.0",
+    "@tabler/icons": "3.21.0",
     "cookies-next": "^4.2.1",
     "cvet": "^4.0.0",
     "next": "14.2.16",
