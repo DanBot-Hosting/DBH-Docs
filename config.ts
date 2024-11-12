@@ -74,8 +74,6 @@ export const navLinks: Link[] = [
       { label: "Grafana", link: "/server/software/grafana" },
       { label: "Haste", link: "/server/software/haste" },
       { label: "RabbitMQ", link: "/server/software/rabbitmq" },
-      { label: "ShareX", link: "/server/software/sharex" },
-      { label: "Uptime Kuma", link: "/server/software/uptimekuma" },
 
       { label: "Voice Servers", title: true },
       { label: "Mumble", link: "/server/voice-server/mumble" },
@@ -88,6 +86,9 @@ export const navLinks: Link[] = [
   {
     label: "Panel Guides",
     icon: BareMetalServer,
-    links: [{ label: "Zipline", link: "/guides/zipline" }],
+    links: [
+      { label: "Zipline", link: "/guides/zipline" },
+      { label: "Uptime Kuma", link: "/guides/uptimekuma" },
+    ],
   },
 ];
