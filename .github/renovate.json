@@ -8,6 +8,7 @@
       "labels": [
         "dependencies"
       ],
+      "dependencyDashboardApproval": true
       "assigneesFromCodeOwners": true,
       "matchPackagePatterns": [
         "*"
