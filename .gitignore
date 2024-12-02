@@ -6,9 +6,12 @@ node_modules/
 styles/
 
 # Files:
-!.yarn/releases
+.yarn/releases
 .gitconfig
 package-lock.json
 
 # Configuration:
 start.sh
+
+# Sentry Config File
+.env.sentry-build-plugin
