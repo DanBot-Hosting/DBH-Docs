@@ -1,6 +1,6 @@
 {
   "name": "docs.danbot.host",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "The documentaion site for DanBot Hosting",
   "main": "next.config.js",
   "scripts": {
