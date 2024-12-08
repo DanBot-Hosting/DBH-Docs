@@ -34,7 +34,7 @@ export const navLinks: Link[] = [
       { label: "SFTP Using VSCode", link: "/advanced/vscode-sftp" },
       { label: "ShareX Setup", link: "/advanced/sharex-setup" },
       { label: "NVM Setup", link: "/advanced/nvm" },
-      { label: "Proxy Minecraft Server", link: "/advanced/minecraft-proxying"},
+      { label: "Proxying a Minecraft Server", link: "/advanced/minecraft-proxying"},
       { label: "Python: Out of Space Error", link: "/advanced/python-install" },
     ],
   },
