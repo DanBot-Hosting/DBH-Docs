@@ -1,7 +1,7 @@
-# DBH Docs
-This is the Offical DanBot Hosting Documantaion website, this was coded by a dbh member and is now continued by DBH Team
+# DBH Documentation Website
+This is the **Offical** DanBot Hosting Documentation Website. Originally created by a DBH Member, now maintained and updated by the DBH Team.
 
-Main Website: https://docs.danbot.host
+Documentation Website: https://docs.danbot.host
 
 ## Maintainers
 - **Jon**
