@@ -2,6 +2,7 @@
 import { PanelProvider } from "@component/layout";
 
 import type { NextPage } from "next";
+import Head from 'next/head';
 import App, { AppContext, AppInitialProps } from "next/app";
 import { ReactElement } from "react";
 import { ColorScheme } from "@mantine/core";
@@ -29,9 +30,11 @@ export default class Panel extends App<AppInitialPropsWithColor> {
       this.props?.colorScheme || (getCookie("color-scheme") as ColorScheme);
 
     return (
-      <PanelProvider colorScheme={colorScheme}>
-        <Component {...pageProps} />
-      </PanelProvider>
+      <><Head>
+        <title>DanBot Hosting Docs</title>
+      </Head><PanelProvider colorScheme={colorScheme}>
+          <Component {...pageProps} />
+        </PanelProvider></>
     );
   }
 }
