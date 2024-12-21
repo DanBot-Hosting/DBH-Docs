@@ -30,9 +30,11 @@ export default class Panel extends App<AppInitialPropsWithColor> {
       this.props?.colorScheme || (getCookie("color-scheme") as ColorScheme);
 
     return (
+    <>
       <Head>
-      <title>DanBot Hosting Docs</title>
+        <title>DanBot Hosting Docs</title>
       </Head>
+
       <PanelProvider colorScheme={colorScheme}>
         <Component {...pageProps} />
       </PanelProvider>
