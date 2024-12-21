@@ -2,6 +2,7 @@
 import { PanelProvider } from "@component/layout";
 
 import type { NextPage } from "next";
+import Head from 'next/head';
 import App, { AppContext, AppInitialProps } from "next/app";
 import { ReactElement } from "react";
 import { ColorScheme } from "@mantine/core";
