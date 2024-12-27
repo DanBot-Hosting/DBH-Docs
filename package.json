@@ -2,7 +2,7 @@
   "name": "docs.danbot.host",
   "version": "2.1.9",
   "description": "The documentaion site for DanBot Hosting",
-  "main": "next.config.js",
+  "main": "next.config.mjs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
