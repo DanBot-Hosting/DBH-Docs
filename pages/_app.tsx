@@ -24,7 +24,6 @@ export default class Panel extends App<AppInitialPropsWithColor> {
     };
   }*/
 
-  a //this is here to see if errors pop up
   render(): ReactElement {
     const { Component, pageProps }: AppInitialPropsWithColor = this.props;
     const colorScheme: ColorScheme =
