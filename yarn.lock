@@ -1538,9 +1538,7 @@
     lit "^3.2.0"
 
 "@skyra/discord-components-react@^4.0.0-alpha.33":
-  version "4.0.0-alpha.33"
-  resolved "https://registry.npmjs.org/@skyra/discord-components-react/-/discord-components-react-4.0.0-alpha.33.tgz"
-  integrity sha512-q9TYAZoPGxyZUrOFDJb0x3J2jMDTWLbgkAxP8G5avtpBS7Jmqucb+Z0b+F/RUsIDFQwIuyWFkYxXALhDI7qw/A==
+  version "4.0.0-alpha.37"
   dependencies:
     "@lit/react" "^1.0.5"
     "@skyra/discord-components-core" "^4.0.0-alpha.33"
