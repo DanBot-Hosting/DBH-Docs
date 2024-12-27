@@ -12,6 +12,4 @@ package-lock.json
 
 # Configuration:
 start.sh
-
-# Sentry Config File
-.env.sentry-build-plugin
+.env
