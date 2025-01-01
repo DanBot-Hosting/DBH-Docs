@@ -35,7 +35,7 @@
     "@pandacss/dev": "^0.49.0",
     "@sentry/nextjs": "^8.41.0",
     "@skyra/discord-components-react": "^4.0.0-alpha.33",
-    "@tabler/icons": "3.19.0",
+    "@tabler/icons": "3.26.0",
     "cookies-next": "^4.2.1",
     "cvet": "^4.0.0",
     "next": "^15.0.3",
