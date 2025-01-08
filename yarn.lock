@@ -1806,9 +1806,7 @@
     lit "^3.2.1"
 
 "@skyra/discord-components-react@^4.0.0-alpha.33":
-  version "4.0.0-alpha.37"
-  resolved "https://registry.yarnpkg.com/@skyra/discord-components-react/-/discord-components-react-4.0.0-alpha.37.tgz#338619848ec26ca3a5b009f83cf8c9771e7bf79f"
-  integrity sha512-leNtT0S2eJGant5gqTQNmi80ZAADtbD/q0zlmYPyYgTEtGD0vMyihbtEsEhFFc13vcibesqUk0abqq4Ctm348w==
+  version "4.0.0-alpha.38"
   dependencies:
     "@lit/react" "^1.0.6"
     "@skyra/discord-components-core" "^4.0.0-alpha.37"
