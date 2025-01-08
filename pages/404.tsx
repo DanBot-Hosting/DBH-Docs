@@ -45,7 +45,7 @@ const NotFound: NextPage = (): ReactElement => {
     <Container className={classes.root}>
       <Image src={Stars} alt="404" width={400} className={classes.stars} />
       <Title className={classes.title} ta="center">
-        You have found a secret place.
+       Welcome! You have found a secret place.
       </Title>
       <Text
         color="dimmed"
