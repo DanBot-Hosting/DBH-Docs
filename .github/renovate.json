@@ -12,6 +12,7 @@
       ],
       "dependencyDashboardApproval": true,
       "assigneesFromCodeOwners": true,
+      "matchFileNames": ["**/package.json", "**/yarn.lock"],
       "matchUpdateTypes": [
         "major"
       ],
