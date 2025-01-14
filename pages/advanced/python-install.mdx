@@ -13,11 +13,13 @@ On the PYTHON server, follow these steps:
 Create a new directory, in the `home/container` directory, named `TEMP`
 
 If your issue is occurring **whilst running PIP to install `requirements.txt`**, use:
+
 ```text
 pip3 install --cache-dir="$HOME/TEMP/" -r requirements.txt
 ```
 
 If your issue is occurring **whilst running code**, you need to export the `TEMP` directory, using:
+
 ```text
 export TMPDIR=$HOME/TEMP
 ```
@@ -33,13 +35,20 @@ export TMPDIR=$HOME/TEMP
 
 # replace this comment (this line) with your current Startup Command
 ```
+
 Then set your Startup Command in the `Startup category` to `bash run.sh`
 
-
-<Tip>Splitting up your `requirements.txt` file also helps out if you're getting this error whilst installing PIP packages.</Tip>
-
-<Tip>Make sure your `run.sh` is in a directory which can reach any file listed in your Startup Command written to this file.</Tip>
+<Tip>
+  Splitting up your `requirements.txt` file also helps out if you're getting
+  this error whilst installing PIP packages.
+</Tip>
 
 <Tip>
-  Thank you to alphaspiderman (212992967462486016) for creating this guide on the Python Support channel.
+  Make sure your `run.sh` is in a directory which can reach any file listed in
+  your Startup Command written to this file.
+</Tip>
+
+<Tip>
+  Thank you to alphaspiderman (212992967462486016) for creating this guide on
+  the Python Support channel.
 </Tip>
