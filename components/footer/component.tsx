@@ -25,7 +25,7 @@ export const Footer: FunctionComponent = (): ReactElement => {
       <div className={classes.wrapper}>
         <Container className={classes.inner}>
           <a href="https://danbot.host">
-          <Image src={Logo()} alt="Danbot Host" height={64} width={64} />
+            <Image src={Logo()} alt="Danbot Host" height={64} width={64} />
           </a>
           <a href="https://discord.gg/dbh">
             <img src="https://skillicons.dev/icons?i=discord" />

@@ -31,7 +31,6 @@ In that case, go to the DBH Discord server and run this command:
 
 For a free server:
 
-
         <DiscordMessages>
           <DiscordMessage
             author="Jonfirexbox"
@@ -49,10 +48,10 @@ For a free server:
             verified={false}
           >
             <DiscordEmbed slot="embeds" color="#00FF00" embed-title="Server Successfully Created">
-						  <DiscordEmbedDescription slot="description">
-							Click Here to Access Your Server
-							</DiscordEmbedDescription>
-							<DiscordEmbedFields slot="fields">
+    					  <DiscordEmbedDescription slot="description">
+    						Click Here to Access Your Server
+    						</DiscordEmbedDescription>
+    						<DiscordEmbedFields slot="fields">
                 <DiscordEmbedField fieldTitle="Status:" inline inline-index="1">
                   {' '}
                   Created{' '}
@@ -65,12 +64,12 @@ For a free server:
                   {' '}
                   gitea{' '}
                 </DiscordEmbedField>
-                <DiscordEmbedField fieldTitle="Server Name:" inline inline-index="4">
+                <DiscordEmbedField fieldTitle="Server Name:">
                   {' '}
                   Untitled Server (settings -> server name){' '}
                 </DiscordEmbedField>
               </DiscordEmbedFields>
-							<DiscordEmbedFooter
+    						<DiscordEmbedFooter
                 slot="footer"
                 footer-image="https://avatars.githubusercontent.com/u/66625200?v=4"
                 timestamp={new Date()}
@@ -80,61 +79,66 @@ For a free server:
             </DiscordEmbed>
           </DiscordMessage>
         </DiscordMessages>
+
 <br></br>
 For a donator server:
-        <DiscordMessages>
-         <DiscordMessage
-          author="Jonfirexbox"
-          avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
-          roleName="Donator"
-          roleColor="#ff00a0"
-          roleIcon="https://images-ext-1.discordapp.net/external/jcxosamsnMQwF-XU7dDsYt5Mz_ti0BRJc5pzpGSDPQ0/https/cdn.discordapp.com/role-icons/898041754564046869/576cbb697c65c8fffe1df17961401d8b.png?format=webp&quality=lossless"
-          >
-           DBH!server create-donator gitea [optional server name]
-          </DiscordMessage>
-          <DiscordMessage
-            author="DanBot Hosting"
-            avatar="https://images-ext-1.discordapp.net/external/9j2_RacvCl8mly7hALccyH0PsM-tbJYm8twQKGf_3jY/https/cdn.discordapp.com/avatars/640161047671603205/718aa5783508125a02e3b244a1bf096e.png"
-            roleColor="#0329d3"
-            bot={true}
-            verified={false}
-          >
-            <DiscordEmbed slot="embeds" color="#00FF00" embed-title="Server Successfully Created">
-						  <DiscordEmbedDescription slot="description">
-							Click Here to Access Your Server
-							</DiscordEmbedDescription>
-							<DiscordEmbedFields slot="fields">
-                <DiscordEmbedField fieldTitle="Status:" inline inline-index="1">
-                  {' '}
-                  Created{' '}
-                </DiscordEmbedField>
-                <DiscordEmbedField fieldTitle="User ID:" inline inline-index="2">
-                  {' '}
-                  126{' '}
-                </DiscordEmbedField>
-                <DiscordEmbedField fieldTitle="Type:" inline inline-index="3">
-                  {' '}
-                  gitea{' '}
-                </DiscordEmbedField>
-                <DiscordEmbedField fieldTitle="Server Name:" inline inline-index="4">
-                  {' '}
-                  Untitled Server (settings -> server name){' '}
-                </DiscordEmbedField>
-								<DiscordEmbedField fieldTitle="Slots Used:">
-                  {' '}
-                  (1 slot / 6 slots){' '}
-                </DiscordEmbedField>
-              </DiscordEmbedFields>
-							<DiscordEmbedFooter
-                slot="footer"
-                footer-image="https://avatars.githubusercontent.com/u/66625200?v=4"
-                timestamp={new Date()}
-              >
-                Command Executed By: jonfirexbox (856176853719187506)
-              </DiscordEmbedFooter>
-            </DiscordEmbed>
-          </DiscordMessage>
-        </DiscordMessages>
+<DiscordMessages>
+  <DiscordMessage
+    author="Jonfirexbox"
+    avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
+    roleName="Donator"
+    roleColor="#ff00a0"
+    roleIcon="https://images-ext-1.discordapp.net/external/jcxosamsnMQwF-XU7dDsYt5Mz_ti0BRJc5pzpGSDPQ0/https/cdn.discordapp.com/role-icons/898041754564046869/576cbb697c65c8fffe1df17961401d8b.png?format=webp&quality=lossless"
+  >
+    DBH!server create-donator gitea [optional server name]
+  </DiscordMessage>
+  <DiscordMessage
+    author="DanBot Hosting"
+    avatar="https://images-ext-1.discordapp.net/external/9j2_RacvCl8mly7hALccyH0PsM-tbJYm8twQKGf_3jY/https/cdn.discordapp.com/avatars/640161047671603205/718aa5783508125a02e3b244a1bf096e.png"
+    roleColor="#0329d3"
+    bot={true}
+    verified={false}
+  >
+    <DiscordEmbed
+      slot="embeds"
+      color="#00FF00"
+      embed-title="Server Successfully Created"
+    >
+      <DiscordEmbedDescription slot="description">
+        Click Here to Access Your Server
+      </DiscordEmbedDescription>
+      <DiscordEmbedFields slot="fields">
+        <DiscordEmbedField fieldTitle="Status:" inline inline-index="1">
+          {" "}
+          Created{" "}
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="User ID:" inline inline-index="2">
+          {" "}
+          126{" "}
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="Type:" inline inline-index="3">
+          {" "}
+          gitea{" "}
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="Server Name:">
+          {" "}
+          Untitled Server (settings -> server name){" "}
+        </DiscordEmbedField>
+        <DiscordEmbedField fieldTitle="Slots Used:">
+          {" "}
+          (1 slot / 6 slots){" "}
+        </DiscordEmbedField>
+      </DiscordEmbedFields>
+      <DiscordEmbedFooter
+        slot="footer"
+        footer-image="https://avatars.githubusercontent.com/u/66625200?v=4"
+        timestamp={new Date()}
+      >
+        Command Executed By: jonfirexbox (856176853719187506)
+      </DiscordEmbedFooter>
+    </DiscordEmbed>
+  </DiscordMessage>
+</DiscordMessages>
 
 <Tip>
   This server might take up to 2 minutes installing, so we ask you to be patient

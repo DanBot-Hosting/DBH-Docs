@@ -2,13 +2,14 @@
 
 If you are looking of how to access your minecraft server without your server port, and using your own domain, you are at the right place
 
-1. You need to have a minecraft server 
+1. You need to have a minecraft server
 2. If you already use cloudflare you are good 👍 If you use your own domain dash, make sure that it allows you to create srv records
 3. Create an srv record and fill the boxes with the information required:
+
 ```
 Type: SRV
 Name: [your subdomain name]
-Service: _minecraft 
+Service: _minecraft
 Protocol: TCP (remember tcp is only for java edition, bedrock uses udp)
 TTL: auto
 Priority: 0
@@ -16,8 +17,14 @@ Weight: 0
 Port: [Your server port]
 Target: [Domain name of the server] (It will be either dono-02.danbot.host or dono-04.danbot.host)
 ```
+
 Here is an example:
 
 ![Example](/content/minecraft-proxy/example.png)
 
-<Tip> Thanks to whoever made the [guide](https://discord.com/channels/639477525927690240/898041892279836692/990411009732800614) in `#hosting`! </Tip>
+<Tip>
+  {" "}
+  Thanks to whoever made the
+  [guide](https://discord.com/channels/639477525927690240/898041892279836692/990411009732800614)
+  in `#hosting`!{" "}
+</Tip>
