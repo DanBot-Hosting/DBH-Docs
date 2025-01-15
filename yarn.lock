@@ -1682,9 +1682,7 @@
   "version" "15.7.12"
 
 "@types/react-dom@^18.3.0":
-  "integrity" "sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg=="
-  "resolved" "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.3.0.tgz"
-  "version" "18.3.0"
+  version "18.3.5"
   dependencies:
     "@types/react" "*"
 
