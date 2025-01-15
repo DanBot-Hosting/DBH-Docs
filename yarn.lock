@@ -1389,9 +1389,7 @@
   "version" "8.47.0"
 
 "@sentry/nextjs@^8.41.0":
-  "integrity" "sha512-qr++MBYhyAwF25hGq7LAxe3Xehs+w2V4b8mVxilRYFXNkWFazY1ukZcVzq9pKrrt5uTiURTf68e8eVMraHnHEQ=="
-  "resolved" "https://registry.npmjs.org/@sentry/nextjs/-/nextjs-8.47.0.tgz"
-  "version" "8.47.0"
+  version "8.48.0"
   dependencies:
     "@opentelemetry/api" "^1.9.0"
     "@opentelemetry/semantic-conventions" "^1.28.0"
