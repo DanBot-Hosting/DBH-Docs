@@ -1,6 +1,6 @@
 # Fixing <u>Environment: Error - No space left on device</u> Error
 
-Please note that this **will not give you more disk space**, this will **increase your TEMP storage size**, which is what causes this error message. This temporary storage is stored within your container.
+Please note that this **will not give you more disk space**, this will only **increase your TEMP storage size**, which is what causes this error message. This temporary storage is stored within your container.
 
 ## Prerequisites:
 
@@ -10,7 +10,7 @@ Please note that this **will not give you more disk space**, this will **increas
 
 On the PYTHON server, follow these steps:
 
-Create a new directory, in the `home/container` directory, named `TEMP`
+Create a new directory, inside the `home/container` directory, named `TEMP`.
 
 If your issue is occurring **whilst running PIP to install `requirements.txt`**, use:
 
@@ -18,13 +18,18 @@ If your issue is occurring **whilst running PIP to install `requirements.txt`**,
 pip3 install --cache-dir="$HOME/TEMP/" -r requirements.txt
 ```
 
-If your issue is occurring **whilst running code**, you need to export the `TEMP` directory, using:
+<Tip>
+  Splitting up your `requirements.txt` file also helps out if you're getting
+  this error whilst installing PIP packages.
+</Tip>
+
+If your issue is occurring **whilst running your code**, you need to also export the `TEMP` directory, using:
 
 ```text
 export TMPDIR=$HOME/TEMP
 ```
 
-**Please note that the TMPDIR export will be wiped on reboot.**
+**Please note that the exported TMPDIR value automaticly gets wiped on reboot.**
 
 ## Making the TMPDIR permanent:
 
@@ -36,17 +41,14 @@ export TMPDIR=$HOME/TEMP
 # replace this comment (this line) with your current Startup Command
 ```
 
-Then set your Startup Command in the `Startup category` to `bash run.sh`
-
-<Tip>
-  Splitting up your `requirements.txt` file also helps out if you're getting
-  this error whilst installing PIP packages.
-</Tip>
-
 <Tip>
   Make sure your `run.sh` is in a directory which can reach any file listed in
-  your Startup Command written to this file.
+  your original Startup Command.
 </Tip>
+
+Then set your Startup Command, located in the `Startup category` to `bash run.sh`
+Please note if you change the directory, you will also have to change the directory in the Startup Command.
+Example: `bash ./startup_files/run.sh`
 
 <Tip>
   Thank you to alphaspiderman (212992967462486016) for creating this guide on
