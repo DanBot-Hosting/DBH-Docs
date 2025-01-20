@@ -1,22 +1,27 @@
 # How to proxy a minecraft server
 
-If you are looking of how to access your minecraft server without your server port, and using your own domain, you are at the right place
+This guide will show you how to access your Minecraft server (works with all eggs), whilst using your own domain.
 
+# Requirements:
 1. You need to have a minecraft server
-2. If you already use cloudflare you are good 👍 If you use your own domain dash, make sure that it allows you to create srv records
-3. Create an srv record and fill the boxes with the information required:
+2. It's better if you're using [Cloudflare](https://www.cloudflare.com), but any other domain dashboard will work, aslong as SRV Records are permitted.
+3. Create an SRV Record and fill the boxes with the information required, as listed below:
 
 ```
 Type: SRV
 Name: [your subdomain name]
 Service: _minecraft
-Protocol: TCP (remember tcp is only for java edition, bedrock uses udp)
+Protocol: TCP/UDP (Choose one! TCP is used for Java Edition, whilst UDP is used for Bedrock Edition)
 TTL: auto
 Priority: 0
 Weight: 0
 Port: [Your server port]
 Target: [Domain name of the server] (It will be either dono-02.danbot.host or dono-04.danbot.host)
 ```
+<Tip>
+  Make sure to fill in the information accordingly! Text in brackets () is a note, and shouldn't be listed in your code.
+  Anything in the square brackets [] should be filled in with your information, removing the square brackets.
+</Tip>
 
 Here is an example:
 
