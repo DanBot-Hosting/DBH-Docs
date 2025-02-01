@@ -574,9 +574,7 @@
   "version" "15.1.4"
 
 "@next/mdx@^15.1.4":
-  "integrity" "sha512-GsmKCWPDW6Qas4/yL+zj7RLGrDsVu89F42/S9pVcPTvYmXNK1PqRT6H7outQy6Ox/AGB8As1lxPvk4dJmDIm7w=="
-  "resolved" "https://registry.npmjs.org/@next/mdx/-/mdx-15.1.4.tgz"
-  "version" "15.1.4"
+  version "15.1.6"
   dependencies:
     "source-map" "^0.7.0"
 
