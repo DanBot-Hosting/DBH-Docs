@@ -4239,9 +4239,7 @@
   "version" "2.6.2"
 
 "next@*", "next@^13.2.0 || ^14.0 || ^15.0.0-rc.0", "next@^15.1.4":
-  "integrity" "sha512-mTaq9dwaSuwwOrcu3ebjDYObekkxRnXpuVL21zotM8qE2W0HBOdVIdg2Li9QjMEZrj73LN96LcWcz62V19FjAg=="
-  "resolved" "https://registry.npmjs.org/next/-/next-15.1.4.tgz"
-  "version" "15.1.4"
+  version "15.1.6"
   dependencies:
     "@next/env" "15.1.4"
     "@swc/counter" "0.1.3"
