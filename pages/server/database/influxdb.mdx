@@ -17,7 +17,7 @@ import {
   label="Source: Wikipedia"
 />
 
-# Creating the server
+## Creating the server
 
 To create a server, we suppose that you've already [created and linked an account into the panel](/getting-started).
 
@@ -136,25 +136,21 @@ For a donator server:
   </DiscordMessage>
 </DiscordMessages>
 
-# Get database going
+## Initialising the Database And User
 
-1. On the server InfluxDB is running on, visit the server address (ex: http://pnode1.danbot.host:1234).
-2. Click Get Started
+- On the server InfluxDB is running on, visit the server address (ex: http://pnode1.danbot.host:1234).
+- Click "Get Started".
 
-## Set up your initial user
+- Enter a Username for your initial user.
+- Enter a Password and Confirm Password for your user.
+- Enter your initial Organization Name.
+- Enter your initial Bucket Name.
+- Click Continue.
+- Copy the provided operator API token and store it for safe keeping.
 
-1. Enter a Username for your initial user.
-2. Enter a Password and Confirm Password for your user.
-3. Enter your initial Organization Name.
-4. Enter your initial Bucket Name.
-5. Click Continue.
-6. Copy the provided operator API token and store it for safe keeping.
-
-And now you have everything setup!
+Once you have the provided operator API, your user and database should be setup, but you still need to modify some details to be able to connect to it:
 
 ## Fields
-
-The link given above isn't enough for you to connect to the database, now you have to modify it to actually connect to the database.
 
 ### Node
 
@@ -173,25 +169,13 @@ The link given above isn't enough for you to connect to the database, now you ha
 
 ### Password
 
-Your "password" is actully a API Token you should have created in the first step
+Your "password" is the provided operator API token.
 
 ### Port
 
-"port" is your server's port that can be found in the main page.
+The "port" is your server's port that can be found in your server's main panel page.
 
-## Final result
+## Conclusion
 
-As soon as you finished with the link it should look like this:
-
-```text
-// Working on finding this
-```
-
-# Conclusion
-
-Now you can deal with NoSQL database. To find out more about InfluxDB visit their documentation website!
-
-<Redirect
-  href="https://docs.influxdata.com/influxdb/v2/"
-  label="InfluxDB Docs"
-/>
+Once you have filled in all the fields, your database should be ready.
+For noSQL usage, kindly look at [InfluxDB's document page](https://docs.influxdata.com/influxdb/v2/).

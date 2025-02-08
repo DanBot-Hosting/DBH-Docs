@@ -1,22 +1,27 @@
-# Proxying
+import {
+  DiscordMessages,
+  DiscordMessage,
+} from "@skyra/discord-components-react";
 
-Proxying might sound a hard job to do but actually it's not! In this page I used cloudflare to proxy my domain!
+# Proxying Your Server to a Domain
+
+Proxying might sound hard, but it's not! And this guide will show you how to proxy, step by step.
+In this guide, [Cloudflare](https://www.cloudflare.com) is used.
 
 ## Available DBH domains
 
-<Tip label="Note">All domains are availble for donators only!</Tip>
+<Tip label="Note">These domains are available for donators!</Tip>
 
 - \*.only-fans.club
 - \*.is-a-awesome.dev
 - \*.is-a-cool.dev
 
-## Set DNS record
+## Setting up Your DNS Records
 
-In order to proxy your domain to one of your servers you have to set a DNS record!
-
+In order to proxy your domain to one of your servers, you need a DNS record.
 ![Add a record](/content/proxying/add-record.png)
 
-There after clicking "Add record" you have to fill all fields as in the image:
+After clicking "Add record" (as shown in the image above) you have to fill all of the fields as per the information below:
 
 ![Fill given fields](/content/proxying/proxy-fields.png)
 
@@ -36,18 +41,46 @@ Consider adding these IPs:
   with!
 </Tip>
 
-After everything is done click "Save" and head to discord!
+After everything is done click "Save"!
 
-## Proxy using a command
+## Proxying Via Discord:
 
-As always you should use given in [Getting Started](/getting-started) channels. Do `DBH!server proxy <domain> <server id>` in order to proxy your domain to your server. Make sure "domain" field doesn't have neither "http://" nor "https://" in it!
+Go to the DBH Discord server, and in a Commands channel, run:
 
-After it is done you have to wait up to 1-2 minutes to see the result. Bot will ping you if it is proxied!
+        <DiscordMessages>
+          <DiscordMessage
+            author="Jonfirexbox"
+            avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
+            roleColor="#00cfff"
+            roleName="Client"
+          >
+            dbh!server proxy [domain] [server ID] 
+          </DiscordMessage>
+          <DiscordMessage
+            author="DanBot Hosting"
+            avatar="https://images-ext-1.discordapp.net/external/9j2_RacvCl8mly7hALccyH0PsM-tbJYm8twQKGf_3jY/https/cdn.discordapp.com/avatars/640161047671603205/718aa5783508125a02e3b244a1bf096e.png"
+            roleColor="#0329d3"
+            bot={true}
+            verified={false}
+          >
+            Domain has been proxied:
+
+            ID: 555
+            Location: United States 1 
+          </DiscordMessage>
+        </DiscordMessages>
+
+<Tip>
+  Make sure "domain" field doesn't have "http://" or "https://" in it!
+  Example: `danbot.host` **not** `https://danbot.host`
+</Tip>
+
+After the Bot finishes and states that the domain has been proxied, please wait 1-5 minutes for the changes to take effect.
 
 ![Successful proxying](/content/proxying/proxying-success.png)
 
 <Tip>
-  If you faced a problem and bot didn't give you a success result please
-  consider contacting moderation in order to fix your issue. Also make sure
-  everything is fine in your proxy fields!
+  If the Bot errors out when proxying, please
+  consider contacting Moderation or Helpers to assist you with your issue.
+  Before contacting staff, double check that all of the fields you filled in were filled correctly.
 </Tip>

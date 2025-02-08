@@ -1,3 +1,13 @@
+import {
+  DiscordEmbedDescription,
+  DiscordMessages,
+  DiscordMessage,
+  DiscordEmbed,
+  DiscordEmbedField,
+  DiscordEmbedFields,
+  DiscordEmbedFooter,
+} from "@skyra/discord-components-react";
+
 # ShareX setup
 
 This guide provides an information on what **ShareX** is, how to set it up using DBH as it's "host" and how to add effects.
@@ -14,50 +24,157 @@ This guide provides an information on what **ShareX** is, how to set it up using
 
 <Tip>ShareX is only available on Windows.</Tip>
 
-# How to setup?
+## How to setup?
 
 Before creating a **ShareX** server you have to install **ShareX** program on your pc using it's [official website page](https://getsharex.com/)
 
 ![Download ShareX](/content/sharex/getsharex.com.png)
 
-## Create a server
+## Creating the server
 
 To create a server, we suppose that you've already [created and linked an account into the panel.](/getting-started)
 
-In that case, go to DBH server and run this command:
+In that case, go to the DBH Discord server and run this command:
 
-For a free server: `DBH!server create sharex [optional server name]`
+For a free server:
 
-For a donator server: `DBH!server create-donator sharex [optional server name]`
+        <DiscordMessages>
+          <DiscordMessage
+            author="Jonfirexbox"
+            avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
+            roleColor="#00cfff"
+            roleName="Client"
+          >
+            DBH!server create sharex [optional server name]
+          </DiscordMessage>
+          <DiscordMessage
+            author="DanBot Hosting"
+            avatar="https://images-ext-1.discordapp.net/external/9j2_RacvCl8mly7hALccyH0PsM-tbJYm8twQKGf_3jY/https/cdn.discordapp.com/avatars/640161047671603205/718aa5783508125a02e3b244a1bf096e.png"
+            roleColor="#0329d3"
+            bot={true}
+            verified={false}
+          >
+            <DiscordEmbed slot="embeds" color="#00FF00" embed-title="Server Successfully Created">
+    					  <DiscordEmbedDescription slot="description">
+    						Click Here to Access Your Server
+    						</DiscordEmbedDescription>
+    						<DiscordEmbedFields slot="fields">
+                <DiscordEmbedField fieldTitle="Status:" inline inline-index="1">
+                  {' '}
+                  Created{' '}
+                </DiscordEmbedField>
+                <DiscordEmbedField fieldTitle="User ID:" inline inline-index="2">
+                  {' '}
+                  126{' '}
+                </DiscordEmbedField>
+                <DiscordEmbedField fieldTitle="Type:" inline inline-index="3">
+                  {' '}
+                  sharex{' '}
+                </DiscordEmbedField>
+                <DiscordEmbedField fieldTitle="Server Name:">
+                  {' '}
+                  Untitled Server (settings -> server name){' '}
+                </DiscordEmbedField>
+              </DiscordEmbedFields>
+    						<DiscordEmbedFooter
+                slot="footer"
+                footer-image="https://avatars.githubusercontent.com/u/66625200?v=4"
+                timestamp={new Date()}
+              >
+                {' '}
+                Command Executed By: jonfirexbox (856176853719187506){' '}
+              </DiscordEmbedFooter>
+            </DiscordEmbed>
+          </DiscordMessage>
+        </DiscordMessages>
 
-# Configuration
+<br></br>
+
+For a donator server:
+
+        <DiscordMessages>
+         <DiscordMessage
+          author="Jonfirexbox"
+          avatar="https://avatars.githubusercontent.com/u/66625200?v=4"
+          roleName="Donator"
+          roleColor="#ff00a0"
+          roleIcon="https://images-ext-1.discordapp.net/external/jcxosamsnMQwF-XU7dDsYt5Mz_ti0BRJc5pzpGSDPQ0/https/cdn.discordapp.com/role-icons/898041754564046869/576cbb697c65c8fffe1df17961401d8b.png?format=webp&quality=lossless"
+          >
+           DBH!server create-donator sharex [optional server name]
+          </DiscordMessage>
+          <DiscordMessage
+            author="DanBot Hosting"
+            avatar="https://images-ext-1.discordapp.net/external/9j2_RacvCl8mly7hALccyH0PsM-tbJYm8twQKGf_3jY/https/cdn.discordapp.com/avatars/640161047671603205/718aa5783508125a02e3b244a1bf096e.png"
+            roleColor="#0329d3"
+            bot={true}
+            verified={false}
+          >
+            <DiscordEmbed slot="embeds" color="#00FF00" embed-title="Server Successfully Created">
+    					  <DiscordEmbedDescription slot="description">
+    						Click Here to Access Your Server
+    						</DiscordEmbedDescription>
+    						<DiscordEmbedFields slot="fields">
+                <DiscordEmbedField fieldTitle="Status:" inline inline-index="1">
+                  {' '}
+                  Created{' '}
+                </DiscordEmbedField>
+                <DiscordEmbedField fieldTitle="User ID:" inline inline-index="2">
+                  {' '}
+                  126{' '}
+                </DiscordEmbedField>
+                <DiscordEmbedField fieldTitle="Type:" inline inline-index="3">
+                  {' '}
+                  sharex{' '}
+                </DiscordEmbedField>
+                <DiscordEmbedField fieldTitle="Server Name:">
+                  {' '}
+                  Untitled Server (settings -> server name){' '}
+                </DiscordEmbedField>
+    							<DiscordEmbedField fieldTitle="Slots Used:">
+                  {' '}
+                  (1 slot / 6 slots){' '}
+                </DiscordEmbedField>
+              </DiscordEmbedFields>
+    						<DiscordEmbedFooter
+                slot="footer"
+                footer-image="https://avatars.githubusercontent.com/u/66625200?v=4"
+                timestamp={new Date()}
+              >
+                {' '}
+                Command Executed By: jonfirexbox (856176853719187506){' '}
+              </DiscordEmbedFooter>
+            </DiscordEmbed>
+          </DiscordMessage>
+        </DiscordMessages>
+
+## Configuration
 
 <Tip>
   This is the most difficult step, so we ask you to dedicate some time to read
-  this article entirely
+  this article entirely.
 </Tip>
 
-Once your server finished installing (it might take up to 2 minutes), go to the [panel](https://panel.danbot.host), then go to your server, and the to the files. Then open the `src` folder. Now open `config.json`.
+Once your server has finished installing (it might take up to 2 minutes), go to the [panel](https://panel.danbot.host). Go to your server, and access the server's files. Open the `src` folder, and in it, open `config.json`.
 
-Now, we're going to explain the important settings that you might need to set up:
+**Explained below this text, are the important settings you might need to setup:**
 
 ## General settings
 
 - **key**: Here you can set up the main keys. **Before setting this up please go (on this doc) to your preferred configuration (private or public)**
 
-- **domain**: This is important as if not set correctly, server won't work and deny all the incoming conexions. If you proxied the server, just type the proxied domain. But if you didn't and you want to use the server's default domain, insert it **without the port**. Example: `dono-03.danbot.host`
+- **domain**: This is important as if not set correctly, server won't work and deny all the incoming connections. If you proxied the server, just type the proxied domain. If you didn't proxy it, and want to use the default domain, insert it **without the port**: Example: `dono-03.danbot.host`.
 
-- **public**: This options allows you to upload the files and see them ONLY with a key. `true` for uploads without key and `false` to accept uploads only with key.
+- **public**: This options allows you to upload files and see them ONLY with a key. `true` for uploads without key and `false` to accept uploads only with key.
 
-- **port** and **securePort**: **IMPORTANT STEP** Here you need to put the server's port if not it won't work.
+- **port** and **securePort**: **IMPORTANT STEP** Here you need to put the server's port. **Without this configured, it will not work.**
 
-This are the important settings. For more info of another values please visit [the official github repo](https://github.com/TannerReynolds/ShareX-Upload-Server#configuration).
+This are the important settings. For more info on another values please visit [the official Github repository](https://github.com/TannerReynolds/ShareX-Upload-Server#configuration).
 
 ### Private configuration (only you can use the server)
 
 - Set `public` to false
 
-- Set the key to anything random (this is because we won't use a non-admin key, i'll show you later how to set the admin one).
+- Set the key to anything random (this is because we won't use a non-admin key. **This guide also includes steps on how to setup an admin key**).
 
 - Now, in `admin` object, set your personal key, set the maximum upload size to whatever in Mb [(Here's a convertor)](https://www.unitconverters.net/data-storage/mb-to-gb.htm) and in `allowed` you can set up all the file formats you want to upload.
 
@@ -65,15 +182,15 @@ This are the important settings. For more info of another values please visit [t
 
 - Set `public` to true
 
-- Set key into `[""]` (default) to let everyone upload.
+- Set the key to `[""]` (default) to let everyone upload.
 
 - Set your admin key.
 
 ## ShareX Discord Admin Bot
 
-First, follow [this steps](https://discordpy.readthedocs.io/en/stable/discord.html) to create and invite your bot.
+First, follow [these steps](https://discordpy.readthedocs.io/en/stable/discord.html) to create and invite your bot.
 
-Once you created it, set the Token of the bot, the [ID of the channel and the IDs of the people](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) that can use the bot. Next set the bot's prefix and you're done.
+Once you've created it, set the bot Token, the [ID of the channel and the IDs of the people](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) that can use the bot. Next set the bot's prefix and you're done.
 
 ## Manage files
 
@@ -142,27 +259,26 @@ By opening these files you will find similar "templates":
   uploader settings soon.
 </Tip>
 
-Consider changing `[YOUR_DOMAIN]` field in "RequestURL" to your [proxied](/beginner/proxying) domain. If you want your **ShareX** space to be private you have to set your own password in "key"! In `src/config.json` make sure to change "public", "port", "securePort", "domain" and "key"
+Consider changing `[YOUR_DOMAIN]` field in "RequestURL" to your [proxied](/beginner/proxying) domain. If you want your **ShareX** space to be private you have to set your own password in "key"! In `src/config.json` make sure to change "public", "port", "securePort", "domain" and "key".
 
 ![config.json](/content/sharex/sharex-config.png)
 
 ## Launch and configurate ShareX
-
-Finish installation of **ShareX** and launch the program. What you have to do right now is configurate "Destinations":
+Go onto your Windows Device and once the **ShareX** installation is finished, launch the program. Now, you need to configure "Destinations":
 
 ![Destinations](/content/sharex/sharex-destinations.png)
 
 There you have to import your changed files: `Text.sxcu`, `Images_and_Files.sxcu`, `URL_Shortener.sxcu`.
 
-After all done, change uploader settings as in the picture
+After you have completed that, change uploader settings as set in the picture:
 
 ![Uploader](/content/sharex/uploader.png)
 
-Move back and change destination uploaders to "Custom ... uploader" for every service
+Move back and change destination uploaders to "Custom ... uploader" for every service.
 
 ![Custom destination](/content/sharex/custom-uploader.png)
 
-After all done you must configure "After..." triggers
+Once you're ready, you must configure "After..." triggers:
 
 ![Trigger on capture](/content/sharex/trigger-1.png)
 
@@ -170,18 +286,18 @@ After all done you must configure "After..." triggers
 
 ## Adding frame effect
 
-Frame effect can be automatically added if **you add it in "After capture task"**! To create/import these frames you have to open the Effects settings in "Task Settings"
+Frame effect can be automatically added if **you add it in "After capture task"**! To create/import these frames you have to open the Effects settings in "Task Settings":
 
 ![Manage effects](/content/sharex/manage-effects.png)
 
-You can manually make your own cool frame effect just like I did but using [official website](https://getsharex.com/image-effects/) you can install other frame effects!
+You can manually make your own cool frame effect just like the one below, by installing frame effects from the [official website](https://getsharex.com/image-effects/)!
 
 ![My cool custom frame](/content/sharex/custom-frame.png)
 
-## Start the server
+## Starting the server
 
-After saving all stuff you're ready to share your cool screenshots made using **ShareX**!
+After saving everything you're ready to share your cool screenshots made using **ShareX**!
 
 <Tip>If you wish you can easily configure hotkeys as well.</Tip>
 
-Hope we helped you! If you think that something is wrong, please consider [creating a PR in our repository.](https://github.com/DanBot-Hosting/DBH-Docs/blob/master/pages/advanced/sharex-setup.mdx)
+Hopefully this guide was helpful! For any other questions, you can always ask in the Discord! If you think that something is wrong, please consider [creating a PR in our repository.](https://github.com/DanBot-Hosting/DBH-Docs/blob/master/pages/advanced/sharex-setup.mdx)
