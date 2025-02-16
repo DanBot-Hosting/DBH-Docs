@@ -17,7 +17,7 @@ import {
   label="Source: Wikipedia"
 />
 
-# Creating the server
+## Creating the server
 
 To create a server, we suppose that you've already [created and linked an account into the panel](/getting-started).
 
@@ -136,17 +136,13 @@ For a donator server:
   </DiscordMessage>
 </DiscordMessages>
 
-# Connect to the database
+## Connecting to the Database
 
-In order to connect to your fresh created database start the server and use the following link:
+In order to connect to your database, you need to modify the following link accordingly:
 
 ```text
-jdbc:mariadb://localhost:3306/DB?user=root&password=myPassword
+jdbc:mariadb://nX.danbot.host:3306/DB?user=root&password=myPassword
 ```
-
-## Fields
-
-The link given above isn't enough for you to connect to the database, now you have to modify it to actually connect to the database.
 
 ### Node
 
@@ -163,40 +159,42 @@ The link given above isn't enough for you to connect to the database, now you ha
 | Dono 01      | dono-01.danbot.host |
 | Dono 03      | dono-03.danbot.host |
 
-### Create DB
+### Creating the Database
 
-First you will need to run:
+In your server's console, run this command:
 
 ```text
 CREATE DATABASE dbhDB;
 ```
 
-in your servers console.
+### Creating a User and Password
 
-### Create user and password
-
-Then we will run this next command:
+Once the first command has finalised, run this command:
+You can change "Dbh!sTheBest!@" to your own password if you want.
 
 ```text
 CREATE USER "DBHMariaDB"@"your_allowed_ipaddr" IDENTIFIED BY "Dbh!sTheBest!@";
 ```
 
 <Tip>
-Please note: You **need** to use the nodes actual IP address, using the domain won't work
+Please note: You **need** to use the nodes actual IP address, as using the domain won't work.
 
 Also: Please note that `your_allowed_ipaddr` is the IP of the node that your server is hosted on. If it's on a same node, use Docker local IP `172.17.0.1`
-
 </Tip>
 
-### Grand all privileges
+### Granting Access to the Database
 
-This is a very import step as this allows you to access the DB:
+Run this command in your console:
 
 ```text
-GRANT ALL PRIVILEGES ON dbhDB.* TO "DBHMariaDB"@"88.99.138.239";
+GRANT ALL PRIVILEGES ON dbhDB.* TO "DBHMariaDB"@"your_allowed_ipaddr";
 ```
 
-And last thing you need to run is:
+<Tip>
+Please note: You **need** to use the nodes actual IP address, as using the domain won't work.
+</Tip>
+
+Then,
 
 ```text
 FLUSH PRIVILEGES;
@@ -204,16 +202,16 @@ FLUSH PRIVILEGES;
 
 ### Port
 
-"port" is your server's port that can be found in the main page.
+Your specific server port can be found in the main menu of the panel.
 
 <Tip>
-  Make sure to change your `port` in `.my.cnf` to your server port, include the
+  Make sure to change your `port` in `.my.cnf` to your server port, and include the
   double ticks when executing the command.
 </Tip>
 
 ## Final result
 
-As soon as you finished with the link it should look like this:
+Once you have completed all of the mentioned steps, your modified link should look like this:
 
 ```text
 jdbc:mariadb://pnode1.danbot.host:3306/DB?user=DBHMariaDB&password=Dbh!sTheBest!@
@@ -221,8 +219,8 @@ jdbc:mariadb://pnode1.danbot.host:3306/DB?user=DBHMariaDB&password=Dbh!sTheBest!
 
 <Tip>Please note: If you did miss a step this will not work!</Tip>
 
-# Conclusion
+If you want to setup MySQL, kindly follow their documentation page:
+<Redirect href="https://dev.mysql.com/doc/" label="MySQL Docs" />
 
-Now you can deal with MySQL database. To find out more about MariaDB visit their documentation website!
-
+If you need any assistance regarding MariaDB, ask in the support channels in the Discord, or visit their documentation website!
 <Redirect href="https://mariadb.org/documentation/" label="MariaDB Docs" />
