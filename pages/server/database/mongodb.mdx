@@ -17,7 +17,7 @@ import {
   label="Source: Wikipedia"
 />
 
-# Creating the server
+## Creating the server
 
 To create a server, we suppose that you've already [created and linked an account into the panel](/getting-started).
 
@@ -134,19 +134,14 @@ For a donator server:
   </DiscordMessage>
 </DiscordMessages>
 
-# Connect to the database
+## Connecting to the Database
 
-In order to connect to your fresh created database start the server and use the following link:
-
+In order to connect to your database, you need to modify the following link accordingly:
 ```text
 mongodb://admin:password@nX.danbot.host:port/?authSource=admin
 ```
 
-## Fields
-
-The link given above isn't enough for you to connect to the database, now you have to modify it to actually connect to the database.
-
-### Node
+#### Node
 
 "nX" in "nX.danbot.host" is replaced with your server's node. It can be:
 
@@ -163,29 +158,30 @@ The link given above isn't enough for you to connect to the database, now you ha
 
 ### Password
 
-"password" can be found in the `Startup` tab.
+The "password" can be found in the `Startup` tab.
 
 ![Password example](/content/databases/postgres.png)
 
-<Tip>
-  Given page screenshot is an example of the password, it does not carry any
-  important information as the server was already deleted.
+<Tip
+  The password being shown in the image will not work as you need to use your container's password.
 </Tip>
 
 ### Port
 
-"port" is your server's port that can be found in the main page.
+Your specific server port can be found in the main menu of the panel.
 
 ## Final result
 
-As soon as you finished with the link it should look like this:
+Once you have completed all of the mentioned steps, your modified link should look like this:
 
 ```text
 mongodb://admin:81OCNEWWJZ1KA0TJ@pnode2.danbot.host:9608/?authSource=admin
 ```
 
-# Conclusion
+<Tip>Please note: If you did miss a step this will not work!</Tip>
 
-Now you can deal with NoSQL database. To find out more about mongodb visit their documentation website!
+If you want to setup MySQL, kindly follow their documentation page:
+<Redirect href="https://dev.mysql.com/doc/" label="MySQL Docs" />
 
+If you need any assistance regarding MongoDB, ask in the support channels in the Discord, or visit their documentation website!
 <Redirect href="https://www.mongodb.com/docs/" label="MongoDB Docs" />
