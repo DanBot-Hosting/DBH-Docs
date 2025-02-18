@@ -8,7 +8,7 @@ import {
   DiscordEmbedFooter,
 } from "@skyra/discord-components-react";
 
-# What is Postgres
+# What is Postgres?
 
 [PostgreSQL](https://www.postgresql.org/), also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance. PostgreSQL features transactions with atomicity, consistency, isolation, durability properties, automatically updatable views, materialized views, triggers, foreign keys, and stored procedures.
 
@@ -17,7 +17,7 @@ import {
   label="Source: Wikipedia"
 />
 
-# Creating the server
+## Creating the server
 
 To create a server, we suppose that you've already [created and linked an account into the panel](/getting-started).
 
@@ -138,17 +138,13 @@ For a donator server:
   </DiscordMessage>
 </DiscordMessages>
 
-# Connect to the database
+## Connecting to the Database
 
-In order to connect to your fresh created database start the server and use the following link:
+In order to connect to your database, you need to modify the following link accordingly:
 
 ```text
 postgres://container:<PASSWORD>@nX.danbot.host:<port>/postgres
 ```
-
-## Fields
-
-The link given above isn't enough for you to connect to the database, now you have to modify it to actually connect to the database.
 
 ### Node
 
@@ -167,18 +163,17 @@ The link given above isn't enough for you to connect to the database, now you ha
 
 ### Password
 
-"password" can be found in the `Startup` tab.
+The "password" can be found in the `Startup` tab.
 
 ![Password example](/content/databases/postgres.png)
 
 <Tip>
-  Given page screenshot is an example of the password, it does not carry any
-  important information as the server was already deleted.
+   The password being shown in the image will not work as you need to use your container's password.
 </Tip>
 
 ### Port
 
-"port" is your server's port that can be found in the main page.
+Your specific server port can be found in the main menu of the panel.
 
 <Tip>
   **YOU MUST USE YOU'RE SERVERS PORT! IF YOU DON'T THIS WILL NOT WORK!**
@@ -186,14 +181,13 @@ The link given above isn't enough for you to connect to the database, now you ha
 
 ## Final result
 
-As soon as you finished with the link it should look like this:
+Once you have completed all of the mentioned steps, your modified link should look like this:
 
 ```text
 postgres://pterodactyl:th!s!snot-p-ssword@pnode2.danbot.host:1234/postgres
 ```
 
-# Conclusion
+<Tip>Please note: If you did miss a step this will not work!</Tip>
 
-Now you can deal with PostgresSQL database. To find out more about PostgresSQL visit their documentation website!
-
+For more assistance on the PostgresSQL database, kindly follow their documentation page:
 <Redirect href="https://www.postgresql.org/docs/" label="PostgresSQL Docs" />
