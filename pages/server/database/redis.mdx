@@ -17,11 +17,9 @@ import {
   label="Source: Wikipedia"
 />
 
-# Creating the server
+## Creating the server
 
 To create a server, we suppose that you've already [created and linked an account into the panel](/getting-started).
-
-At DBH we have 2 versions of Postgres you can use, you can use Postgres14 or Postgres16. Both are the same just different versions
 
 In that case, go to DBH server and run this command:
 
@@ -138,17 +136,12 @@ For a donator server:
   </DiscordMessage>
 </DiscordMessages>
 
-# Connect to the database
+## Connecting to the Database
 
-In order to connect to your fresh created database start the server and use the following link:
-
+In order to connect to your database, you need to modify the following link accordingly:
 ```text
 redis://default:<PASSWORD>@nX.danbot.host:<port>
 ```
-
-## Fields
-
-The link given above isn't enough for you to connect to the database, now you have to modify it to actually connect to the database.
 
 ### Node
 
@@ -167,33 +160,27 @@ The link given above isn't enough for you to connect to the database, now you ha
 
 ### Password
 
-"password" can be found in the `Startup` tab.
+The "password" can be found in the `Startup` tab.
 
 ![Password example](/content/databases/redis.png)
 
-<Tip>
-  Given page screenshot is an example of the password, it does not carry any
-  important information as the server was already deleted.
+<Tip
+  The password being shown in the image will not work as you need to use your container's password.
 </Tip>
 
 ### Port
 
-"port" is your server's port that can be found in the main page.
-
-<Tip>
-  **YOU MUST USE YOU'RE SERVERS PORT! IF YOU DON'T THIS WILL NOT WORK!**
-</Tip>
+Your specific server port can be found in the main menu of the panel.
 
 ## Final result
 
-As soon as you finished with the link it should look like this:
+Once you have completed all of the mentioned steps, your modified link should look like this:
 
 ```text
 redis://default:th!s!snot-p-ssword@pnode1.danbot.host:1125
 ```
 
-# Conclusion
+<Tip>Please note: If you did miss a step this will not work!</Tip>
 
-Now you can deal with Redis database. To find out more about Redis visit their documentation website!
-
+If you need any assistance regarding Redis, ask in the support channels in the Discord, or visit their documentation website!
 <Redirect href="https://redis.io/docs/latest/" label="Redis Docs" />
