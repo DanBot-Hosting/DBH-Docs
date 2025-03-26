@@ -159,9 +159,7 @@
     "@ibm/telemetry-js" "^1.5.0"
 
 "@carbon/icons-react@^11.47.1":
-  "integrity" "sha512-GHwOTi/UKkf55qhPhAr4csb6rrv2MpESP3L4LeuCTa61BCC0q1G01TvfoeXhZCoRhX8OvgYKrD8STuRq54+G3A=="
-  "resolved" "https://registry.npmjs.org/@carbon/icons-react/-/icons-react-11.47.1.tgz"
-  "version" "11.47.1"
+  version "11.56.0"
   dependencies:
     "@carbon/icon-helpers" "^10.50.0"
     "@ibm/telemetry-js" "^1.5.0"
