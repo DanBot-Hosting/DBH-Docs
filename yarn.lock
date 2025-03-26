@@ -2399,9 +2399,7 @@
   "version" "0.6.0"
 
 "cookies-next@^4.2.1":
-  "integrity" "sha512-qsjtZ8TLlxCSX2JphMQNhkm3V3zIMQ05WrLkBKBwu50npBbBfiZWIdmSMzBGcdGKfMK19E0PIitTfRFAdMGHXg=="
-  "resolved" "https://registry.npmjs.org/cookies-next/-/cookies-next-4.2.1.tgz"
-  "version" "4.2.1"
+  version "4.3.0"
   dependencies:
     "@types/cookie" "^0.6.0"
     "cookie" "^0.6.0"
