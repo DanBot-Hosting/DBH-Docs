@@ -4829,9 +4829,7 @@
   "version" "0.14.1"
 
 "remark-gfm@^4.0.0":
-  "integrity" "sha512-U92vJgBPkbw4Zfu/IiW2oTZLSL3Zpv+uI7My2eq8JxKgqraFdU8YUGicEJCEgSbeaG+QDFqIcwwfMTOEelPxuA=="
-  "resolved" "https://registry.npmjs.org/remark-gfm/-/remark-gfm-4.0.0.tgz"
-  "version" "4.0.0"
+  version "4.0.1"
   dependencies:
     "@types/mdast" "^4.0.0"
     "mdast-util-gfm" "^3.0.0"
