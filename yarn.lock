@@ -1685,7 +1685,7 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^18.3.4", "@types/react@>=16", "@types/react@17 || 18 || 19":
-  version "18.3.18"
+  version "18.3.20"
   dependencies:
     "@types/prop-types" "*"
     "csstype" "^3.0.2"
