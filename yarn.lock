@@ -4239,7 +4239,7 @@
   "version" "2.6.2"
 
 "next@*", "next@^13.2.0 || ^14.0 || ^15.0.0-rc.0", "next@^15.1.4":
-  version "15.2.3"
+  version "15.2.4"
   dependencies:
     "@next/env" "15.1.4"
     "@swc/counter" "0.1.3"
