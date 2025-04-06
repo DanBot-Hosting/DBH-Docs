@@ -1680,7 +1680,7 @@
   "version" "15.7.12"
 
 "@types/react-dom@^18.3.0":
-  version "18.3.5"
+  version "18.3.6"
   dependencies:
     "@types/react" "*"
 
